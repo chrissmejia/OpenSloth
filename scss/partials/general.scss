@@ -1,0 +1,171 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+// The MIT License (MIT)                                                                  //
+//                                                                                        //
+// Copyright (C) 2015  Christopher Mejía Montoya - me@chrissmejia.com - chrissmejia.com   //
+//                                                                                        //
+// Permission is hereby granted, free of charge, to any person obtaining a copy           //
+// of this software and associated documentation files (the "Software"), to deal          //
+// in the Software without restriction, including without limitation the rights           //
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell              //
+// copies of the Software, and to permit persons to whom the Software is                  //
+// furnished to do so, subject to the following conditions:                               //
+//                                                                                        //
+// The above copyright notice and this permission notice shall be included in all         //
+// copies or substantial portions of the Software.                                        //
+//                                                                                        //
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR             //
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,               //
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE            //
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER                 //
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,          //
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE          //
+// SOFTWARE.                                                                              //
+////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "variables";
+@import "mixins";
+
+.row.fluid {
+    max-width: initial;	
+}
+
+a:hover {
+    text-decoration: underline;	
+}
+
+.link {
+    position: relative;
+
+    div, span, img {
+        position: relative;    
+    }
+
+    &:before {
+        @include link;
+    }
+
+    &:hover {
+        text-decoration: none;
+    
+        &:before {
+            @include link_hover;
+        }
+    }
+}
+
+.button {
+    overflow: hidden;
+    margin-bottom: 0.92857rem;
+    
+    &:before {
+        background-color: $info-color;
+    }
+
+    &:hover:before {
+        background-color: darken($info-color, 10%);
+    }
+	
+	&.success {
+        &:before {
+            background-color: $success-color;
+        }
+
+        &:hover:before {
+            background-color: darken($success-color, 10%);
+        }
+
+	}
+	
+	&.alert {
+        &:before {
+            background-color: $alert-color;
+        }
+
+        &:hover:before {
+            background-color: darken($alert-color, 10%);
+        }
+
+	}
+
+	&.secondary {
+        background-color: tint($info-color, 40%);
+
+        &:before {
+            background-color: tint($info-color, 40%);
+        }
+
+        &:hover {
+            background-color: tint($info-color, 40%);
+
+            &:before {
+                background-color: darken(tint($info-color, 40%), 10%);
+            }
+        }
+
+        &:active {
+            background-color: darken(tint($info-color, 40%), 10%);
+        }
+
+	}
+
+	&.action {
+        background-color: $complement-color;
+
+        &:before {
+            background-color: $complement-color;
+        }
+
+        &:hover {
+            background-color: $complement-color;
+
+            &:before {
+                background-color: darken($complement-color, 10%);
+            }
+        }
+
+        &:active {
+            background-color: darken($complement-color, 10%);
+        }
+
+	}
+}
+
+.top-bar {
+    height: initial;
+
+    .name {
+        height: initial;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+        width: 2rem;
+        text-align: center;
+    }
+
+    i {
+        line-height: 4.9rem;
+
+        span {
+            @include circular-notification(1rem, 1.4rem, -0.3rem);
+            background-color: $secondary-color-2;
+            color: tint($secondary-color-2, 90%);
+            line-height: 0.6rem;     
+        }
+
+        &.fa-neuter.search {
+            @include rotate(-45deg);
+        }
+
+    }
+
+    .has-dropdown a::after {
+        margin-top: 0;
+        top: 2.3rem;
+    }
+
+}
+
+.circle {
+	@include circular;
+}

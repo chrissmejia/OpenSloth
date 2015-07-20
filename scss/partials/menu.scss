@@ -1,0 +1,119 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+// The MIT License (MIT)                                                                  //
+//                                                                                        //
+// Copyright (C) 2015  Christopher Mejía Montoya - me@chrissmejia.com - chrissmejia.com   //
+//                                                                                        //
+// Permission is hereby granted, free of charge, to any person obtaining a copy           //
+// of this software and associated documentation files (the "Software"), to deal          //
+// in the Software without restriction, including without limitation the rights           //
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell              //
+// copies of the Software, and to permit persons to whom the Software is                  //
+// furnished to do so, subject to the following conditions:                               //
+//                                                                                        //
+// The above copyright notice and this permission notice shall be included in all         //
+// copies or substantial portions of the Software.                                        //
+//                                                                                        //
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR             //
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,               //
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE            //
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER                 //
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,          //
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE          //
+// SOFTWARE.                                                                              //
+////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "variables";
+@import "mixins";
+
+#side-menu {
+    width: $menu-width;
+    position: absolute;
+
+    .side-nav {
+
+        .link:before {
+            background-color: $primary-color;
+        }
+
+        .link:hover:before {
+            background-color: darken($primary-color, 10%);
+        }
+
+        .open {
+            border-top: 0.1rem solid tint($primary-color, 10%);
+            border-bottom: 0.1rem solid tint($primary-color, 10%);
+        }
+
+        .current a {
+            color: tint($secondary-color, 90%);
+        }
+
+        .active {
+            a {
+                border-left: 0.6rem solid $secondary-color;
+                padding: 0.8rem 0.8rem;
+            }
+
+            .link:before {
+                background-color: $secondary-color;
+            }
+
+            .link:hover:before {
+                background-color: darken($secondary-color, 10%);
+            }
+
+            ul {
+                display: block;
+
+                li {
+                    border-top: none;
+                    font-size: 0.9rem;
+
+                    &.current:before {
+                        top: 1rem;
+                        right: -0.7rem;
+                        @include arrow(1.4rem, tint($primary-color, 95%), 90deg);
+                    }
+
+                    &.current:after {
+                        top: 1.1rem;
+                        right: -0.6rem;
+                        @include arrow(1.2rem, $secondary-color, 90deg);
+                    }
+
+                }
+
+            }
+    
+            &.current {
+                background-color: $secondary-color;
+                color: tint($secondary-color, 90%);
+            }
+
+        }
+
+        li {
+            position: relative;
+
+            a {
+                padding: 0.8rem 1.2rem;
+                display: block;
+
+                i {
+                    padding: 0 0.4rem;
+                }
+
+            }
+
+            ul {
+                display: none;
+                list-style: none;
+                margin-left: 0;
+
+                a {
+                    padding-left: 1.9rem !important;
+                }
+            }
+        }
+    }
+}

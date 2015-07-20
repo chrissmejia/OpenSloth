@@ -1,0 +1,87 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+// The MIT License (MIT)                                                                  //
+//                                                                                        //
+// Copyright (C) 2015  Christopher Mejía Montoya - me@chrissmejia.com - chrissmejia.com   //
+//                                                                                        //
+// Permission is hereby granted, free of charge, to any person obtaining a copy           //
+// of this software and associated documentation files (the "Software"), to deal          //
+// in the Software without restriction, including without limitation the rights           //
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell              //
+// copies of the Software, and to permit persons to whom the Software is                  //
+// furnished to do so, subject to the following conditions:                               //
+//                                                                                        //
+// The above copyright notice and this permission notice shall be included in all         //
+// copies or substantial portions of the Software.                                        //
+//                                                                                        //
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR             //
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,               //
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE            //
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER                 //
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,          //
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE          //
+// SOFTWARE.                                                                              //
+////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "variables";
+@import "mixins";
+@import "compass/css3/transition";
+
+#content {
+    background-color: $primary-color;	
+}
+
+#main {
+    margin-left: $menu-width;
+    background-color: tint($primary-color, 95%);   
+
+    .row{
+        margin: 0;
+        padding: 0.9375rem;
+
+        .row {
+            padding: 0;
+        }
+    }
+}
+
+#breadcrumb {
+    .breadcrumbs {
+        margin-bottom: 0;
+        background: inherit;
+
+        i {
+            margin-right: 0.6rem;
+        }
+    }
+
+    &.fixed {
+        z-index: 10000;
+        background: #fff;
+        padding-left: 14rem;
+
+        #mini_logo {
+            left: 0;
+            opacity: 1;
+            position: fixed;
+            top: 0;
+        }
+    }
+}
+
+#mini_logo {
+	background-color: $secondary-color;
+    left: -$menu-width;
+    opacity: 0;
+    position: absolute;
+    @include single-transition(all, 0.5s);
+
+    .button {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+
+    .logo{
+        @include import-image('logo_white.svg', 14rem, 4rem, 90%);
+    }
+}
