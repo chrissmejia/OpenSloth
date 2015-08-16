@@ -22,5 +22,76 @@
 // SOFTWARE.                                                                              //
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-$menu-width: 14rem;
-$side_content-width: 18rem;
+@import "settings";
+@import "variables";
+@import "compass/css3/border-radius";
+
+#side_content {
+    width: $side_content-width;
+    top: 0;
+    right: -$side_content-width;
+    position: absolute;
+    height: 100%;
+    border-top: 0;
+    border-bottom: 0;
+    color: $primary-color;
+
+    .close {
+        opacity: 1;
+        visibility: initial;
+        position: absolute;
+        z-index: 1000;
+        top: 0.8rem;
+        left: -0.4rem;
+
+        a {
+            @include border-top-right-radius(0.6rem);
+            @include border-bottom-left-radius(0.6rem);
+            padding: 0.3rem 0.2rem 0.5rem 0.2rem;
+            background-color: #EBF2F6;
+            border: #c2cfdb 0.1rem solid;
+            overflow: hidden;
+
+            &:before {
+                @include border-top-right-radius(0.6rem);
+                @include border-bottom-left-radius(0.6rem);
+                background: #c2cfdb;
+            }
+        }
+
+        i {
+            font-size: 0.8rem;
+        }
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .tabs-content {
+        i {
+            display: block;
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+#inner_content {
+    margin-right: $side_content-width !important;
+    position: relative;
+    @include single-transition(all, 0.5s);
+
+    &.full {
+        margin-right: 0 !important;
+
+        .close {
+            opacity: 0;
+            visibility: hidden;
+            @include single-transition(all, 1s);
+        }
+
+    }
+
+}

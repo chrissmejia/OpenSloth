@@ -1,23 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
-/* line 28, ../../scss/partials/general.scss */
+/* line 29, ../../scss/partials/general.scss */
 .row.fluid {
-  max-width: initial;
+  max-width: none;
 }
 
-/* line 32, ../../scss/partials/general.scss */
+/* line 33, ../../scss/partials/general.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 36, ../../scss/partials/general.scss */
+/* line 37, ../../scss/partials/general.scss */
 .link {
   position: relative;
 }
-/* line 39, ../../scss/partials/general.scss */
+/* line 40, ../../scss/partials/general.scss */
 .link div, .link span, .link img {
   position: relative;
 }
-/* line 43, ../../scss/partials/general.scss */
+/* line 44, ../../scss/partials/general.scss */
 .link:before {
   background-color: #fff;
   content: "";
@@ -32,106 +32,102 @@ a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 47, ../../scss/partials/general.scss */
+/* line 48, ../../scss/partials/general.scss */
 .link:hover {
   text-decoration: none;
 }
-/* line 50, ../../scss/partials/general.scss */
+/* line 51, ../../scss/partials/general.scss */
 .link:hover:before {
   background-color: #eaeff3;
   right: 0;
   left: 0;
 }
 
-/* line 56, ../../scss/partials/general.scss */
+/* line 57, ../../scss/partials/general.scss */
 .button {
   overflow: hidden;
   margin-bottom: 0.92857rem;
 }
-/* line 60, ../../scss/partials/general.scss */
+/* line 61, ../../scss/partials/general.scss */
 .button:before {
   background-color: #346288;
 }
-/* line 64, ../../scss/partials/general.scss */
+/* line 65, ../../scss/partials/general.scss */
 .button:hover:before {
   background-color: #264763;
 }
-/* line 69, ../../scss/partials/general.scss */
+/* line 70, ../../scss/partials/general.scss */
 .button.success:before {
   background-color: #75BB3F;
 }
-/* line 73, ../../scss/partials/general.scss */
+/* line 74, ../../scss/partials/general.scss */
 .button.success:hover:before {
   background-color: #5d9532;
 }
-/* line 80, ../../scss/partials/general.scss */
+/* line 81, ../../scss/partials/general.scss */
 .button.alert:before {
   background-color: #BE4064;
 }
-/* line 84, ../../scss/partials/general.scss */
+/* line 85, ../../scss/partials/general.scss */
 .button.alert:hover:before {
   background-color: #983350;
 }
-/* line 90, ../../scss/partials/general.scss */
+/* line 91, ../../scss/partials/general.scss */
 .button.secondary {
   background-color: #85a0b7;
 }
-/* line 93, ../../scss/partials/general.scss */
+/* line 94, ../../scss/partials/general.scss */
 .button.secondary:before {
   background-color: #85a0b7;
 }
-/* line 97, ../../scss/partials/general.scss */
+/* line 98, ../../scss/partials/general.scss */
 .button.secondary:hover {
   background-color: #85a0b7;
 }
-/* line 100, ../../scss/partials/general.scss */
+/* line 101, ../../scss/partials/general.scss */
 .button.secondary:hover:before {
   background-color: #6587a4;
 }
-/* line 105, ../../scss/partials/general.scss */
+/* line 106, ../../scss/partials/general.scss */
 .button.secondary:active {
   background-color: #6587a4;
 }
-/* line 111, ../../scss/partials/general.scss */
+/* line 112, ../../scss/partials/general.scss */
 .button.action {
   background-color: #D39847;
 }
-/* line 114, ../../scss/partials/general.scss */
+/* line 115, ../../scss/partials/general.scss */
 .button.action:before {
   background-color: #D39847;
 }
-/* line 118, ../../scss/partials/general.scss */
+/* line 119, ../../scss/partials/general.scss */
 .button.action:hover {
   background-color: #D39847;
 }
-/* line 121, ../../scss/partials/general.scss */
+/* line 122, ../../scss/partials/general.scss */
 .button.action:hover:before {
   background-color: #ba7f2d;
 }
-/* line 126, ../../scss/partials/general.scss */
+/* line 127, ../../scss/partials/general.scss */
 .button.action:active {
   background-color: #ba7f2d;
 }
 
-/* line 133, ../../scss/partials/general.scss */
+/* line 134, ../../scss/partials/general.scss */
 .top-bar {
   height: initial;
 }
-/* line 136, ../../scss/partials/general.scss */
-.top-bar .name {
-  height: initial;
-}
-/* line 140, ../../scss/partials/general.scss */
+/* line 137, ../../scss/partials/general.scss */
 .top-bar .icon {
   font-size: 1.2rem;
   width: 2rem;
   text-align: center;
 }
-/* line 146, ../../scss/partials/general.scss */
+/* line 143, ../../scss/partials/general.scss */
 .top-bar i {
   line-height: 4.9rem;
 }
-/* line 149, ../../scss/partials/general.scss */
+/* line 146, ../../scss/partials/general.scss */
 .top-bar i span {
   color: #f8ebef;
   width: 1rem;
@@ -148,20 +144,62 @@ a:hover {
   color: #f8ebef;
   line-height: 0.6rem;
 }
-/* line 156, ../../scss/partials/general.scss */
+/* line 153, ../../scss/partials/general.scss */
 .top-bar i.fa-neuter.search {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 162, ../../scss/partials/general.scss */
+/* line 159, ../../scss/partials/general.scss */
 .top-bar .has-dropdown a::after {
   margin-top: 0;
   top: 2.3rem;
 }
-
+/* line 166, ../../scss/partials/general.scss */
+.top-bar.tabs li {
+  width: 33%;
+}
 /* line 169, ../../scss/partials/general.scss */
+.top-bar.tabs li a {
+  padding: 0;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 175, ../../scss/partials/general.scss */
+.top-bar.tabs i {
+  line-height: 1.9rem;
+}
+/* line 178, ../../scss/partials/general.scss */
+.top-bar.tabs i span {
+  top: 0rem;
+}
+/* line 184, ../../scss/partials/general.scss */
+.top-bar.tabs .link:before {
+  background-color: #eaeff3;
+}
+/* line 188, ../../scss/partials/general.scss */
+.top-bar.tabs .link:hover:before {
+  background-color: #fff;
+}
+
+/* line 195, ../../scss/partials/general.scss */
+.dispel {
+  opacity: 1;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 199, ../../scss/partials/general.scss */
+.dispel.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 205, ../../scss/partials/general.scss */
 .circle {
   border-radius: 50%;
 }

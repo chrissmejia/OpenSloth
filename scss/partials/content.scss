@@ -27,12 +27,13 @@
 @import "compass/css3/transition";
 
 #content {
-    background-color: $primary-color;	
+    background-color: $primary-color;
+    overflow: hidden;
 }
 
 #main {
     margin-left: $menu-width;
-    background-color: tint($primary-color, 95%);   
+    background-color: tint($primary-color, 95%); 
 
     .row{
         margin: 0;
@@ -82,6 +83,7 @@
     }
 
     .logo{
-        @include import-image('logo_white.svg', 14rem, 4rem, 90%);
+        @include import-image('logo_white.svg', 14rem, 3.18rem, 90%);
+        margin-top: 0.4rem;
     }
 }

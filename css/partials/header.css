@@ -7,6 +7,7 @@ header .logo {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 96%;
+  display: inline-block;
 }
 /* line 35, ../../scss/partials/header.scss */
 header .profile {

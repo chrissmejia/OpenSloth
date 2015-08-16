@@ -24,9 +24,10 @@
 
 @import "variables";
 @import "mixins";
+@import "compass/css3/transition";
 
 .row.fluid {
-    max-width: initial;	
+    max-width: none;	
 }
 
 a:hover {
@@ -133,10 +134,6 @@ a:hover {
 .top-bar {
     height: initial;
 
-    .name {
-        height: initial;
-    }
-
     .icon {
         font-size: 1.2rem;
         width: 2rem;
@@ -164,6 +161,45 @@ a:hover {
         top: 2.3rem;
     }
 
+    &.tabs {
+
+        li {
+            width: 33%;
+
+            a {
+                padding: 0;
+                @include single-transition(all, 0.3s);
+            }
+        }
+
+        i {
+            line-height: 1.9rem;
+
+            span {
+                top: 0rem;
+            }
+        }
+
+
+        .link:before {
+            background-color: tint($primary-color, 90%);
+        }
+
+        .link:hover:before {
+            background-color: #fff;
+        }
+    }
+
+}
+
+.dispel {
+    opacity: 1;
+    @include single-transition(all, 0.5s);
+
+    &.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 .circle {
