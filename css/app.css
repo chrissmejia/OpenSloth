@@ -9905,7 +9905,7 @@ header .profile .dropdown a {
   margin-top: 0.4rem;
 }
 
-/* line 29, ../scss/partials/side_content.scss */
+/* line 30, ../scss/partials/side_content.scss */
 #side_content {
   width: 18rem;
   top: 0;
@@ -9916,7 +9916,7 @@ header .profile .dropdown a {
   border-bottom: 0;
   color: #346288;
 }
-/* line 39, ../scss/partials/side_content.scss */
+/* line 40, ../scss/partials/side_content.scss */
 #side_content .close {
   opacity: 1;
   visibility: initial;
@@ -9925,7 +9925,7 @@ header .profile .dropdown a {
   top: 0.8rem;
   left: -0.4rem;
 }
-/* line 47, ../scss/partials/side_content.scss */
+/* line 48, ../scss/partials/side_content.scss */
 #side_content .close a {
   -moz-border-radius-topright: 0.6rem;
   -webkit-border-top-right-radius: 0.6rem;
@@ -9938,7 +9938,7 @@ header .profile .dropdown a {
   border: #c2cfdb 0.1rem solid;
   overflow: hidden;
 }
-/* line 55, ../scss/partials/side_content.scss */
+/* line 56, ../scss/partials/side_content.scss */
 #side_content .close a:before {
   -moz-border-radius-topright: 0.6rem;
   -webkit-border-top-right-radius: 0.6rem;
@@ -9948,15 +9948,15 @@ header .profile .dropdown a {
   border-bottom-left-radius: 0.6rem;
   background: #c2cfdb;
 }
-/* line 62, ../scss/partials/side_content.scss */
+/* line 63, ../scss/partials/side_content.scss */
 #side_content .close i {
   font-size: 0.8rem;
 }
-/* line 67, ../scss/partials/side_content.scss */
+/* line 68, ../scss/partials/side_content.scss */
 #side_content p {
   font-size: 0.9rem;
 }
-/* line 72, ../scss/partials/side_content.scss */
+/* line 73, ../scss/partials/side_content.scss */
 #side_content .tabs-content i {
   display: block;
   font-size: 4rem;
@@ -9964,7 +9964,7 @@ header .profile .dropdown a {
   margin-bottom: 1rem;
 }
 
-/* line 81, ../scss/partials/side_content.scss */
+/* line 82, ../scss/partials/side_content.scss */
 #inner_content {
   margin-right: 18rem !important;
   position: relative;
@@ -9973,11 +9973,11 @@ header .profile .dropdown a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 86, ../scss/partials/side_content.scss */
+/* line 87, ../scss/partials/side_content.scss */
 #inner_content.full {
   margin-right: 0 !important;
 }
-/* line 89, ../scss/partials/side_content.scss */
+/* line 90, ../scss/partials/side_content.scss */
 #inner_content.full .close {
   opacity: 0;
   visibility: hidden;
