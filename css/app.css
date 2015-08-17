@@ -9753,7 +9753,7 @@ header .profile .dropdown a {
 /* line 53, ../scss/partials/menu.scss */
 #side-menu .side-nav .active a {
   border-left: 0.6rem solid #75BB3F;
-  padding: 0.8rem 0.8rem;
+  padding: 6%;
 }
 /* line 58, ../scss/partials/menu.scss */
 #side-menu .side-nav .active .link:before {
@@ -9815,7 +9815,7 @@ header .profile .dropdown a {
 }
 /* line 99, ../scss/partials/menu.scss */
 #side-menu .side-nav li a {
-  padding: 0.8rem 1.2rem;
+  padding: 6% 10%;
   display: block;
 }
 /* line 103, ../scss/partials/menu.scss */
@@ -9833,43 +9833,69 @@ header .profile .dropdown a {
   padding-left: 1.9rem !important;
 }
 
+/* line 122, ../scss/partials/menu.scss */
+#main {
+  margin-left: 14rem;
+  background-color: #f4f7f9;
+}
+
+@media only screen and (min-width: 45.78571em) and (max-width: 73.14286em) {
+  /* line 128, ../scss/partials/menu.scss */
+  #side-menu {
+    width: 7rem;
+  }
+  /* line 131, ../scss/partials/menu.scss */
+  #side-menu i {
+    font-size: 1.6rem;
+    display: block;
+    padding: 0.3rem !important;
+  }
+  /* line 138, ../scss/partials/menu.scss */
+  #side-menu .active a {
+    border-left: 0 !important;
+  }
+
+  /* line 144, ../scss/partials/menu.scss */
+  #main {
+    margin-left: 7rem;
+  }
+}
 /* line 30, ../scss/partials/content.scss */
 #content {
   background-color: #346288;
   overflow: hidden;
 }
 
-/* line 35, ../scss/partials/content.scss */
-#main {
-  margin-left: 14rem;
-  background-color: #f4f7f9;
-}
-/* line 39, ../scss/partials/content.scss */
+/* line 36, ../scss/partials/content.scss */
 #main .row {
   margin: 0;
   padding: 0.9375rem;
 }
-/* line 43, ../scss/partials/content.scss */
+/* line 40, ../scss/partials/content.scss */
 #main .row .row {
   padding: 0;
 }
 
-/* line 50, ../scss/partials/content.scss */
+/* line 46, ../scss/partials/content.scss */
+#breadcrumb {
+  overflow: hidden;
+}
+/* line 49, ../scss/partials/content.scss */
 #breadcrumb .breadcrumbs {
   margin-bottom: 0;
   background: inherit;
 }
-/* line 54, ../scss/partials/content.scss */
+/* line 53, ../scss/partials/content.scss */
 #breadcrumb .breadcrumbs i {
   margin-right: 0.6rem;
 }
-/* line 59, ../scss/partials/content.scss */
+/* line 58, ../scss/partials/content.scss */
 #breadcrumb.fixed {
   z-index: 10000;
   background: #FFFFFF;
   padding-left: 14rem;
 }
-/* line 64, ../scss/partials/content.scss */
+/* line 63, ../scss/partials/content.scss */
 #breadcrumb.fixed #mini_logo {
   left: 0;
   opacity: 1;
@@ -9877,10 +9903,10 @@ header .profile .dropdown a {
   top: 0;
 }
 
-/* line 73, ../scss/partials/content.scss */
+/* line 72, ../scss/partials/content.scss */
 #mini_logo {
   background-color: #75BB3F;
-  left: -14rem;
+  left: -7rem;
   opacity: 0;
   position: absolute;
   -moz-transition: all 0.5s;
@@ -9888,13 +9914,13 @@ header .profile .dropdown a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 80, ../scss/partials/content.scss */
+/* line 79, ../scss/partials/content.scss */
 #mini_logo .button {
   margin: 0;
   padding: 0;
   position: absolute;
 }
-/* line 86, ../scss/partials/content.scss */
+/* line 85, ../scss/partials/content.scss */
 #mini_logo .logo {
   width: 14rem;
   height: 3.18rem;

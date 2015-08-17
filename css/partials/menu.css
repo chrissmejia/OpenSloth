@@ -25,7 +25,7 @@
 /* line 53, ../../scss/partials/menu.scss */
 #side-menu .side-nav .active a {
   border-left: 0.6rem solid #75BB3F;
-  padding: 0.8rem 0.8rem;
+  padding: 6%;
 }
 /* line 58, ../../scss/partials/menu.scss */
 #side-menu .side-nav .active .link:before {
@@ -87,7 +87,7 @@
 }
 /* line 99, ../../scss/partials/menu.scss */
 #side-menu .side-nav li a {
-  padding: 0.8rem 1.2rem;
+  padding: 6% 10%;
   display: block;
 }
 /* line 103, ../../scss/partials/menu.scss */
@@ -103,4 +103,32 @@
 /* line 114, ../../scss/partials/menu.scss */
 #side-menu .side-nav li ul a {
   padding-left: 1.9rem !important;
+}
+
+/* line 122, ../../scss/partials/menu.scss */
+#main {
+  margin-left: 14rem;
+  background-color: #f4f7f9;
+}
+
+@media only screen and (min-width: 45.78571em) and (max-width: 73.14286em) {
+  /* line 128, ../../scss/partials/menu.scss */
+  #side-menu {
+    width: 7rem;
+  }
+  /* line 131, ../../scss/partials/menu.scss */
+  #side-menu i {
+    font-size: 1.6rem;
+    display: block;
+    padding: 0.3rem !important;
+  }
+  /* line 138, ../../scss/partials/menu.scss */
+  #side-menu .active a {
+    border-left: 0 !important;
+  }
+
+  /* line 144, ../../scss/partials/menu.scss */
+  #main {
+    margin-left: 7rem;
+  }
 }

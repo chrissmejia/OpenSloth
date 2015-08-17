@@ -27,7 +27,7 @@
 @import "mixins";
 
 #side-menu {
-    width: $menu-width;
+    width: $menu-full-width;
     position: absolute;
 
     .side-nav {
@@ -52,7 +52,7 @@
         .active {
             a {
                 border-left: 0.6rem solid $secondary-color;
-                padding: 0.8rem 0.8rem;
+                padding: 6%;
             }
 
             .link:before {
@@ -97,7 +97,7 @@
             position: relative;
 
             a {
-                padding: 0.8rem 1.2rem;
+                padding: 6% 10%;
                 display: block;
 
                 i {
@@ -116,5 +116,32 @@
                 }
             }
         }
+    }
+}
+
+#main {
+    margin-left: $menu-full-width;
+    background-color: tint($primary-color, 95%); 
+}
+
+@media #{$medium-only} {
+    #side-menu {
+        width: $menu-width;
+
+        i {
+            font-size: 1.6rem;
+            display: block;
+            padding: 0.3rem !important;
+        }
+
+        .active {
+            a {
+                border-left: 0 !important;
+            }
+        }
+    }
+
+    #main {
+        margin-left: $menu-width;
     }
 }

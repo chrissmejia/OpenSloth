@@ -33,9 +33,6 @@
 }
 
 #main {
-    margin-left: $menu-width;
-    background-color: tint($primary-color, 95%); 
-
     .row{
         margin: 0;
         padding: 0.9375rem;
@@ -47,6 +44,8 @@
 }
 
 #breadcrumb {
+    overflow: hidden;
+
     .breadcrumbs {
         margin-bottom: 0;
         background: inherit;
