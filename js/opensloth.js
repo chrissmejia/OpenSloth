@@ -37,7 +37,7 @@
 
     window.OpenSloth = {
         name : 'OpenSloth',
-        version : '0.1',
+        version : '0.2',
         
         header : {
             side_content_buttons : {
