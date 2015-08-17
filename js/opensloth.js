@@ -31,6 +31,7 @@
     var side_content_tag = $('#side_content');
     var side_content_close_tag = $('#side_content .close');
     var inner_content_tag = $('#inner_content');
+    var inner_content_offcavas_tag = $('#inner_content .off-canvas');
     var top_side_content_object_tag = $('.side-content-buttons');
     var top_side_content_button_tag = $('.side-content-buttons a');
 
@@ -70,6 +71,9 @@
         OpenSloth.side_content.show();
     });
     side_content_close_tag.click(function(){
+        OpenSloth.side_content.hide();
+    });
+    inner_content_offcavas_tag.click(function(){
         OpenSloth.side_content.hide();
     });
 })();

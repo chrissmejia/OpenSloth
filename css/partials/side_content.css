@@ -3,15 +3,19 @@
 #side_content {
   width: 18rem;
   top: 0;
-  right: -18rem;
+  right: 0;
   position: absolute;
   height: 100%;
   border-top: 0;
   border-bottom: 0;
   color: #346288;
   z-index: 1000;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
-/* line 41, ../../scss/partials/side_content.scss */
+/* line 42, ../../scss/partials/side_content.scss */
 #side_content .close {
   opacity: 1;
   visibility: initial;
@@ -20,7 +24,7 @@
   top: 0.8rem;
   left: -0.4rem;
 }
-/* line 49, ../../scss/partials/side_content.scss */
+/* line 50, ../../scss/partials/side_content.scss */
 #side_content .close a {
   -moz-border-radius-topright: 0.6rem;
   -webkit-border-top-right-radius: 0.6rem;
@@ -33,7 +37,7 @@
   border: #c2cfdb 0.1rem solid;
   overflow: hidden;
 }
-/* line 57, ../../scss/partials/side_content.scss */
+/* line 58, ../../scss/partials/side_content.scss */
 #side_content .close a:before {
   -moz-border-radius-topright: 0.6rem;
   -webkit-border-top-right-radius: 0.6rem;
@@ -43,15 +47,15 @@
   border-bottom-left-radius: 0.6rem;
   background: #c2cfdb;
 }
-/* line 64, ../../scss/partials/side_content.scss */
+/* line 65, ../../scss/partials/side_content.scss */
 #side_content .close i {
   font-size: 0.8rem;
 }
-/* line 69, ../../scss/partials/side_content.scss */
+/* line 70, ../../scss/partials/side_content.scss */
 #side_content p {
   font-size: 0.9rem;
 }
-/* line 74, ../../scss/partials/side_content.scss */
+/* line 75, ../../scss/partials/side_content.scss */
 #side_content .tabs-content i {
   display: block;
   font-size: 4rem;
@@ -59,25 +63,65 @@
   margin-bottom: 1rem;
 }
 
-/* line 83, ../../scss/partials/side_content.scss */
-#inner_content {
-  margin-right: 18rem !important;
+/* line 84, ../../scss/partials/side_content.scss */
+#inner_content.row {
+  margin-right: 0;
   position: relative;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 88, ../../scss/partials/side_content.scss */
-#inner_content.full {
-  margin-right: 0 !important;
+/* line 89, ../../scss/partials/side_content.scss */
+#inner_content.row .off-canvas {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  background: rgba(52, 98, 136, 0.4);
+  z-index: 100;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
-/* line 91, ../../scss/partials/side_content.scss */
-#inner_content.full .close {
+/* line 103, ../../scss/partials/side_content.scss */
+#inner_content.row.full #side_content {
+  right: -18rem;
+}
+/* line 107, ../../scss/partials/side_content.scss */
+#inner_content.row.full .off-canvas {
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 112, ../../scss/partials/side_content.scss */
+#inner_content.row.full .close {
   opacity: 0;
   visibility: hidden;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+@media only screen and (min-width: 73.21429em) {
+  /* line 122, ../../scss/partials/side_content.scss */
+  #side_content {
+    right: -18rem;
+  }
+
+  /* line 126, ../../scss/partials/side_content.scss */
+  #inner_content.row {
+    margin-right: 18rem;
+  }
+  /* line 129, ../../scss/partials/side_content.scss */
+  #inner_content.row.full {
+    margin-right: 0;
+  }
+  /* line 133, ../../scss/partials/side_content.scss */
+  #inner_content.row .off-canvas {
+    display: none;
+  }
 }
