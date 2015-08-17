@@ -22,6 +22,7 @@
 // SOFTWARE.                                                                              //
 ////////////////////////////////////////////////////////////////////////////////////////////
 
+@import "settings";
 @import "variables";
 @import "mixins";
 @import "compass/css3/transition";
@@ -57,7 +58,7 @@
 
     &.fixed {
         z-index: 10000;
-        background: #fff;
+        background: $white;
         padding-left: 14rem;
 
         #mini_logo {

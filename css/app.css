@@ -29,6 +29,7 @@ SOFTWARE.
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
 /* line 364, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.2/";
@@ -6608,7 +6609,7 @@ table tr td {
 .tabs dd > a,
 .tabs .tab-title > a {
   display: block;
-  background-color: #EBF2F6;
+  background-color: #eaeff3;
   color: #222222;
   font-family: "Nunito", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.14286rem;
@@ -6617,7 +6618,7 @@ table tr td {
 /* line 50, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs dd > a:hover,
 .tabs .tab-title > a:hover {
-  background-color: #d7e5ed;
+  background-color: #d8e1e9;
 }
 /* line 55, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs dd.active a,
@@ -9490,7 +9491,7 @@ a:hover {
 }
 /* line 44, ../scss/partials/general.scss */
 .link:before {
-  background-color: #fff;
+  background-color: #FFFFFF;
   content: "";
   bottom: 0;
   top: 0;
@@ -9832,43 +9833,43 @@ header .profile .dropdown a {
   padding-left: 1.9rem !important;
 }
 
-/* line 29, ../scss/partials/content.scss */
+/* line 30, ../scss/partials/content.scss */
 #content {
   background-color: #346288;
   overflow: hidden;
 }
 
-/* line 34, ../scss/partials/content.scss */
+/* line 35, ../scss/partials/content.scss */
 #main {
   margin-left: 14rem;
   background-color: #f4f7f9;
 }
-/* line 38, ../scss/partials/content.scss */
+/* line 39, ../scss/partials/content.scss */
 #main .row {
   margin: 0;
   padding: 0.9375rem;
 }
-/* line 42, ../scss/partials/content.scss */
+/* line 43, ../scss/partials/content.scss */
 #main .row .row {
   padding: 0;
 }
 
-/* line 49, ../scss/partials/content.scss */
+/* line 50, ../scss/partials/content.scss */
 #breadcrumb .breadcrumbs {
   margin-bottom: 0;
   background: inherit;
 }
-/* line 53, ../scss/partials/content.scss */
+/* line 54, ../scss/partials/content.scss */
 #breadcrumb .breadcrumbs i {
   margin-right: 0.6rem;
 }
-/* line 58, ../scss/partials/content.scss */
+/* line 59, ../scss/partials/content.scss */
 #breadcrumb.fixed {
   z-index: 10000;
-  background: #fff;
+  background: #FFFFFF;
   padding-left: 14rem;
 }
-/* line 63, ../scss/partials/content.scss */
+/* line 64, ../scss/partials/content.scss */
 #breadcrumb.fixed #mini_logo {
   left: 0;
   opacity: 1;
@@ -9876,7 +9877,7 @@ header .profile .dropdown a {
   top: 0;
 }
 
-/* line 72, ../scss/partials/content.scss */
+/* line 73, ../scss/partials/content.scss */
 #mini_logo {
   background-color: #75BB3F;
   left: -14rem;
@@ -9887,13 +9888,13 @@ header .profile .dropdown a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 79, ../scss/partials/content.scss */
+/* line 80, ../scss/partials/content.scss */
 #mini_logo .button {
   margin: 0;
   padding: 0;
   position: absolute;
 }
-/* line 85, ../scss/partials/content.scss */
+/* line 86, ../scss/partials/content.scss */
 #mini_logo .logo {
   width: 14rem;
   height: 3.18rem;
@@ -9915,8 +9916,9 @@ header .profile .dropdown a {
   border-top: 0;
   border-bottom: 0;
   color: #346288;
+  z-index: 1000;
 }
-/* line 40, ../scss/partials/side_content.scss */
+/* line 41, ../scss/partials/side_content.scss */
 #side_content .close {
   opacity: 1;
   visibility: initial;
@@ -9925,7 +9927,7 @@ header .profile .dropdown a {
   top: 0.8rem;
   left: -0.4rem;
 }
-/* line 48, ../scss/partials/side_content.scss */
+/* line 49, ../scss/partials/side_content.scss */
 #side_content .close a {
   -moz-border-radius-topright: 0.6rem;
   -webkit-border-top-right-radius: 0.6rem;
@@ -9934,11 +9936,11 @@ header .profile .dropdown a {
   -webkit-border-bottom-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
   padding: 0.3rem 0.2rem 0.5rem 0.2rem;
-  background-color: #EBF2F6;
+  background-color: #eaeff3;
   border: #c2cfdb 0.1rem solid;
   overflow: hidden;
 }
-/* line 56, ../scss/partials/side_content.scss */
+/* line 57, ../scss/partials/side_content.scss */
 #side_content .close a:before {
   -moz-border-radius-topright: 0.6rem;
   -webkit-border-top-right-radius: 0.6rem;
@@ -9948,15 +9950,15 @@ header .profile .dropdown a {
   border-bottom-left-radius: 0.6rem;
   background: #c2cfdb;
 }
-/* line 63, ../scss/partials/side_content.scss */
+/* line 64, ../scss/partials/side_content.scss */
 #side_content .close i {
   font-size: 0.8rem;
 }
-/* line 68, ../scss/partials/side_content.scss */
+/* line 69, ../scss/partials/side_content.scss */
 #side_content p {
   font-size: 0.9rem;
 }
-/* line 73, ../scss/partials/side_content.scss */
+/* line 74, ../scss/partials/side_content.scss */
 #side_content .tabs-content i {
   display: block;
   font-size: 4rem;
@@ -9964,7 +9966,7 @@ header .profile .dropdown a {
   margin-bottom: 1rem;
 }
 
-/* line 82, ../scss/partials/side_content.scss */
+/* line 83, ../scss/partials/side_content.scss */
 #inner_content {
   margin-right: 18rem !important;
   position: relative;
@@ -9973,11 +9975,11 @@ header .profile .dropdown a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 87, ../scss/partials/side_content.scss */
+/* line 88, ../scss/partials/side_content.scss */
 #inner_content.full {
   margin-right: 0 !important;
 }
-/* line 90, ../scss/partials/side_content.scss */
+/* line 91, ../scss/partials/side_content.scss */
 #inner_content.full .close {
   opacity: 0;
   visibility: hidden;

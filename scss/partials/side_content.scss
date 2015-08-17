@@ -36,6 +36,7 @@
     border-top: 0;
     border-bottom: 0;
     color: $primary-color;
+    z-index: 1000;
 
     .close {
         opacity: 1;
@@ -49,14 +50,14 @@
             @include border-top-right-radius(0.6rem);
             @include border-bottom-left-radius(0.6rem);
             padding: 0.3rem 0.2rem 0.5rem 0.2rem;
-            background-color: #EBF2F6;
-            border: #c2cfdb 0.1rem solid;
+            background-color: tint($primary-color, 90%);
+            border: tint($primary-color, 70%) 0.1rem solid;
             overflow: hidden;
 
             &:before {
                 @include border-top-right-radius(0.6rem);
                 @include border-bottom-left-radius(0.6rem);
-                background: #c2cfdb;
+                background: tint($primary-color, 70%);
             }
         }
 
@@ -96,3 +97,5 @@
     }
 
 }
+
+//    z-index: 1000;
