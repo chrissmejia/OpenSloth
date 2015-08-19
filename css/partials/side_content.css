@@ -125,3 +125,27 @@
     display: none;
   }
 }
+@media only screen and (max-width: 45.71429em) {
+  /* line 141, ../../scss/partials/side_content.scss */
+  #inner_content.row.full {
+    right: 45.71429em;
+  }
+  /* line 145, ../../scss/partials/side_content.scss */
+  #inner_content.row .close {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* line 152, ../../scss/partials/side_content.scss */
+  #main {
+    position: relative;
+  }
+  /* line 155, ../../scss/partials/side_content.scss */
+  #main #inner_content {
+    position: initial;
+  }
+  /* line 158, ../../scss/partials/side_content.scss */
+  #main #inner_content .tabs {
+    display: none;
+  }
+}

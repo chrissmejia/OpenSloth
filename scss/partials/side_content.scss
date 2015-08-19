@@ -133,7 +133,31 @@
         .off-canvas {
             display: none;
         }
+    }
+}
+
+@media #{$small-only} {
+    #inner_content.row {
+        &.full {
+            right: $small-breakpoint;
+        }
+
+        .close {
+            opacity: 0;
+            visibility: hidden;
+        }
 
     }
 
+    #main {
+        position: relative;
+
+        #inner_content {
+            position: initial;
+
+            .tabs {
+                display: none;
+            }
+        }
+    }
 }

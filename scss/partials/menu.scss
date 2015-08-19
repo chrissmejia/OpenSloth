@@ -145,3 +145,99 @@
         margin-left: $menu-width;
     }
 }
+
+@media #{$small-only} {
+    body {
+        header, #content {
+            position: relative;
+            overflow: hidden;
+        }
+
+        header nav, #content #main {
+            left: $menu-full-width;
+            position: relative;
+            overflow: visible !important;
+            @include single-transition(all, 0.5s);
+        }
+
+        >.off-canvas {
+            top: -$mobile-header-height;
+            right: 0;
+            bottom: 0;
+            left: $menu-full-width;
+            opacity: 1;
+            position: absolute;
+            background: rgba($primary-color, 0.4);
+            z-index: 100000;
+            @include single-transition(all, 0.5s);
+        }
+
+    }
+
+    header {
+        border-bottom: solid 0.1rem tint($primary-color, 70%);
+
+        .profile {
+            position: absolute !important;
+            left: -$menu-full-width;
+            top: -$mobile-header-height + 2.66rem;
+            width: $menu-full-width !important;
+            background: darken($primary-color, 14%) !important;
+            height: $mobile-header-height;
+        }
+    }
+
+    #breadcrumb.fixed {
+        display: none;
+    }
+
+    #side-menu, #profile-side-menu {
+        width: $menu-full-width;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background: darken($primary-color, 14%);;
+    }
+
+    #profile-side-menu {
+
+        a {
+            color: $white;
+            width: 50%;
+            float: left;
+            padding: 1.1rem 0;
+
+            span {
+                display: block;
+            }
+        }
+
+        .settings {
+            .avatar {
+                width: 2.6rem;
+                padding-bottom: 0.1rem;
+            }
+        }
+
+        i {
+            font-size: 2.5rem;
+        }
+    }
+
+    #main {
+        margin: 0;
+    }
+
+    body.full {
+        header nav, #content #main {
+            left: 0;
+        }
+
+        >.off-canvas {
+            opacity: 0;
+            left: 0;
+            visibility: hidden;
+        }
+
+    }
+}

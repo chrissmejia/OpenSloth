@@ -27,6 +27,10 @@
 @import "mixins";
 @import "compass/css3/transition";
 
+body.non-scroll {
+    overflow: hidden;
+}
+
 #content {
     background-color: $primary-color;
     overflow: hidden;

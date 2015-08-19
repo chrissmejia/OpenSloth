@@ -132,3 +132,100 @@
     margin-left: 7rem;
   }
 }
+@media only screen and (max-width: 45.71429em) {
+  /* line 151, ../../scss/partials/menu.scss */
+  body header, body #content {
+    position: relative;
+    overflow: hidden;
+  }
+  /* line 156, ../../scss/partials/menu.scss */
+  body header nav, body #content #main {
+    left: 14rem;
+    position: relative;
+    overflow: visible !important;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  /* line 163, ../../scss/partials/menu.scss */
+  body > .off-canvas {
+    top: -6.66rem;
+    right: 0;
+    bottom: 0;
+    left: 14rem;
+    opacity: 1;
+    position: absolute;
+    background: rgba(52, 98, 136, 0.4);
+    z-index: 100000;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  /* line 177, ../../scss/partials/menu.scss */
+  header {
+    border-bottom: solid 0.1rem #c2cfdb;
+  }
+  /* line 180, ../../scss/partials/menu.scss */
+  header .profile {
+    position: absolute !important;
+    left: -14rem;
+    top: -4rem;
+    width: 14rem !important;
+    background: #203d54 !important;
+    height: 6.66rem;
+  }
+
+  /* line 190, ../../scss/partials/menu.scss */
+  #breadcrumb.fixed {
+    display: none;
+  }
+
+  /* line 194, ../../scss/partials/menu.scss */
+  #side-menu, #profile-side-menu {
+    width: 14rem;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #203d54;
+  }
+
+  /* line 204, ../../scss/partials/menu.scss */
+  #profile-side-menu a {
+    color: #FFFFFF;
+    width: 50%;
+    float: left;
+    padding: 1.1rem 0;
+  }
+  /* line 210, ../../scss/partials/menu.scss */
+  #profile-side-menu a span {
+    display: block;
+  }
+  /* line 216, ../../scss/partials/menu.scss */
+  #profile-side-menu .settings .avatar {
+    width: 2.6rem;
+    padding-bottom: 0.1rem;
+  }
+  /* line 222, ../../scss/partials/menu.scss */
+  #profile-side-menu i {
+    font-size: 2.5rem;
+  }
+
+  /* line 227, ../../scss/partials/menu.scss */
+  #main {
+    margin: 0;
+  }
+
+  /* line 232, ../../scss/partials/menu.scss */
+  body.full header nav, body.full #content #main {
+    left: 0;
+  }
+  /* line 236, ../../scss/partials/menu.scss */
+  body.full > .off-canvas {
+    opacity: 0;
+    left: 0;
+    visibility: hidden;
+  }
+}

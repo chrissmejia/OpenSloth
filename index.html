@@ -10,17 +10,27 @@
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
+  <body class="full">
+    <div class="off-canvas"></div>
     
     <header class="row fluid">
-    
-      <nav class="top-bar" data-topbar role="navigation" data-options="is_hover: false">
+      <aside id="profile-side-menu" class="show-for-small-only text-center">
+        <a href="#" class="settings">
+                <img class="circle avatar" src="img/pic/me.png" alt="">
+                <span class="username">Chriss</i></span>
+        </a>
+        <a href="#" class="signout">
+          <i class="fa fa-sign-out"></i>
+          <span>Logout</span>
+        </a>
+      </aside>
+
+      <nav class="top-bar small-only-text-center" data-topbar role="navigation" data-options="is_hover: false">
         <ul class="title-area">
+          <li class="menu-icon show-for-small-only"><a href="#"><span><i class="fa fa-bars"></i></span></a></li>
           <li class="name">
             <a href="#"><div class="image logo"></div></a>
           </li>
-          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
 
         <section class="top-bar-section">
@@ -36,11 +46,11 @@
               <a href="#" data-tab="tab-notifications" class="link"><i class="fa fa-bell-o icon"></i></a>
             </li>
           
-            <li class="has-dropdown profile">
+            <li class="has-dropdown profile hide-for-small-only">
               <a href="#" class="link">
                 <img class="circle avatar" src="img/pic/me.png" alt="">
                 <span class="online"></span>
-                <span class="user-name">Chriss</i></span>
+                <span class="username">Chriss</i></span>
               </a>
               <ul class="dropdown">
                 <li><a href="#" class="link"><span><i class="fa fa-user"></i>Profile</a></span></li>
@@ -59,6 +69,7 @@
 
       <aside id="side-menu">
         <ul class="side-nav" role="navigation" title="Navigation list">
+
           <li role="menuitem">
             <a href="#" class="link medium-only-text-center"><span><i class="fa fa-home"></i>Dashboard</span></a>
           </li>
@@ -240,10 +251,10 @@
       </div>
     </div>
       <div id="footer" class="row panel">
-        <div class="large-6 medium-6 columns text-left">
+        <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
           Copyright © 2015 <b>Your Project</b>.
         </div>        
-        <div class="large-6 medium-6 columns text-right">
+        <div class="large-6 medium-6 small-12 columns text-right small-only-text-center">
           <a target="_blank" href="http://opensloth.org">OpenSloth</a> template by <a target="_blank" href="http://chrissmejia.com">Chriss Mejía</a>.
         </div>        
       </div>

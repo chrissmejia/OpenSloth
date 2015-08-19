@@ -1,41 +1,46 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 /* line 30, ../../scss/partials/content.scss */
+body.non-scroll {
+  overflow: hidden;
+}
+
+/* line 34, ../../scss/partials/content.scss */
 #content {
   background-color: #346288;
   overflow: hidden;
 }
 
-/* line 36, ../../scss/partials/content.scss */
+/* line 40, ../../scss/partials/content.scss */
 #main .row {
   margin: 0;
   padding: 0.9375rem;
 }
-/* line 40, ../../scss/partials/content.scss */
+/* line 44, ../../scss/partials/content.scss */
 #main .row .row {
   padding: 0;
 }
 
-/* line 46, ../../scss/partials/content.scss */
+/* line 50, ../../scss/partials/content.scss */
 #breadcrumb {
   overflow: hidden;
 }
-/* line 49, ../../scss/partials/content.scss */
+/* line 53, ../../scss/partials/content.scss */
 #breadcrumb .breadcrumbs {
   margin-bottom: 0;
   background: inherit;
 }
-/* line 53, ../../scss/partials/content.scss */
+/* line 57, ../../scss/partials/content.scss */
 #breadcrumb .breadcrumbs i {
   margin-right: 0.6rem;
 }
-/* line 58, ../../scss/partials/content.scss */
+/* line 62, ../../scss/partials/content.scss */
 #breadcrumb.fixed {
   z-index: 10000;
   background: #FFFFFF;
   padding-left: 14rem;
 }
-/* line 63, ../../scss/partials/content.scss */
+/* line 67, ../../scss/partials/content.scss */
 #breadcrumb.fixed #mini_logo {
   left: 0;
   opacity: 1;
@@ -43,7 +48,7 @@
   top: 0;
 }
 
-/* line 72, ../../scss/partials/content.scss */
+/* line 76, ../../scss/partials/content.scss */
 #mini_logo {
   background-color: #75BB3F;
   left: -7rem;
@@ -54,13 +59,13 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 79, ../../scss/partials/content.scss */
+/* line 83, ../../scss/partials/content.scss */
 #mini_logo .button {
   margin: 0;
   padding: 0;
   position: absolute;
 }
-/* line 85, ../../scss/partials/content.scss */
+/* line 89, ../../scss/partials/content.scss */
 #mini_logo .logo {
   width: 14rem;
   height: 3.18rem;

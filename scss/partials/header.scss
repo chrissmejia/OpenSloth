@@ -22,11 +22,16 @@
 // SOFTWARE.                                                                              //
 ////////////////////////////////////////////////////////////////////////////////////////////
 
+@import "settings";
 @import "variables";
 @import "mixins";
 @import "compass/css3/transform";
 
 header {
+
+    .name {
+        height: 4.88rem !important;
+    }
 
     .logo{
         @include import-image('logo.svg', 14rem, 4.9rem, 96%);
@@ -62,5 +67,66 @@ header {
             }
         }
 
+    }
+}
+
+@media #{$small-only} {
+    header {
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+
+        .title-area {
+            background: $primary-color !important;
+
+            li {
+                height: 4rem !important;
+            }
+
+            .logo{
+                @include import-image('logo_white.svg', 14rem, 3.6rem, 96%);
+                margin-top: 0.2rem;
+            }
+
+            .menu-icon {
+                position: absolute;
+                left: 0.8rem;
+            
+                i {
+                    font-size: 2rem;
+                    color: $white;
+                    line-height: 4rem;
+                }
+            }
+        }
+
+        .right {
+           li {
+                width: 33.33%;
+                float: left;
+                opacity: 1 !important;
+                visibility: visible !important;
+                background: $white;
+
+                i {
+                    line-height: 1.9rem;
+        
+                    span {
+                        top: 0rem;
+                    }
+                }
+
+                a {
+                    padding: 0.4rem;
+                }
+           }
+
+           .active {
+                &:before {
+                    @include link_hover;
+                }
+           }
+
+        }
     }
 }
