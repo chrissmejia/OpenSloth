@@ -144,7 +144,7 @@ a:hover {
         line-height: 4.9rem;
 
         span {
-            @include circular-notification(1rem, 1.4rem, -0.3rem);
+            @include circular-notification(1rem, -0.5rem, -0.2rem);
             background-color: $secondary-color-2;
             color: tint($secondary-color-2, 90%);
             line-height: 0.6rem;     
