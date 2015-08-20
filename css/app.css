@@ -31,6 +31,7 @@ SOFTWARE.
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
 /* line 364, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.2/";
@@ -9658,7 +9659,25 @@ a:hover {
   background-color: #fff;
 }
 
-/* line 195, ../scss/partials/general.scss */
+/* line 196, ../scss/partials/general.scss */
+.alert-box h1, .alert-box h2, .alert-box h3, .alert-box h4, .alert-box h5, .alert-box h6 {
+  color: #FFFFFF;
+}
+/* line 199, ../scss/partials/general.scss */
+.alert-box a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+/* line 203, ../scss/partials/general.scss */
+.alert-box a:hover {
+  opacity: 0.9;
+}
+/* line 208, ../scss/partials/general.scss */
+.alert-box .close {
+  text-decoration: none;
+}
+
+/* line 213, ../scss/partials/general.scss */
 .dispel {
   opacity: 1;
   -moz-transition: all 0.5s;
@@ -9666,13 +9685,13 @@ a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 199, ../scss/partials/general.scss */
+/* line 217, ../scss/partials/general.scss */
 .dispel.hidden {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 205, ../scss/partials/general.scss */
+/* line 223, ../scss/partials/general.scss */
 .circle {
   border-radius: 50%;
 }
@@ -10195,19 +10214,19 @@ body.non-scroll {
 #inner_content.row.full #side_content {
   right: -18rem;
 }
-/* line 107, ../scss/partials/side_content.scss */
-#inner_content.row.full .off-canvas {
-  opacity: 0;
-  visibility: hidden;
-}
-/* line 112, ../scss/partials/side_content.scss */
-#inner_content.row.full .close {
+/* line 106, ../scss/partials/side_content.scss */
+#inner_content.row.full #side_content .close {
   opacity: 0;
   visibility: hidden;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+/* line 113, ../scss/partials/side_content.scss */
+#inner_content.row.full .off-canvas {
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media only screen and (min-width: 73.21429em) {
@@ -10256,4 +10275,27 @@ body.non-scroll {
 /* line 25, ../scss/partials/footer.scss */
 #footer {
   font-size: 0.7rem;
+}
+
+/* line 10, ../scss/partials/icons.scss */
+#icons .container .fa-hover a {
+  line-height: 3rem;
+  padding: 0.4rem;
+}
+/* line 14, ../scss/partials/icons.scss */
+#icons .container .fa-hover a:hover {
+  background: #346288;
+  color: #FFFFFF;
+  text-decoration: none;
+  -moz-border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  border-radius: 0.8rem;
+}
+/* line 22, ../scss/partials/icons.scss */
+#icons .container section {
+  margin-bottom: 2rem;
+}
+/* line 26, ../scss/partials/icons.scss */
+#icons .container .text-muted {
+  opacity: 0.7;
 }

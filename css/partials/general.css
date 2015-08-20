@@ -185,7 +185,25 @@ a:hover {
   background-color: #fff;
 }
 
-/* line 195, ../../scss/partials/general.scss */
+/* line 196, ../../scss/partials/general.scss */
+.alert-box h1, .alert-box h2, .alert-box h3, .alert-box h4, .alert-box h5, .alert-box h6 {
+  color: #FFFFFF;
+}
+/* line 199, ../../scss/partials/general.scss */
+.alert-box a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+/* line 203, ../../scss/partials/general.scss */
+.alert-box a:hover {
+  opacity: 0.9;
+}
+/* line 208, ../../scss/partials/general.scss */
+.alert-box .close {
+  text-decoration: none;
+}
+
+/* line 213, ../../scss/partials/general.scss */
 .dispel {
   opacity: 1;
   -moz-transition: all 0.5s;
@@ -193,13 +211,13 @@ a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 199, ../../scss/partials/general.scss */
+/* line 217, ../../scss/partials/general.scss */
 .dispel.hidden {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 205, ../../scss/partials/general.scss */
+/* line 223, ../../scss/partials/general.scss */
 .circle {
   border-radius: 50%;
 }

@@ -102,17 +102,17 @@
 
         #side_content {
             right: -$side_content-width;
+
+            .close {
+                opacity: 0;
+                visibility: hidden;
+                @include single-transition(all, 1s);
+            }
         }
 
         .off-canvas {
             opacity: 0;
             visibility: hidden;
-        }
-
-        .close {
-            opacity: 0;
-            visibility: hidden;
-            @include single-transition(all, 1s);
         }
     }
 }

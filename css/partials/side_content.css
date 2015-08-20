@@ -91,19 +91,19 @@
 #inner_content.row.full #side_content {
   right: -18rem;
 }
-/* line 107, ../../scss/partials/side_content.scss */
-#inner_content.row.full .off-canvas {
-  opacity: 0;
-  visibility: hidden;
-}
-/* line 112, ../../scss/partials/side_content.scss */
-#inner_content.row.full .close {
+/* line 106, ../../scss/partials/side_content.scss */
+#inner_content.row.full #side_content .close {
   opacity: 0;
   visibility: hidden;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+/* line 113, ../../scss/partials/side_content.scss */
+#inner_content.row.full .off-canvas {
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media only screen and (min-width: 73.21429em) {

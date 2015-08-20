@@ -192,6 +192,24 @@ a:hover {
 
 }
 
+.alert-box {
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;    
+    }
+    a {
+        color: $white;
+        text-decoration: underline;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .close {
+        text-decoration: none;
+    }
+}
+
 .dispel {
     opacity: 1;
     @include single-transition(all, 0.5s);

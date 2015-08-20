@@ -1,0 +1,30 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+// Used only to show the icons, you can remove this                                       //
+////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "settings";
+@import "compass/css3/border-radius";
+
+#icons {
+    .container {
+        .fa-hover a {
+            line-height: 3rem;
+            padding: 0.4rem;
+
+            &:hover {
+                background: $primary-color;
+                color: $white;
+                text-decoration: none;
+                @include border-radius(0.8rem);
+            }
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .text-muted {
+            opacity: 0.7;
+        }
+    }
+}
