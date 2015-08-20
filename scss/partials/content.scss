@@ -75,7 +75,7 @@ body.non-scroll {
 
 #mini_logo {
 	background-color: $secondary-color;
-    left: -$menu-width;
+    left: -$menu-full-width;
     opacity: 0;
     position: absolute;
     @include single-transition(all, 0.5s);
