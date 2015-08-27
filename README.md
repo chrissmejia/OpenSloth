@@ -3,6 +3,8 @@ OpenSource HTML Dashboard
 
 Based on Foundation and Compass
 
+See more at: http://OpenSloth.org
+
 ## Requirements
 
   * Ruby 1.9+
