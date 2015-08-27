@@ -51,7 +51,7 @@ header {
 
         .online {
             @include circular-notification(0.6rem, initial, initial, 1rem, 3rem);
-            background-color: $secondary-color;
+            background-color: $success-color;
         }
 
         .dropdown {

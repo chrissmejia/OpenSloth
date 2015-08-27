@@ -46,21 +46,21 @@
         }
 
         .current a {
-            color: tint($secondary-color, 90%);
+            color: tint($success-color, 90%);
         }
 
         .active {
             a {
-                border-left: 0.6rem solid $secondary-color;
+                border-left: 0.6rem solid $success-color;
                 padding: 6%;
             }
 
             .link:before {
-                background-color: $secondary-color;
+                background-color: $success-color;
             }
 
             .link:hover:before {
-                background-color: darken($secondary-color, 10%);
+                background-color: darken($success-color, 10%);
             }
 
             ul {
@@ -79,7 +79,7 @@
                     &.current:after {
                         top: 1.1rem;
                         right: -0.6rem;
-                        @include arrow(1.2rem, $secondary-color, 90deg);
+                        @include arrow(1.2rem, $success-color, 90deg);
                     }
 
                 }
@@ -87,8 +87,8 @@
             }
     
             &.current {
-                background-color: $secondary-color;
-                color: tint($secondary-color, 90%);
+                background-color: $success-color;
+                color: tint($success-color, 90%);
             }
 
         }

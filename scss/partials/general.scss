@@ -26,6 +26,20 @@
 @import "mixins";
 @import "compass/css3/transition";
 
+h1, h2, h3, h4, h5, h6 {
+    small {
+        color: darken($primary-color, 4%);
+    }
+}
+
+blockquote {
+    color: darken($primary-color, 20%);
+
+    cite {
+        color: darken($primary-color, 4%);
+    }
+}
+
 .row.fluid {
     max-width: none;	
 }
@@ -89,8 +103,6 @@ a:hover {
 	}
 
 	&.secondary {
-        background-color: tint($info-color, 40%);
-
         &:before {
             background-color: tint($info-color, 40%);
         }
@@ -129,6 +141,21 @@ a:hover {
         }
 
 	}
+
+    &.disabled {
+        background-color: darken($info-color, 20%) !important;
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+
+.label {
+    &.action {
+        background-color: $complement-color;
+    }
 }
 
 .top-bar {
@@ -222,4 +249,57 @@ a:hover {
 
 .circle {
 	@include circular;
+}
+
+.panel {
+    margin-top: 1.42857rem;
+
+    .title {
+        margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
+        background: tint($primary-color, 70%);
+        color: $primary-color;
+        text-transform: uppercase;
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            display: inline-block;
+            padding: 1.2rem;
+        }
+
+        .link {
+            float: right;
+            padding: 0.9rem;
+        }
+    }
+
+    a:not(.link):not(.button) {
+        color: scale-color($primary-color, $lightness: 15%);
+    }
+
+    .button {
+        margin-bottom: 0;
+    }
+}
+
+// Fix for split buttons
+.split.link {
+    padding: 0;
+
+    div {
+        padding: 1rem;
+        margin-right: 3.53571rem;
+
+        span {
+            right: -3.53571rem;
+        }
+    }
+}
+
+.split.button.no-pip span > i {
+    margin-left: -0.48889em;
+}
+
+// Fix for modals
+.close-reveal-modal:hover {
+    text-decoration: none;
 }

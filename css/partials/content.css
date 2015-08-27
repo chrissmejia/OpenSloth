@@ -24,23 +24,26 @@ body.non-scroll {
 /* line 50, ../../scss/partials/content.scss */
 #breadcrumb {
   overflow: hidden;
+  background: #e0e7ed;
+  color: #346288;
+  border: 0.1rem #c2cfdb solid !important;
 }
-/* line 53, ../../scss/partials/content.scss */
+/* line 56, ../../scss/partials/content.scss */
 #breadcrumb .breadcrumbs {
   margin-bottom: 0;
   background: inherit;
 }
-/* line 57, ../../scss/partials/content.scss */
+/* line 60, ../../scss/partials/content.scss */
 #breadcrumb .breadcrumbs i {
   margin-right: 0.6rem;
 }
-/* line 62, ../../scss/partials/content.scss */
+/* line 65, ../../scss/partials/content.scss */
 #breadcrumb.fixed {
   z-index: 10000;
   background: #FFFFFF;
   padding-left: 14rem;
 }
-/* line 67, ../../scss/partials/content.scss */
+/* line 70, ../../scss/partials/content.scss */
 #breadcrumb.fixed #mini_logo {
   left: 0;
   opacity: 1;
@@ -48,7 +51,7 @@ body.non-scroll {
   top: 0;
 }
 
-/* line 76, ../../scss/partials/content.scss */
+/* line 79, ../../scss/partials/content.scss */
 #mini_logo {
   background-color: #75BB3F;
   left: -14rem;
@@ -59,13 +62,13 @@ body.non-scroll {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 83, ../../scss/partials/content.scss */
+/* line 86, ../../scss/partials/content.scss */
 #mini_logo .button {
   margin: 0;
   padding: 0;
   position: absolute;
 }
-/* line 89, ../../scss/partials/content.scss */
+/* line 92, ../../scss/partials/content.scss */
 #mini_logo .logo {
   width: 14rem;
   height: 3.18rem;

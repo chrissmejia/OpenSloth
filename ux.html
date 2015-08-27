@@ -1,0 +1,314 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="ChrissMejía">
+    <meta name="description" content="The OpenSource Dashboard Template">
+    <title>OpenSloth | The OpenSource Dashboard Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body class="full">
+    <div class="off-canvas"></div>
+    
+    <header class="row fluid">
+      <aside id="profile-side-menu" class="show-for-small-only text-center">
+        <a href="#" class="settings">
+                <img class="circle avatar" src="img/pic/me.png" alt="">
+                <span class="username">Chriss</i></span>
+        </a>
+        <a href="#" class="signout">
+          <i class="fa fa-sign-out"></i>
+          <span>Logout</span>
+        </a>
+      </aside>
+
+      <nav class="top-bar small-only-text-center" data-topbar role="navigation" data-options="is_hover: false">
+        <ul class="title-area">
+          <li class="menu-icon show-for-small-only"><a href="#"><span><i class="fa fa-bars"></i></span></a></li>
+          <li class="name">
+            <a href="#"><div class="image logo"></div></a>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+        <!-- Right Nav Section -->
+          <ul class="right">
+            <li class="side-content-buttons dispel">  
+              <a id="numero2" href="#" data-tab="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a>
+            </li>
+            <li class="side-content-buttons dispel">
+              <a href="#" data-tab="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a>
+            </li>
+            <li class="side-content-buttons dispel">
+              <a href="#" data-tab="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a>
+            </li>
+          
+            <li class="has-dropdown profile hide-for-small-only">
+              <a href="#" class="link">
+                <img class="circle avatar" src="img/pic/me.png" alt="">
+                <span class="online"></span>
+                <span class="username">Chriss</i></span>
+              </a>
+              <ul class="dropdown">
+                <li><a href="#" class="link"><span><i class="fa fa-user"></i>Profile</a></span></li>
+                <li><a href="#" class="link"><span><i class="fa fa-cog"></i>Settings</a></span></li>
+                <li class="divider"></li>
+                <li><a href="#" class="link"><span><i class="fa fa-sign-out"></i>Logout</a></span></li>
+              </ul>
+            </li>
+          </ul>
+
+        </section>
+      </nav>
+    </header>
+    
+    <div id="content" class="row fluid">
+
+      <aside id="side-menu">
+        <ul class="side-nav" role="navigation" title="Navigation list">
+
+          <li role="menuitem">
+            <a href="#" class="link medium-only-text-center"><span><i class="fa fa-home"></i>Dashboard</span></a>
+          </li>
+          <li role="menuitem">
+            <a href="index.html" class="link medium-only-text-center"><span><i class="fa fa-th"></i>Foundation</span></a>
+          </li>
+          <li role="menuitem">
+            <a href="icons.html" class="link medium-only-text-center"><span><i class="fa fa-flag"></i>Icons</span></a>
+          </li>
+          <li role="menuitem">
+            <a href="panels.html" class="link medium-only-text-center"><span><i class="fa fa-th-large"></i>Panels</span></a>
+          </li>
+          <li class="active current" role="menuitem">
+            <a href="#" class="link medium-only-text-center"><span><i class="fa fa-clone"></i>Basic UX</span></a>
+          </li>
+          <li role="menuitem">
+            <a href="typography.html" class="link medium-only-text-center"><span><i class="fa fa-font"></i>Typography</span></a>
+          </li>
+          <li role="menuitem">
+            <a href="buttons.html" class="link medium-only-text-center"><span><i class="fa fa-caret-square-o-right"></i>Buttons</span></a>
+          </li>
+        </ul>
+      </aside>
+
+      <section id="main">
+        <nav id="breadcrumb" class="row" data-magellan-expedition="fixed">
+          <div id="mini_logo">
+            <a href="#" class="link button success">
+              <div class="image logo"></div>
+            </a>
+          </div>
+          <div class="columns large-12">
+            <ul class="breadcrumbs" role="menubar">
+              <li role="menuitem"><a href="#"><i class="fa fa-th"></i><span class="sidebar-mini-hide">Foundation</span></a></li>
+              <li role="menuitem" class="current"><a href="#"><span class="sidebar-mini-hide">Basic</span></a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+    <div id="inner_content" class="row full">
+      <div class="off-canvas"></div>
+      <div id="side_content" class="row panel callout">
+        <div class="close"><a href="#" class="link"><span><i class="fa fa-angle-double-right"></i></span></a></div>
+        <ul class="tabs top-bar" data-tab role="tablist">
+          <li class="tab-title active text-center" role="presentation"><a href="#tab-search" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a></li>
+          <li class="tab-title text-center" role="presentation"><a href="#tab-chat" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a></li>
+          <li class="tab-title text-center" role="presentation"><a href="#tab-notifications" role="tab" tabindex="2" aria-selected="false" aria-controls="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a></li>
+        </ul>
+        <div class="tabs-content">
+          <section role="tabpanel" aria-hidden="false" class="content active" id="tab-search">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">This feature has not been developed yet, <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a></br></br>Stay tuned, this is will be coded soon.</p>
+          </section>
+          <section role="tabpanel" aria-hidden="true" class="content" id="tab-chat">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">This feature has not been developed yet, <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a></br></br>Stay tuned, this is will be coded soon.</p>
+          </section>
+          <section role="tabpanel" aria-hidden="true" class="content" id="tab-notifications">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">This feature has not been developed yet, <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a></br></br>Stay tuned, this is will be coded soon.</p>
+          </section>
+        </div>
+      </div>
+
+      <div class="row">
+        <div data-alert class="alert-box success radius" tabindex="0" aria-live="assertive" role="alertdialog">
+          This is a success alert with a radius.
+          <button tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+        </div>
+
+        <div data-alert class="alert-box warning round" tabindex="0" aria-live="assertive" role="alertdialog">
+          This is a warning alert that is rounded.
+          <button tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+        </div>
+
+        <div data-alert class="alert-box info radius" tabindex="0" aria-live="assertive" role="alertdialog">
+          This is an info alert with a radius.
+          <button tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+        </div>
+
+        <div data-alert class="alert-box alert round" tabindex="0" aria-live="assertive" role="alertdialog">
+          This is an alert - alert that is rounded.
+          <button tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+        </div>
+
+        <div data-alert class="alert-box secondary" tabindex="0" aria-live="assertive" role="alertdialog">
+          This is a secondary alert.
+          <button tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+        </div>
+      
+        <div class="large-6 medium-6 small-12 columns small-only-text-center">
+          <div class="panel callout">
+            <div class="title"><h6>Switches</h6></div>
+                <div class="switch">
+                  <input id="exampleCheckboxSwitch" type="checkbox">
+                  <label for="exampleCheckboxSwitch"></label>
+                </div> 
+
+                <!-- Using radio buttons – each switch turns off the other two -->
+                <div class="switch small">
+                  <input id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+                  <label for="exampleRadioSwitch1"></label>
+                </div> 
+
+                <div class="switch radius">
+                  <input id="exampleRadioSwitch2" type="radio" name="testGroup">
+                  <label for="exampleRadioSwitch2"></label>
+                </div> 
+
+                <div class="switch round large">
+                  <input id="exampleRadioSwitch3" type="radio" name="testGroup">
+                  <label for="exampleRadioSwitch3"></label>
+                </div>
+          </div>
+          <div class="panel callout">
+            <div class="title"><h6>Modals</h6></div>
+              <!-- Triggers the modals -->
+              <a class="radius button link" href="#" data-reveal-id="firstModal"><span>Modal in a modal&hellip;</span></a>
+              
+              <!-- Reveal Modals begin -->
+              <div id="firstModal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+                <h2 id="firstModalTitle">This is a modal.</h2>
+                <p>Reveal makes these very easy to summon and dismiss. The close button is simply an anchor with a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will also dismiss it.</p>
+                <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you gracefully.</p>
+                <p><a href="#" data-reveal-id="secondModal" class="secondary button link"><span>Second Modal...</span></a></p>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+              </div>
+
+              <div id="secondModal" class="reveal-modal" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
+                <h2 id="secondModalTitle">This is a second modal.</h2>
+                <p>See? It just slides into place after the other first modal. Very handy when you need subsequent dialogs, or when a modal option impacts or requires another decision.</p>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+              </div>
+          </div>
+          <div class="panel callout">
+            <div class="title"><h6>JoyRide</h6></div>
+            <div id="firstStop" class="panel">Some awesome part of your site!</div>
+            <div id="numero1" class="switch">
+              <input id="exampleCheckboxSwitch" type="checkbox">
+              <label for="exampleCheckboxSwitch"></label>
+            </div> 
+          </div>
+          <div class="panel callout">
+            <div class="title"><h6>Progress Bars</h6></div>
+            Regular:
+            <div class="progress">
+              <span class="meter" style="width: 50%"></span>
+            </div>
+            <div class="progress alert">
+              <span class="meter" style="width: 70%"></span>
+            </div>
+            <div class="progress success">
+              <span class="meter" style="width: 20%"></span>
+            </div>
+            <div class="progress secondary">
+              <span class="meter" style="width: 80%"></span>
+            </div>
+          </div>
+        </div>        
+        <div class="large-6 medium-6 small-12 columns">
+          <div class="panel callout">
+            <div class="title"><h6>Range Sliders</h6></div>
+              Horizontal:
+            </br>
+            <div class="range-slider" data-slider>
+              <span class="range-slider-handle" role="slider" tabindex="0"></span>
+              <span class="range-slider-active-segment"></span>
+              <input type="hidden">
+            </div>
+            <hr>
+              Vertical:
+            </br></br>
+            <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+              <span class="range-slider-handle" role="slider" tabindex="0"></span>
+              <span class="range-slider-active-segment"></span>
+              <input type="hidden">
+            </div>
+            <hr>
+              With Label:
+            </br></br>
+            <div class="range-slider" data-slider data-options="display_selector: #sliderOutput3;">
+              <span class="range-slider-handle" role="slider" tabindex="0"></span>
+              <span class="range-slider-active-segment"></span>
+            </div>
+            <span id="sliderOutput3"></span>
+          </div>
+          <div class="panel callout">
+            <div class="title"><h6>Tooltips</h6></div>
+            <span data-tooltip aria-haspopup="true" class="has-tip" title="Tooltips are awesome, you should totally use them!">Hover on desktop or touch me on mobile!</span>
+          </div>        
+        </div>        
+      </div>
+
+    </div>
+
+
+
+      <div id="footer" class="row panel">
+        <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
+          Copyright © 2015 <b>Your Project</b>.
+        </div>        
+        <div class="large-6 medium-6 small-12 columns text-right small-only-text-center">
+          <a target="_blank" href="http://opensloth.org">OpenSloth</a> template by <a target="_blank" href="http://chrissmejia.com">Chriss Mejía</a>.
+        </div>        
+      </div>
+
+    </div>
+
+    </section>
+
+<!-- At the bottom of your page but inside of the body tag -->
+<ol class="joyride-list" data-joyride>
+  <li data-id="firstStop" data-text="Next" data-options="tip_location: top; prev_button: false">
+    <p>Hello and welcome to the Joyride <br>documentation page.</p>
+  </li>
+  <li data-id="numero1" data-class="custom so-awesome" data-text="Next" data-prev-text="Prev">
+    <h4>Stop #1</h4>
+    <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
+  </li>
+  <li data-id="numero2" data-button="Next" data-prev-text="Prev" data-options="tip_location:top;tip_animation:fade">
+    <h4>Stop #2</h4>
+    <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+  </li>
+  <li data-button="End" data-prev-text="Prev">
+    <h4>Stop #3</h4>
+    <p>It works as a modal too!</p>
+  </li>
+</ol>
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.slider.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+    <script src="js/opensloth.js"></script>
+    <script>
+      // Joyride does not initialize on page load like the rest of the plugins. You need to call start to get it to load.
+      $(document).foundation().foundation('joyride', 'start');
+    </script>
+  </body>
+</html>

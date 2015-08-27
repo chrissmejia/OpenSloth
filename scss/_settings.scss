@@ -120,12 +120,12 @@ $steel       : #666666;
 
 // We use these as default colors throughout
 $primary-color: $color-primary-0; // Blue
-$secondary-color: $color-secondary-2-0; // Green
+$secondary-color: tint($primary-color, 40%);
 $secondary-color-2: $color-secondary-1-0; // Purple
 $complement-color: $color-complement-0; // Orange
 
 $info-color: $primary-color;
-$success-color: $secondary-color;
+$success-color: $color-secondary-2-0; // Green
 $alert-color: $secondary-color-2;
 $warning-color: $complement-color;
 
@@ -445,10 +445,10 @@ $crumb-font-transform: capitalize;
 // $include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
-// $button-tny: rem-calc(10);
-// $button-sml: rem-calc(14);
-// $button-med: rem-calc(16);
-// $button-lrg: rem-calc(18);
+$button-tny: rem-calc(6);
+$button-sml: rem-calc(10);
+$button-med: rem-calc(12);
+$button-lrg: rem-calc(14);
 
 // We use this to control the display property.
 // $button-display: inline-block;
@@ -458,10 +458,10 @@ $crumb-font-transform: capitalize;
 // $button-font-family: $body-font-family;
 // $button-font-color: $white;
 // $button-font-color-alt: $oil;
-// $button-font-tny: rem-calc(11);
-// $button-font-sml: rem-calc(13);
-// $button-font-med: rem-calc(16);
-// $button-font-lrg: rem-calc(20);
+$button-font-tny: rem-calc(9);
+$button-font-sml: rem-calc(11);
+$button-font-med: rem-calc(14);
+$button-font-lrg: rem-calc(18);
 // $button-font-weight: $font-weight-normal;
 // $button-font-align: center;
 
@@ -1085,10 +1085,10 @@ $panel-font-color: darken($primary-color, 20%);
 // $progress-bar-margin-bottom: rem-calc(10);
 
 // We use these to set the meter colors
-// $progress-meter-color: $primary-color;
-// $progress-meter-secondary-color: $secondary-color;
-// $progress-meter-success-color: $success-color;
-// $progress-meter-alert-color: $alert-color;
+$progress-meter-color: $primary-color;
+$progress-meter-secondary-color: $secondary-color;
+$progress-meter-success-color: $success-color;
+$progress-meter-alert-color: $alert-color;
 
 // 24. Range Slider
 // - - - - - - - - - - - - - - - - - - - - - - - - -
