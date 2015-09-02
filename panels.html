@@ -1,216 +1,309 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="ChrissMejía">
     <meta name="description" content="The OpenSource Dashboard Template">
     <title>OpenSloth | The OpenSource Dashboard Template</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/app.css"/>
     <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body class="full">
-    <div class="off-canvas"></div>
-    
-    <header class="row fluid">
-      <aside id="profile-side-menu" class="show-for-small-only text-center">
+</head>
+<body class="full">
+<div class="off-canvas"></div>
+
+<header class="row fluid">
+    <aside id="profile-side-menu" class="show-for-small-only text-center">
         <a href="#" class="settings">
-                <img class="circle avatar" src="img/pic/me.png" alt="">
-                <span class="username">Chriss</span>
+            <img class="circle avatar" src="img/pic/me.png" alt="">
+            <span class="username">Chriss</span>
         </a>
         <a href="#" class="signout">
-          <i class="fa fa-sign-out"></i>
-          <span>Logout</span>
+            <i class="fa fa-sign-out"></i>
+            <span>Logout</span>
         </a>
-      </aside>
+    </aside>
 
-      <nav class="top-bar small-only-text-center" data-topbar role="navigation" data-options="is_hover: false">
+    <nav class="top-bar small-only-text-center" data-topbar role="navigation" data-options="is_hover: false">
         <ul class="title-area">
-          <li class="menu-icon show-for-small-only"><a href="#"><span><i class="fa fa-bars"></i></span></a></li>
-          <li class="name">
-            <a href="#"><div class="image logo"></div></a>
-          </li>
+            <li class="menu-icon show-for-small-only"><a href="#"><span><i class="fa fa-bars"></i></span></a></li>
+            <li class="name">
+                <a href="#">
+                    <div class="image logo"></div>
+                </a>
+            </li>
         </ul>
 
         <section class="top-bar-section">
-        <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="side-content-buttons dispel">  
-              <a href="#" data-tab="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a>
-            </li>
-            <li class="side-content-buttons dispel">
-              <a href="#" data-tab="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a>
-            </li>
-            <li class="side-content-buttons dispel">
-              <a href="#" data-tab="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a>
-            </li>
-          
-            <li class="has-dropdown profile hide-for-small-only">
-              <a href="#" class="link">
-                <img class="circle avatar" src="img/pic/me.png" alt="">
-                <span class="online"></span>
-                <span class="username">Chriss</span>
-              </a>
-              <ul class="dropdown">
-                <li><a href="#" class="link"><span><i class="fa fa-user"></i>Profile</span></a></li>
-                <li><a href="#" class="link"><span><i class="fa fa-cog"></i>Settings</span></a></li>
-                <li class="divider"></li>
-                <li><a href="#" class="link"><span><i class="fa fa-sign-out"></i>Logout</span></a></li>
-              </ul>
-            </li>
-          </ul>
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="side-content-buttons dispel">
+                    <a href="#" data-tab="tab-search" class="link">
+                        <span><i class="fa fa-neuter icon search"></i></span>
+                    </a>
+
+                </li>
+                <li class="side-content-buttons dispel">
+                    <a href="#" data-tab="tab-chat" class="link">
+                        <span>
+                            <i class="fa fa-comments-o icon"><span class="text-center">3</span></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="side-content-buttons dispel">
+                    <a href="#" data-tab="tab-notifications" class="link">
+                        <span><i class="fa fa-bell-o icon"></i></span>
+                    </a>
+                </li>
+
+                <li class="has-dropdown profile hide-for-small-only">
+                    <a href="#" class="link">
+                        <img class="circle avatar" src="img/pic/me.png" alt="">
+                        <span class="online"></span>
+                        <span class="username">Chriss</span>
+                    </a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#" class="link">
+                                <span><i class="fa fa-user"></i>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <span><i class="fa fa-cog"></i>Settings</span>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#" class="link">
+                                <span><i class="fa fa-sign-out"></i>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
         </section>
-      </nav>
-    </header>
-    
-    <div id="content" class="row fluid">
+    </nav>
+</header>
 
-      <aside id="side-menu">
+<div id="content" class="row fluid">
+
+    <aside id="side-menu">
         <ul class="side-nav" role="navigation" title="Navigation list">
 
-          <li role="menuitem">
-            <a href="#" class="link medium-only-text-center"><span><i class="fa fa-home"></i>Dashboard</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="index.html" class="link medium-only-text-center"><span><i class="fa fa-th"></i>Foundation</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="icons.html" class="link medium-only-text-center"><span><i class="fa fa-flag"></i>Icons</span></a>
-          </li>
-          <li class="active current" role="menuitem">
-            <a href="#" class="link medium-only-text-center"><span><i class="fa fa-th-large"></i>Panels</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="ux.html" class="link medium-only-text-center"><span><i class="fa fa-clone"></i>Basic UX</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="typography.html" class="link medium-only-text-center"><span><i class="fa fa-font"></i>Typography</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="buttons.html" class="link medium-only-text-center"><span><i class="fa fa-caret-square-o-right"></i>Buttons</span></a>
-          </li>
+            <li role="menuitem">
+                <a href="#" class="link medium-only-text-center">
+                    <span><i class="fa fa-home"></i>Dashboard</span>
+                </a>
+            </li>
+            <li role="menuitem">
+                <a href="index.html" class="link medium-only-text-center"
+                        ><span><i class="fa fa-th"></i>Foundation</span>
+                </a>
+            </li>
+            <li role="menuitem">
+                <a href="icons.html" class="link medium-only-text-center">
+                    <span><i class="fa fa-flag"></i>Icons</span>
+                </a>
+            </li>
+            <li class="active current" role="menuitem">
+                <a href="#" class="link medium-only-text-center">
+                    <span><i class="fa fa-th-large"></i>Panels</span>
+                </a>
+            </li>
+            <li role="menuitem">
+                <a href="ux.html" class="link medium-only-text-center">
+                    <span><i class="fa fa-clone"></i>Basic UX</span>
+                </a>
+            </li>
+            <li role="menuitem">
+                <a href="typography.html" class="link medium-only-text-center">
+                    <span><i class="fa fa-font"></i>Typography</span>
+                </a>
+            </li>
+            <li role="menuitem">
+                <a href="buttons.html" class="link medium-only-text-center">
+                    <span><i class="fa fa-caret-square-o-right"></i>Buttons</span>
+                </a>
+            </li>
         </ul>
-      </aside>
+    </aside>
 
-      <section id="main">
+    <section id="main">
         <nav id="breadcrumb" class="row" data-magellan-expedition="fixed">
-          <div id="mini_logo">
-            <a href="#" class="link button success">
-              <div class="image logo"></div>
-            </a>
-          </div>
-          <div class="columns large-12">
-            <ul class="breadcrumbs" role="menubar">
-              <li role="menuitem"><a href="#"><i class="fa fa-th"></i><span class="sidebar-mini-hide">Foundation</span></a></li>
-              <li role="menuitem" class="current"><a href="#"><span class="sidebar-mini-hide">Basic</span></a></li>
-            </ul>
-          </div>
+            <div id="mini_logo">
+                <a href="#" class="link button success">
+                    <div class="image logo"></div>
+                </a>
+            </div>
+            <div class="columns large-12">
+                <ul class="breadcrumbs" role="menubar">
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-th"></i>
+                            <span class="sidebar-mini-hide">Foundation</span>
+                        </a>
+                    </li>
+                    <li role="menuitem" class="current">
+                        <a href="#">
+                            <span class="sidebar-mini-hide">Basic</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
 
-    <div id="inner_content" class="row full">
-      <div class="off-canvas"></div>
-      <div id="side_content" class="row panel callout">
-        <div class="close"><a href="#" class="link"><span><i class="fa fa-angle-double-right"></i></span></a></div>
-        <ul class="tabs top-bar" data-tab role="tablist">
-          <li class="tab-title active text-center" role="presentation"><a href="#tab-search" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a></li>
-          <li class="tab-title text-center" role="presentation"><a href="#tab-chat" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a></li>
-          <li class="tab-title text-center" role="presentation"><a href="#tab-notifications" role="tab" tabindex="2" aria-selected="false" aria-controls="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a></li>
-        </ul>
-        <div class="tabs-content">
-          <section role="tabpanel" aria-hidden="false" class="content active" id="tab-search">
-              <i class="fa fa-frown-o"></i>
-              <p class="text-center">This feature has not been developed yet, <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a></br></br>Stay tuned, this is will be coded soon.</p>
-          </section>
-          <section role="tabpanel" aria-hidden="true" class="content" id="tab-chat">
-              <i class="fa fa-frown-o"></i>
-              <p class="text-center">This feature has not been developed yet, <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a></br></br>Stay tuned, this is will be coded soon.</p>
-          </section>
-          <section role="tabpanel" aria-hidden="true" class="content" id="tab-notifications">
-              <i class="fa fa-frown-o"></i>
-              <p class="text-center">This feature has not been developed yet, <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a></br></br>Stay tuned, this is will be coded soon.</p>
-          </section>
-        </div>
-      </div>
+        <div id="inner_content" class="row full">
+            <div class="off-canvas"></div>
+            <div id="side_content" class="row panel callout">
+                <div class="close"><a href="#" class="link"><span><i class="fa fa-angle-double-right"></i></span></a>
+                </div>
+                <ul class="tabs top-bar" data-tab role="tablist">
+                    <li class="tab-title active text-center" role="presentation">
+                        <a href="#tab-search" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-search" class="link">
+                            <span>
+                                <i class="fa fa-neuter icon search"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="tab-title text-center" role="presentation">
+                        <a href="#tab-chat" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-chat" class="link">
+                            <span>
+                                <i class="fa fa-comments-o icon"><span class="text-center">3</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="tab-title text-center" role="presentation">
+                        <a href="#tab-notifications" role="tab" tabindex="2" aria-selected="false" aria-controls="tab-notifications" class="link">
+                            <span><i class="fa fa-bell-o icon"></i></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tabs-content">
+                    <section role="tabpanel" aria-hidden="false" class="content active" id="tab-search">
+                        <i class="fa fa-frown-o"></i>
 
-      <div class="row">
-        <div class="large-6 medium-6 small-12 columns">
-          <h6>Without title</h6>
-          <div class="panel callout">
-            This is a callout panel
-          </div>
-        </div>        
-        <div class="large-6 medium-6 small-12 columns">
-          <div class="panel callout">
-            <div class="title">
-              <h6>with title</h6>
-              <a href="#" class="link"><span><i class="fa fa-times"></i></span></a>
-              <a href="#" class="link"><span><i class="fa fa-cog"></i></span></a>
+                        <p class="text-center">
+                            This feature has not been developed yet,
+                            <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                            </br></br>Stay tuned, this is will be coded soon.
+                        </p>
+                    </section>
+                    <section role="tabpanel" aria-hidden="true" class="content" id="tab-chat">
+                        <i class="fa fa-frown-o"></i>
+
+                        <p class="text-center">
+                            This feature has not been developed yet,
+                            <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                            </br></br>Stay tuned, this is will be coded soon.
+                        </p>
+                    </section>
+                    <section role="tabpanel" aria-hidden="true" class="content" id="tab-notifications">
+                        <i class="fa fa-frown-o"></i>
+
+                        <p class="text-center">
+                            This feature has not been developed yet,
+                            <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                            </br></br>Stay tuned, this is will be coded soon.
+                        </p>
+                    </section>
+                </div>
             </div>
-            This is a callout panel
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
-          <h6>Without title</h6>
-          <div class="panel callout radius">
-            This is a callout radius panel
-          </div>
-        </div>        
-        <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
-          <div class="panel callout radius">
-            <div class="title">
-              <h6>Radius with title</h6>
-              <a href="#" class="link"><span><i class="fa fa-times"></i></span></a>
-              <a href="#" class="link"><span><i class="fa fa-cog"></i></span></a>
+
+            <div class="row">
+                <div class="large-6 medium-6 small-12 columns">
+                    <h6>Without title</h6>
+
+                    <div class="panel callout">
+                        This is a callout panel
+                    </div>
+                </div>
+                <div class="large-6 medium-6 small-12 columns">
+                    <div class="panel callout">
+                        <div class="title">
+                            <h6>with title</h6>
+                            <a href="#" class="link">
+                                <span><i class="fa fa-times"></i></span>
+                            </a>
+                            <a href="#" class="link">
+                                <span><i class="fa fa-cog"></i></span>
+                            </a>
+                        </div>
+                        This is a callout panel
+                    </div>
+                </div>
             </div>
-            This is a callout radius panel
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
-          <h6>Without title</h6>
-          <div class="panel">
-            This is a regular panel
-          </div>
-        </div>        
-        <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
-          <div class="panel">
-            <div class="title">
-              <h6>with title</h6>
-              <a href="#" class="link"><span><i class="fa fa-times"></i></span></a>
-              <a href="#" class="link"><span><i class="fa fa-cog"></i></span></a>
+            <div class="row">
+                <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
+                    <h6>Without title</h6>
+
+                    <div class="panel callout radius">
+                        This is a callout radius panel
+                    </div>
+                </div>
+                <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
+                    <div class="panel callout radius">
+                        <div class="title">
+                            <h6>Radius with title</h6>
+                            <a href="#" class="link">
+                                <span><i class="fa fa-times"></i></span>
+                            </a>
+                            <a href="#" class="link">
+                                <span><i class="fa fa-cog"></i></span>
+                            </a>
+                        </div>
+                        This is a callout radius panel
+                    </div>
+                </div>
             </div>
-            This is a regular panel
-          </div>
+            <div class="row">
+                <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
+                    <h6>Without title</h6>
+
+                    <div class="panel">
+                        This is a regular panel
+                    </div>
+                </div>
+                <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
+                    <div class="panel">
+                        <div class="title">
+                            <h6>with title</h6>
+                            <a href="#" class="link">
+                                <span><i class="fa fa-times"></i></span>
+                            </a>
+                            <a href="#" class="link">
+                                <span><i class="fa fa-cog"></i></span>
+                            </a>
+                        </div>
+                        This is a regular panel
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-
-    </div>
 
 
+        <div id="footer" class="row panel">
+            <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
+                Copyright © 2015 <b>Your Project</b>.
+            </div>
+            <div class="large-6 medium-6 small-12 columns text-right small-only-text-center">
+                <a target="_blank" href="http://opensloth.org">OpenSloth</a> template by
+                <a target="_blank" href="http://chrissmejia.com">Chriss Mejía</a>.
+            </div>
+        </div>
 
-      <div id="footer" class="row panel">
-        <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
-          Copyright © 2015 <b>Your Project</b>.
-        </div>        
-        <div class="large-6 medium-6 small-12 columns text-right small-only-text-center">
-          <a target="_blank" href="http://opensloth.org">OpenSloth</a> template by <a target="_blank" href="http://chrissmejia.com">Chriss Mejía</a>.
-        </div>        
-      </div>
+    </section>
 
-      </section>
+</div>
 
-    </div>
 
-    
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
-    <script src="js/opensloth.js"></script>
-  </body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+<script src="js/opensloth.js"></script>
+</body>
 </html>
