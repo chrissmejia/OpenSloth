@@ -300,7 +300,7 @@ a:hover {
     margin-left: -0.48889em;
 }
 
-// Fix for modals
-.close-reveal-modal:hover {
+// Fix for modals and joyride
+.close-reveal-modal:hover, .joyride-close-tip:hover {
     text-decoration: none;
 }

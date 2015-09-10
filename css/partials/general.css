@@ -297,6 +297,6 @@ a:hover {
 }
 
 /* line 304, ../../scss/partials/general.scss */
-.close-reveal-modal:hover {
+.close-reveal-modal:hover, .joyride-close-tip:hover {
   text-decoration: none;
 }
