@@ -12,7 +12,7 @@
   </head>
   <body class="full">
     <div class="off-canvas"></div>
-
+    
     <header class="row fluid">
       <aside id="profile-side-menu" class="show-for-small-only text-center">
         <a href="#" class="settings">
@@ -36,8 +36,8 @@
         <section class="top-bar-section">
         <!-- Right Nav Section -->
           <ul class="right">
-            <li class="side-content-buttons dispel">
-              <a href="#" data-tab="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a>
+            <li class="side-content-buttons dispel">  
+              <a id="numero2" href="#" data-tab="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a>
             </li>
             <li class="side-content-buttons dispel">
               <a href="#" data-tab="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a>
@@ -45,7 +45,7 @@
             <li class="side-content-buttons dispel">
               <a href="#" data-tab="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a>
             </li>
-
+          
             <li class="has-dropdown profile hide-for-small-only">
               <a href="#" class="link">
                 <img class="circle avatar" src="img/pic/me.png" alt="">
@@ -64,7 +64,7 @@
         </section>
       </nav>
     </header>
-
+    
     <div id="content" class="row fluid">
 
       <aside id="side-menu">
@@ -82,16 +82,14 @@
           <li role="menuitem">
             <a href="panels.html" class="link medium-only-text-center"><span><i class="fa fa-th-large"></i>Panels</span></a>
           </li>
-            <li role="menuitem">
-                <a href="progress.html" class="link medium-only-text-center">
-                    <span><i class="fa fa-bars"></i>Progress Bars</span>
-                </a>
-            </li>
+          <li class="active current" role="menuitem">
+            <a href="#" class="link medium-only-text-center"><span><i class="fa fa-bars"></i>Progress Bars</span></a>
+          </li>
           <li role="menuitem">
             <a href="ux.html" class="link medium-only-text-center"><span><i class="fa fa-clone"></i>Basic UX</span></a>
           </li>
-          <li class="active current" role="menuitem">
-            <a href="#" class="link medium-only-text-center"><span><i class="fa fa-font"></i>Typography</span></a>
+          <li role="menuitem">
+            <a href="typography.html" class="link medium-only-text-center"><span><i class="fa fa-font"></i>Typography</span></a>
           </li>
           <li role="menuitem">
             <a href="buttons.html" class="link medium-only-text-center"><span><i class="fa fa-caret-square-o-right"></i>Buttons</span></a>
@@ -141,188 +139,151 @@
       </div>
 
       <div class="row">
-        <div class="large-6 medium-6 small-12 columns">
+        <div class="large-6 medium-6 small-12 columns small-only-text-center">
           <div class="panel callout">
-            <div class="title"><h6>Headings</h6></div>
-            <h1>Heading 1 <small>Secondary Text</small></h1>
-            <h2>Heading 2 <small>Secondary Text</small></h2>
-            <h3>Heading 3 <small>Secondary Text</small></h3>
-            <h4>Heading 4 <small>Secondary Text</small></h4>
-            <h5>Heading 5 <small>Secondary Text</small></h5>
-            <h6>Heading 6 <small>Secondary Text</small></h6>
-          </div>
-          <div class="panel callout">
-            <div class="title"><h6>Paragraphs</h6></div>
-            <p>This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap strong around type to <strong>make it bold!</strong>. You can also use em to <em>italicize your words</em>.</p>
-          </div>
-          <div class="panel callout">
-            <div class="title"><h6>Links</h6></div>
-            <p>Links are <a href="http://chrissmejia.com">very standard</a>.</p>
-          </div>
-          <div class="panel callout">
-            <div class="title"><h6>Blockquotes</h6></div>
-            <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite></blockquote>
-          </div>
-          <div class="panel callout">
-            <div class="title"><h6>V-Cards</h6></div>
-            <ul class="vcard">
-              <li class="fn">Gaius Baltar</li>
-              <li class="street-address">123 Colonial Ave.</li>
-              <li class="locality">Caprica City</li>
-              <li><span class="state">Caprica</span>, <span class="zip">12345</span></li>
-              <li class="email"><a href="#">g.baltar@example.com</a></li>
-            </ul>
-          </div>
-          <div class="panel callout">
-            <div class="title"><h6>Inline Lists</h6></div>
-              <ul class="inline-list">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
-                <li><a href="#">Link 5</a></li>
-              </ul>
-          </div>
-          <div class="panel callout">
-            <div class="title"><h6>Labels</h6></div>
-              Normal:
-              </br>
-              <span class="label">Regular label</span>
-              <span class="success label">Success label</span>
-              <span class="alert label">Alert label</span>
-              <span class="action label">Call to action label</span>
-              <span class="secondary label">Secondary label</span>
-              <hr>
-              Radius:
-              </br>
-              <span class="label radius">Regular label</span>
-              <span class="success label radius">Success label</span>
-              <span class="alert label radius">Alert label</span>
-              <span class="action label radius">Call to action label</span>
-              <span class="secondary label radius">Secondary label</span>
-              <hr>
-              Round:
-              </br>
-              <span class="label round">Regular label</span>
-              <span class="success label round">Success label</span>
-              <span class="alert label round">Alert label</span>
-              <span class="action label round">Call to action label</span>
-              <span class="secondary label round">Secondary label</span>
+            <div class="title"><h6>Progress Bars</h6></div>
+            Regular:
+            <div class="progress">
+              <span class="meter" style="width: 50%"></span>
+            </div>
+            <div class="progress alert">
+              <span class="meter" style="width: 70%"></span>
+            </div>
+            <div class="progress success">
+              <span class="meter" style="width: 20%"></span>
+            </div>
+            <div class="progress secondary">
+              <span class="meter" style="width: 80%"></span>
+            </div>
+
+            Striped:
+            <div class="progress striped">
+              <span class="meter" style="width: 50%"></span>
+            </div>
+            <div class="progress alert striped">
+              <span class="meter" style="width: 70%"></span>
+            </div>
+            <div class="progress success striped">
+              <span class="meter" style="width: 20%"></span>
+            </div>
+            <div class="progress secondary striped">
+              <span class="meter" style="width: 80%"></span>
+            </div>
+
+            Legend:
+            <div class="progress">
+              <span class="meter text-center" style="width: 50%">50% Completed</span>
+            </div>
+            <div class="progress alert">
+              <span class="meter text-center" style="width: 70%">70% Completed</span>
+            </div>
+            <div class="progress success">
+              <span class="meter text-center" style="width: 20%">20% Completed</span>
+            </div>
+            <div class="progress secondary">
+              <span class="meter text-center" style="width: 80%">80% Completed</span>
+            </div>
+
           </div>
         </div>
-        <div class="large-6 medium-6 small-12 columns">
+        <div class="large-6 medium-6 small-12 columns small-only-text-center">
           <div class="panel callout">
-            <div class="title"><h6>Lists</h6></div>
-              <ul class="disc">
-                <li>List item with a much longer description or more content.</li>
-                <li>List item</li>
-                <li>List item
-                  <ul>
-                    <li>Nested list item</li>
-                    <li>Nested list item</li>
-                    <li>Nested list item</li>
-                  </ul>
-                </li>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-              </ul>
-              <hr>
-              <ul class="circle">
-                <li>List item with a much longer description or more content.</li>
-                <li>List item</li>
-                <li>List item
-                  <ul>
-                    <li>Nested List Item</li>
-                    <li>Nested List Item</li>
-                    <li>Nested List Item</li>
-                  </ul>
-                </li>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-              </ul>
-              <hr>
-              <ul class="square">
-                <li>List item with a much longer description or more content.</li>
-                <li>List item</li>
-                <li>List item
-                  <ul>
-                    <li>Nested List Item</li>
-                    <li>Nested List Item</li>
-                    <li>Nested List Item</li>
-                  </ul>
-                </li>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-               </ul>
-               <hr>
-               <ul class="no-bullet">
-                <li>List item with a much longer description or more content.</li>
-                <li>List item</li>
-                <li>List item
-                  <ul>
-                    <li>Nested List Item</li>
-                    <li>Nested List Item</li>
-                    <li>Nested List Item</li>
-                  </ul>
-                </li>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-               </ul>
-               <hr>
-               <ol>
-                <li>List item with a much longer description or more content.</li>
-                <li>List item</li>
-                <li>List item
-                  <ol>
-                    <li>Nested List Item</li>
-                    <li>Nested List Item</li>
-                    <li>Nested List Item</li>
-                  </ol>
-                </li>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-               </ol>
-               <hr>
-               <dl>
-                <dt>Definition Title</dt>
-                <dd>Definition Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</dd>
-              </dl>
+            <div class="title"><h6>Animated Progress Bars</h6></div>
+            Regular:
+            <div class="progress animated">
+              <span class="meter" data-width="50%"></span>
+            </div>
+            <div class="progress alert animated">
+              <span class="meter" data-width="70%"></span>
+            </div>
+            <div class="progress success animated">
+              <span class="meter" data-width="20%"></span>
+            </div>
+            <div class="progress secondary animated">
+              <span class="meter" data-width="80%"></span>
+            </div>
+
+            Striped:
+            <div class="progress animated striped">
+              <span class="meter" data-width="50%"></span>
+            </div>
+            <div class="progress alert animated striped">
+              <span class="meter" data-width="70%"></span>
+            </div>
+            <div class="progress success animated striped">
+              <span class="meter" data-width="20%"></span>
+            </div>
+            <div class="progress secondary animated striped">
+              <span class="meter" data-width="80%"></span>
+            </div>
+
+
+            Legend:
+            <div class="progress animated">
+              <span class="meter text-center" data-width="50%">50% Completed</span>
+            </div>
+            <div class="progress alert animated">
+              <span class="meter text-center" data-width="70%">70% Completed</span>
+            </div>
+            <div class="progress success animated">
+              <span class="meter text-center" data-width="20%">20% Completed</span>
+            </div>
+            <div class="progress secondary animated">
+              <span class="meter text-center" data-width="80%">80% Completed</span>
+            </div>
           </div>
-          <div class="panel callout">
-            <div class="title"><h6>Keystrokes</h6></div>
-            <p>For example, to close your browser hit <kbd>Cmd</kbd> + <kbd>Q</kbd></p>
-          </div>
+        </div>        
       </div>
 
     </div>
-  </div>
 
 
 
       <div id="footer" class="row panel">
         <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
           Copyright © 2015 <b>Your Project</b>.
-        </div>
+        </div>        
         <div class="large-6 medium-6 small-12 columns text-right small-only-text-center">
           <a target="_blank" href="http://opensloth.org">OpenSloth</a> template by <a target="_blank" href="http://chrissmejia.com">Chriss Mejía</a>.
-        </div>
+        </div>        
       </div>
-
       </section>
-
     </div>
 
-
-
-
+<!-- At the bottom of your page but inside of the body tag -->
+<ol class="joyride-list" data-joyride>
+  <li data-id="firstStop" data-options="tip_location: top; prev_button: false; next_button: false;">
+    <p>Hello and welcome to the Joyride <br>documentation page.</p>
+    <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
+  </li>
+  <li data-id="numero1" data-class="custom so-awesome" data-options="prev_button: false; next_button: false;">
+    <h4>Stop #1</h4>
+    <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
+    <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+    <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
+  </li>
+  <li data-id="numero2" data-options="tip_animation:fade; prev_button: false; next_button: false;">
+    <h4>Stop #2</h4>
+    <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+    <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+    <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
+  </li>
+  <li data-options="prev_button: false; next_button: false;">
+    <h4>Stop #3</h4>
+    <p>It works as a modal too!</p>
+    <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+    <a href="#" class="small button joyride-next-tip link"><span>End</span></a>
+  </li>
+</ol>
+    
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
     <script src="js/opensloth.js"></script>
+    <script>
+      // Progress animation trigger.
+      $('.progress.animated .meter').each(function() {
+          $(this).width($(this).data("width"));
+      });
+    </script>
   </body>
 </html>

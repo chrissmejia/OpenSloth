@@ -9473,40 +9473,40 @@ th.hide-for-touch {
     display: none !important;
   }
 }
-/* line 30, ../scss/partials/general.scss */
+/* line 33, ../scss/partials/general.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   color: #2e5779;
 }
 
-/* line 35, ../scss/partials/general.scss */
+/* line 38, ../scss/partials/general.scss */
 blockquote {
   color: #182d3e;
 }
-/* line 38, ../scss/partials/general.scss */
+/* line 41, ../scss/partials/general.scss */
 blockquote cite {
   color: #2e5779;
 }
 
-/* line 43, ../scss/partials/general.scss */
+/* line 46, ../scss/partials/general.scss */
 .row.fluid {
   max-width: none;
 }
 
-/* line 47, ../scss/partials/general.scss */
+/* line 50, ../scss/partials/general.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 51, ../scss/partials/general.scss */
+/* line 54, ../scss/partials/general.scss */
 .link {
   position: relative;
   text-decoration: none;
 }
-/* line 55, ../scss/partials/general.scss */
+/* line 58, ../scss/partials/general.scss */
 .link div, .link span, .link img {
   position: relative;
 }
-/* line 59, ../scss/partials/general.scss */
+/* line 62, ../scss/partials/general.scss */
 .link:before {
   background-color: #FFFFFF;
   content: "";
@@ -9521,111 +9521,111 @@ a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 63, ../scss/partials/general.scss */
+/* line 66, ../scss/partials/general.scss */
 .link:hover {
   text-decoration: none;
 }
-/* line 66, ../scss/partials/general.scss */
+/* line 69, ../scss/partials/general.scss */
 .link:hover:before {
   background-color: #eaeff3;
   right: 0;
   left: 0;
 }
 
-/* line 72, ../scss/partials/general.scss */
+/* line 75, ../scss/partials/general.scss */
 .button {
   overflow: hidden;
   margin-bottom: 0.92857rem;
 }
-/* line 76, ../scss/partials/general.scss */
+/* line 79, ../scss/partials/general.scss */
 .button:before {
   background-color: #346288;
 }
-/* line 80, ../scss/partials/general.scss */
+/* line 83, ../scss/partials/general.scss */
 .button:hover:before {
   background-color: #264763;
 }
-/* line 85, ../scss/partials/general.scss */
+/* line 88, ../scss/partials/general.scss */
 .button.success:before {
   background-color: #75BB3F;
 }
-/* line 89, ../scss/partials/general.scss */
+/* line 92, ../scss/partials/general.scss */
 .button.success:hover:before {
   background-color: #5d9532;
 }
-/* line 96, ../scss/partials/general.scss */
+/* line 99, ../scss/partials/general.scss */
 .button.alert:before {
   background-color: #BE4064;
 }
-/* line 100, ../scss/partials/general.scss */
+/* line 103, ../scss/partials/general.scss */
 .button.alert:hover:before {
   background-color: #983350;
 }
-/* line 107, ../scss/partials/general.scss */
+/* line 110, ../scss/partials/general.scss */
 .button.secondary:before {
   background-color: #85a0b7;
 }
-/* line 111, ../scss/partials/general.scss */
+/* line 114, ../scss/partials/general.scss */
 .button.secondary:hover {
   background-color: #85a0b7;
 }
-/* line 114, ../scss/partials/general.scss */
+/* line 117, ../scss/partials/general.scss */
 .button.secondary:hover:before {
   background-color: #6587a4;
 }
-/* line 119, ../scss/partials/general.scss */
+/* line 122, ../scss/partials/general.scss */
 .button.secondary:active {
   background-color: #6587a4;
 }
-/* line 125, ../scss/partials/general.scss */
+/* line 128, ../scss/partials/general.scss */
 .button.action {
   background-color: #D39847;
 }
-/* line 128, ../scss/partials/general.scss */
+/* line 131, ../scss/partials/general.scss */
 .button.action:before {
   background-color: #D39847;
 }
-/* line 132, ../scss/partials/general.scss */
+/* line 135, ../scss/partials/general.scss */
 .button.action:hover {
   background-color: #D39847;
 }
-/* line 135, ../scss/partials/general.scss */
+/* line 138, ../scss/partials/general.scss */
 .button.action:hover:before {
   background-color: #ba7f2d;
 }
-/* line 140, ../scss/partials/general.scss */
+/* line 143, ../scss/partials/general.scss */
 .button.action:active {
   background-color: #ba7f2d;
 }
-/* line 146, ../scss/partials/general.scss */
+/* line 149, ../scss/partials/general.scss */
 .button.disabled {
   background-color: #182d3e !important;
 }
-/* line 149, ../scss/partials/general.scss */
+/* line 152, ../scss/partials/general.scss */
 .button.disabled:before {
   display: none;
 }
 
-/* line 157, ../scss/partials/general.scss */
+/* line 160, ../scss/partials/general.scss */
 .label.action {
   background-color: #D39847;
 }
 
-/* line 162, ../scss/partials/general.scss */
+/* line 165, ../scss/partials/general.scss */
 .top-bar {
   height: initial;
 }
-/* line 165, ../scss/partials/general.scss */
+/* line 168, ../scss/partials/general.scss */
 .top-bar .icon {
   font-size: 1.2rem;
   width: 2rem;
   text-align: center;
 }
-/* line 171, ../scss/partials/general.scss */
+/* line 174, ../scss/partials/general.scss */
 .top-bar i {
   line-height: 4.9rem;
 }
-/* line 174, ../scss/partials/general.scss */
+/* line 177, ../scss/partials/general.scss */
 .top-bar i span {
   color: #f8ebef;
   width: 1rem;
@@ -9642,23 +9642,23 @@ a:hover {
   color: #f8ebef;
   line-height: 0.6rem;
 }
-/* line 181, ../scss/partials/general.scss */
+/* line 184, ../scss/partials/general.scss */
 .top-bar i.fa-neuter.search {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 187, ../scss/partials/general.scss */
+/* line 190, ../scss/partials/general.scss */
 .top-bar .has-dropdown a::after {
   margin-top: 0;
   top: 2.3rem;
 }
-/* line 194, ../scss/partials/general.scss */
+/* line 197, ../scss/partials/general.scss */
 .top-bar.tabs li {
   width: 33.33%;
 }
-/* line 197, ../scss/partials/general.scss */
+/* line 200, ../scss/partials/general.scss */
 .top-bar.tabs li a {
   padding: 0;
   -moz-transition: all 0.3s;
@@ -9666,47 +9666,51 @@ a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 203, ../scss/partials/general.scss */
+/* line 206, ../scss/partials/general.scss */
 .top-bar.tabs i {
   line-height: 1.9rem;
 }
-/* line 206, ../scss/partials/general.scss */
+/* line 209, ../scss/partials/general.scss */
 .top-bar.tabs i span {
   top: 0rem;
 }
-/* line 212, ../scss/partials/general.scss */
+/* line 215, ../scss/partials/general.scss */
 .top-bar.tabs .link:before {
   background-color: #eaeff3;
 }
-/* line 216, ../scss/partials/general.scss */
+/* line 219, ../scss/partials/general.scss */
 .top-bar.tabs .link:hover:before {
   background-color: #FFFFFF;
 }
 
-/* line 224, ../scss/partials/general.scss */
+/* line 227, ../scss/partials/general.scss */
 .alert-box h1, .alert-box h2, .alert-box h3, .alert-box h4, .alert-box h5, .alert-box h6 {
   color: #000000 !important;
   opacity: 0.5;
 }
-/* line 228, ../scss/partials/general.scss */
+/* line 232, ../scss/partials/general.scss */
 .alert-box a {
   color: #FFFFFF !important;
   text-decoration: underline;
 }
-/* line 232, ../scss/partials/general.scss */
+/* line 236, ../scss/partials/general.scss */
 .alert-box a:hover {
   opacity: 0.9;
 }
-/* line 237, ../scss/partials/general.scss */
+/* line 241, ../scss/partials/general.scss */
 .alert-box .close {
   text-decoration: none;
 }
-/* line 240, ../scss/partials/general.scss */
+/* line 244, ../scss/partials/general.scss */
+.alert-box .close.top {
+  top: 1.3rem;
+}
+/* line 248, ../scss/partials/general.scss */
 .alert-box .close:hover {
   opacity: 0.7;
 }
 
-/* line 246, ../scss/partials/general.scss */
+/* line 254, ../scss/partials/general.scss */
 .dispel {
   opacity: 1;
   -moz-transition: all 0.5s;
@@ -9714,73 +9718,130 @@ a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 250, ../scss/partials/general.scss */
+/* line 258, ../scss/partials/general.scss */
 .dispel.hidden {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 256, ../scss/partials/general.scss */
+/* line 264, ../scss/partials/general.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 260, ../scss/partials/general.scss */
+/* line 268, ../scss/partials/general.scss */
 .panel {
   margin-top: 1.42857rem;
 }
-/* line 263, ../scss/partials/general.scss */
+/* line 271, ../scss/partials/general.scss */
 .panel .title {
   margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
   background: #c2cfdb;
   color: #346288;
   text-transform: uppercase;
 }
-/* line 269, ../scss/partials/general.scss */
+/* line 277, ../scss/partials/general.scss */
 .panel .title h1, .panel .title h2, .panel .title h3, .panel .title h4, .panel .title h5, .panel .title h6 {
   margin: 0;
   display: inline-block;
   padding: 1.2rem;
 }
-/* line 275, ../scss/partials/general.scss */
+/* line 283, ../scss/partials/general.scss */
 .panel .title .link {
   float: right;
   padding: 0.9rem;
 }
-/* line 281, ../scss/partials/general.scss */
+/* line 289, ../scss/partials/general.scss */
 .panel a:not(.link):not(.button) {
   color: #417bab;
 }
-/* line 285, ../scss/partials/general.scss */
+/* line 293, ../scss/partials/general.scss */
 .panel .button {
   margin-bottom: 0;
 }
 
-/* line 291, ../scss/partials/general.scss */
+/* line 299, ../scss/partials/general.scss */
+.progress .meter {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+/* line 306, ../scss/partials/general.scss */
+.progress.striped .meter {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPjxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  -moz-background-size: 40px 40px;
+  -o-background-size: 40px 40px;
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+}
+/* line 311, ../scss/partials/general.scss */
+.progress.animated .meter {
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 0;
+}
+/* line 316, ../scss/partials/general.scss */
+.progress.animated.striped .meter {
+  -moz-animation: animated-striped 3s linear infinite;
+  -webkit-animation: animated-striped 3s linear infinite;
+  animation: animated-striped 3s linear infinite;
+}
+@-moz-keyframes animated-striped {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@-webkit-keyframes animated-striped {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes animated-striped {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+/* line 327, ../scss/partials/general.scss */
 .split.link {
   padding: 0;
 }
-/* line 294, ../scss/partials/general.scss */
+/* line 330, ../scss/partials/general.scss */
 .split.link div {
   padding: 1rem;
   margin-right: 3.53571rem;
 }
-/* line 298, ../scss/partials/general.scss */
+/* line 334, ../scss/partials/general.scss */
 .split.link div span {
   right: -3.53571rem;
 }
 
-/* line 304, ../scss/partials/general.scss */
+/* line 340, ../scss/partials/general.scss */
 .split.button.no-pip span > i {
   margin-left: -0.48889em;
 }
 
-/* line 309, ../scss/partials/general.scss */
+/* line 345, ../scss/partials/general.scss */
 .close-reveal-modal:hover, .joyride-close-tip:hover {
   text-decoration: none;
   opacity: 0.3;
 }
-/* line 313, ../scss/partials/general.scss */
+/* line 349, ../scss/partials/general.scss */
 .close-reveal-modal:hover:hover, .joyride-close-tip:hover:hover {
   opacity: 0.7;
 }

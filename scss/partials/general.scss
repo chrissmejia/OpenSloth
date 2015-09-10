@@ -24,7 +24,10 @@
 
 @import "variables";
 @import "mixins";
+@import "compass/css3/images";
+@import "compass/css3/animation";
 @import "compass/css3/transition";
+@import "compass/css3/background-size";
 
 h1, h2, h3, h4, h5, h6 {
     small {
@@ -225,7 +228,7 @@ a:hover {
         color: $black !important;
         opacity: 0.5;    
     }
-    
+
     a {
         color: $white !important;
         text-decoration: underline;
@@ -238,6 +241,10 @@ a:hover {
     .close {
         text-decoration: none;
 
+        &.top {
+            top: 1.3rem;
+        }
+    
         &:hover {
             opacity: 0.7;
         }
@@ -286,6 +293,34 @@ a:hover {
     .button {
         margin-bottom: 0;
     }
+}
+
+.progress {
+    .meter {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        color: $white;
+        overflow: hidden;
+    }
+
+    &.striped .meter {
+        @include background-image(linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent));
+        @include background-size(40px 40px);
+    }
+
+    &.animated .meter {
+        @include single-transition(all, 0.5s);
+        width: 0;
+    }
+
+    &.animated.striped .meter {
+        @include animation(animated-striped 3s linear infinite);
+    }
+
+    @include keyframes(animated-striped) {
+        from  { background-position: 40px 0; }
+        to    { background-position: 0 0; }
+    }    
 }
 
 // Fix for split buttons
