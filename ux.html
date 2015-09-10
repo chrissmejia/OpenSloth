@@ -281,20 +281,27 @@
 
 <!-- At the bottom of your page but inside of the body tag -->
 <ol class="joyride-list" data-joyride>
-  <li data-id="firstStop" data-text="Next" data-options="tip_location: top; prev_button: false">
+  <li data-id="firstStop" data-options="tip_location: top; prev_button: false; next_button: false;">
     <p>Hello and welcome to the Joyride <br>documentation page.</p>
+    <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
   </li>
-  <li data-id="numero1" data-class="custom so-awesome" data-text="Next" data-prev-text="Prev">
+  <li data-id="numero1" data-class="custom so-awesome" data-options="prev_button: false; next_button: false;">
     <h4>Stop #1</h4>
     <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
+    <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+    <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
   </li>
-  <li data-id="numero2" data-button="Next" data-prev-text="Prev" data-options="tip_location:top;tip_animation:fade">
+  <li data-id="numero2" data-options="tip_animation:fade; prev_button: false; next_button: false;">
     <h4>Stop #2</h4>
     <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+    <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+    <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
   </li>
-  <li data-button="End" data-prev-text="Prev">
+  <li data-options="prev_button: false; next_button: false;">
     <h4>Stop #3</h4>
     <p>It works as a modal too!</p>
+    <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+    <a href="#" class="small button joyride-next-tip link"><span>End</span></a>
   </li>
 </ol>
     
