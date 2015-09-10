@@ -72,7 +72,7 @@ a:hover {
 .button {
     overflow: hidden;
     margin-bottom: 0.92857rem;
-    
+
     &:before {
         background-color: $info-color;
     }
@@ -235,6 +235,10 @@ a:hover {
 
     .close {
         text-decoration: none;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
@@ -303,4 +307,9 @@ a:hover {
 // Fix for modals and joyride
 .close-reveal-modal:hover, .joyride-close-tip:hover {
     text-decoration: none;
+    opacity: 0.3;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
