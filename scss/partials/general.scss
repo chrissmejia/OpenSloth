@@ -214,7 +214,7 @@ a:hover {
         }
 
         .link:hover:before {
-            background-color: #fff;
+            background-color: $white;
         }
     }
 
@@ -222,10 +222,12 @@ a:hover {
 
 .alert-box {
     h1, h2, h3, h4, h5, h6 {
-        color: $white;    
+        color: $black !important;
+        opacity: 0.5;    
     }
+    
     a {
-        color: $white;
+        color: $white !important;
         text-decoration: underline;
 
         &:hover {
