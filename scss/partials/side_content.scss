@@ -33,10 +33,10 @@
     right: 0;
     position: absolute;
     height: 100%;
-    border-top: 0;
-    border-bottom: 0;
     color: $primary-color;
     z-index: 1000;
+    background: $white;
+    border-left: tint($primary-color, 70%) 0.1rem solid;
     @include single-transition(all, 0.5s);
 
     .close {
@@ -46,6 +46,7 @@
         z-index: 1000;
         top: 0.8rem;
         left: -0.4rem;
+        width: 1.1rem;
 
         a {
             @include border-top-right-radius(0.6rem);

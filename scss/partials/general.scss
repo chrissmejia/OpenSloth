@@ -267,6 +267,7 @@ a:hover {
 
 .panel {
     margin-top: 1.42857rem;
+    overflow: auto;
 
     .title {
         margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
@@ -288,7 +289,6 @@ a:hover {
 
     .accordion {
         margin: -1.42857rem !important;
-        @include single-transition(all, 0.5s);
 
         .accordion-navigation {
             &>a {
@@ -316,6 +316,57 @@ a:hover {
                     padding: 1.07143rem;
                     opacity: 1;
                 }
+            }
+        }
+    }
+
+    .tabs {
+        margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
+        background: tint($primary-color, 70%);
+
+        .tab-title {
+
+            a {
+                color: darken($primary-color, 20%) !important;
+                text-transform: uppercase;
+                background: tint($primary-color, 70%);
+
+                margin: 0;
+                padding: 0.9rem 1.2rem;
+ 
+                font-size: 1rem;
+
+            }
+
+            &.active {
+                a{
+                    background: $white !important;
+                }
+            }
+
+        }
+
+        &.vertical {
+            margin: -1.42857rem 1.42857rem -1.42857rem -1.42857rem !important;
+        }
+    }
+
+    .tabs-content {
+        .content {
+                display: block !important;
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0.5;
+                padding: 0;
+                @include single-transition(all, 0.5s);
+
+                &.active {
+                    max-height: 100rem;
+                    opacity: 1;
+                }
+
+            &>:last-child {
+                margin-bottom: 0;
             }
         }
     }

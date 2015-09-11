@@ -258,32 +258,29 @@ a:hover {
 /* line 268, ../../scss/partials/general.scss */
 .panel {
   margin-top: 1.42857rem;
+  overflow: auto;
 }
-/* line 271, ../../scss/partials/general.scss */
+/* line 272, ../../scss/partials/general.scss */
 .panel .title {
   margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
   background: #c2cfdb;
   color: #346288;
   text-transform: uppercase;
 }
-/* line 277, ../../scss/partials/general.scss */
+/* line 278, ../../scss/partials/general.scss */
 .panel .title h1, .panel .title h2, .panel .title h3, .panel .title h4, .panel .title h5, .panel .title h6 {
   margin: 0;
   display: inline-block;
   padding: 1.2rem;
 }
-/* line 283, ../../scss/partials/general.scss */
+/* line 284, ../../scss/partials/general.scss */
 .panel .title .link {
   float: right;
   padding: 0.9rem;
 }
-/* line 289, ../../scss/partials/general.scss */
+/* line 290, ../../scss/partials/general.scss */
 .panel .accordion {
   margin: -1.42857rem !important;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 /* line 294, ../../scss/partials/general.scss */
 .panel .accordion .accordion-navigation > a {
@@ -314,22 +311,65 @@ a:hover {
   opacity: 1;
 }
 /* line 323, ../../scss/partials/general.scss */
+.panel .tabs {
+  margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
+  background: #c2cfdb;
+}
+/* line 329, ../../scss/partials/general.scss */
+.panel .tabs .tab-title a {
+  color: #182d3e !important;
+  text-transform: uppercase;
+  background: #c2cfdb;
+  margin: 0;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+}
+/* line 342, ../../scss/partials/general.scss */
+.panel .tabs .tab-title.active a {
+  background: #FFFFFF !important;
+}
+/* line 349, ../../scss/partials/general.scss */
+.panel .tabs.vertical {
+  margin: -1.42857rem 1.42857rem -1.42857rem -1.42857rem !important;
+}
+/* line 355, ../../scss/partials/general.scss */
+.panel .tabs-content .content {
+  display: block !important;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0.5;
+  padding: 0;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 363, ../../scss/partials/general.scss */
+.panel .tabs-content .content.active {
+  max-height: 100rem;
+  opacity: 1;
+}
+/* line 368, ../../scss/partials/general.scss */
+.panel .tabs-content .content > :last-child {
+  margin-bottom: 0;
+}
+/* line 374, ../../scss/partials/general.scss */
 .panel a:not(.link):not(.button) {
   color: #417bab;
 }
-/* line 327, ../../scss/partials/general.scss */
+/* line 378, ../../scss/partials/general.scss */
 .panel .button {
   margin-bottom: 0;
 }
 
-/* line 333, ../../scss/partials/general.scss */
+/* line 384, ../../scss/partials/general.scss */
 .progress .meter {
   font-size: 0.8rem;
   line-height: 1.5rem;
   color: #FFFFFF;
   overflow: hidden;
 }
-/* line 340, ../../scss/partials/general.scss */
+/* line 391, ../../scss/partials/general.scss */
 .progress.striped .meter {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPjxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -341,7 +381,7 @@ a:hover {
   -webkit-background-size: 40px 40px;
   background-size: 40px 40px;
 }
-/* line 345, ../../scss/partials/general.scss */
+/* line 396, ../../scss/partials/general.scss */
 .progress.animated .meter {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -349,7 +389,7 @@ a:hover {
   transition: all 0.5s;
   width: 0;
 }
-/* line 350, ../../scss/partials/general.scss */
+/* line 401, ../../scss/partials/general.scss */
 .progress.animated.striped .meter {
   -moz-animation: animated-striped 3s linear infinite;
   -webkit-animation: animated-striped 3s linear infinite;
@@ -379,31 +419,31 @@ a:hover {
     background-position: 0 0;
   }
 }
-/* line 361, ../../scss/partials/general.scss */
+/* line 412, ../../scss/partials/general.scss */
 .split.link {
   padding: 0;
 }
-/* line 364, ../../scss/partials/general.scss */
+/* line 415, ../../scss/partials/general.scss */
 .split.link div {
   padding: 1rem;
   margin-right: 3.53571rem;
 }
-/* line 368, ../../scss/partials/general.scss */
+/* line 419, ../../scss/partials/general.scss */
 .split.link div span {
   right: -3.53571rem;
 }
 
-/* line 374, ../../scss/partials/general.scss */
+/* line 425, ../../scss/partials/general.scss */
 .split.button.no-pip span > i {
   margin-left: -0.48889em;
 }
 
-/* line 379, ../../scss/partials/general.scss */
+/* line 430, ../../scss/partials/general.scss */
 .close-reveal-modal:hover, .joyride-close-tip:hover {
   text-decoration: none;
   opacity: 0.3;
 }
-/* line 383, ../../scss/partials/general.scss */
+/* line 434, ../../scss/partials/general.scss */
 .close-reveal-modal:hover:hover, .joyride-close-tip:hover:hover {
   opacity: 0.7;
 }
