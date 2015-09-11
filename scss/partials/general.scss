@@ -292,14 +292,14 @@ a:hover {
 
         .accordion-navigation {
             &>a {
-            color: $primary-color !important;
-            background: tint($primary-color, 70%);
-            text-transform: uppercase;
+                color: darken($primary-color, 20%) !important;
+                background: tint($primary-color, 70%);
+                text-transform: uppercase;
 
-            margin: 0;
-            padding: 1.2rem;
-
-            font-size: 1rem;
+                margin: 0;
+                padding: 0.9rem 1.2rem;
+ 
+                font-size: 1rem;
             }
 
             &>.content {
