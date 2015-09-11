@@ -286,6 +286,40 @@ a:hover {
         }
     }
 
+    .accordion {
+        margin: -1.42857rem !important;
+        @include single-transition(all, 0.5s);
+
+        .accordion-navigation {
+            &>a {
+            color: $primary-color !important;
+            background: tint($primary-color, 70%);
+            text-transform: uppercase;
+
+            margin: 0;
+            padding: 1.2rem;
+
+            font-size: 1rem;
+            }
+
+            &>.content {
+                display: block;
+                max-height: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                overflow: hidden;
+                opacity: 0;
+                @include single-transition(all, 0.5s);
+
+                &.active {
+                    max-height: 100rem;
+                    padding: 1.07143rem;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
     a:not(.link):not(.button) {
         color: scale-color($primary-color, $lightness: 15%);
     }
