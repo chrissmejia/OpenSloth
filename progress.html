@@ -1,241 +1,253 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="ChrissMejía">
-    <meta name="description" content="The OpenSource Dashboard Template">
-    <title>OpenSloth | The OpenSource Dashboard Template</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body class="full">
-    <div class="off-canvas"></div>
-    
-    <header class="row fluid">
-      <aside id="profile-side-menu" class="show-for-small-only text-center">
-        <a href="#" class="settings">
-                <img class="circle avatar" src="img/pic/me.png" alt="">
-                <span class="username">Chriss</span>
-        </a>
-        <a href="#" class="signout">
-          <i class="fa fa-sign-out"></i>
-          <span>Logout</span>
-        </a>
-      </aside>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ChrissMejía">
+  <meta name="description" content="The OpenSource Dashboard Template">
+  <title>OpenSloth | The OpenSource Dashboard Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body class="full">
+  <div class="off-canvas"></div>
 
-      <nav class="top-bar small-only-text-center" data-topbar role="navigation" data-options="is_hover: false">
-        <ul class="title-area">
-          <li class="menu-icon show-for-small-only"><a href="#"><span><i class="fa fa-bars"></i></span></a></li>
-          <li class="name">
-            <a href="#"><div class="image logo"></div></a>
-          </li>
-        </ul>
+  <header class="row fluid">
+    <aside id="profile-side-menu" class="show-for-small-only text-center">
+      <a href="#" class="settings">
+        <img class="circle avatar" src="img/pic/me.png" alt="">
+        <span class="username">Chriss</span>
+      </a>
+      <a href="#" class="signout">
+        <i class="fa fa-sign-out"></i>
+        <span>Logout</span>
+      </a>
+    </aside>
 
-        <section class="top-bar-section">
+    <nav class="top-bar small-only-text-center" data-topbar role="navigation" data-options="is_hover: false">
+      <ul class="title-area">
+        <li class="menu-icon show-for-small-only"><a href="#"><span><i class="fa fa-bars"></i></span></a></li>
+        <li class="name">
+          <a href="#"><div class="image logo"></div></a>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
         <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="side-content-buttons dispel">  
-              <a id="numero2" href="#" data-tab="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a>
-            </li>
-            <li class="side-content-buttons dispel">
-              <a href="#" data-tab="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a>
-            </li>
-            <li class="side-content-buttons dispel">
-              <a href="#" data-tab="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a>
-            </li>
+        <ul class="right">
+          <li class="side-content-buttons dispel">  
+            <a id="numero2" href="#" data-tab="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a>
+          </li>
+          <li class="side-content-buttons dispel">
+            <a href="#" data-tab="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a>
+          </li>
+          <li class="side-content-buttons dispel">
+            <a href="#" data-tab="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a>
+          </li>
           
-            <li class="has-dropdown profile hide-for-small-only">
-              <a href="#" class="link">
-                <img class="circle avatar" src="img/pic/me.png" alt="">
-                <span class="online"></span>
-                <span class="username">Chriss</span>
-              </a>
-              <ul class="dropdown">
-                <li><a href="#" class="link"><span><i class="fa fa-user"></i>Profile</span></a></li>
-                <li><a href="#" class="link"><span><i class="fa fa-cog"></i>Settings</span></a></li>
-                <li class="divider"></li>
-                <li><a href="#" class="link"><span><i class="fa fa-sign-out"></i>Logout</span></a></li>
-              </ul>
-            </li>
-          </ul>
-
-        </section>
-      </nav>
-    </header>
-    
-    <div id="content" class="row fluid">
-
-      <aside id="side-menu">
-        <ul class="side-nav" role="navigation" title="Navigation list">
-
-          <li role="menuitem">
-            <a href="#" class="link medium-only-text-center"><span><i class="fa fa-home"></i>Dashboard</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="index.html" class="link medium-only-text-center"><span><i class="fa fa-th"></i>Foundation</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="icons.html" class="link medium-only-text-center"><span><i class="fa fa-flag"></i>Icons</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="panels.html" class="link medium-only-text-center"><span><i class="fa fa-th-large"></i>Panels</span></a>
-          </li>
-          <li class="active current" role="menuitem">
-            <a href="#" class="link medium-only-text-center"><span><i class="fa fa-bars"></i>Progress Bars</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="ux.html" class="link medium-only-text-center"><span><i class="fa fa-clone"></i>Basic UX</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="typography.html" class="link medium-only-text-center"><span><i class="fa fa-font"></i>Typography</span></a>
-          </li>
-          <li role="menuitem">
-            <a href="buttons.html" class="link medium-only-text-center"><span><i class="fa fa-caret-square-o-right"></i>Buttons</span></a>
-          </li>
-        </ul>
-      </aside>
-
-      <section id="main">
-        <nav id="breadcrumb" class="row" data-magellan-expedition="fixed">
-          <div id="mini_logo">
-            <a href="#" class="link button success">
-              <div class="image logo"></div>
+          <li class="has-dropdown profile hide-for-small-only">
+            <a href="#" class="link">
+              <img class="circle avatar" src="img/pic/me.png" alt="">
+              <span class="online"></span>
+              <span class="username">Chriss</span>
             </a>
-          </div>
-          <div class="columns large-12">
-            <ul class="breadcrumbs" role="menubar">
-              <li role="menuitem"><a href="#"><i class="fa fa-th"></i><span class="sidebar-mini-hide">Foundation</span></a></li>
-              <li role="menuitem" class="current"><a href="#"><span class="sidebar-mini-hide">Basic</span></a></li>
+            <ul class="dropdown">
+              <li><a href="#" class="link"><span><i class="fa fa-user"></i>Profile</span></a></li>
+              <li><a href="#" class="link"><span><i class="fa fa-cog"></i>Settings</span></a></li>
+              <li class="divider"></li>
+              <li><a href="#" class="link"><span><i class="fa fa-sign-out"></i>Logout</span></a></li>
             </ul>
-          </div>
-        </nav>
-
-
-    <div id="inner_content" class="row full">
-      <div class="off-canvas"></div>
-      <div id="side_content" class="row">
-        <div class="close"><a href="#" class="link"><span><i class="fa fa-angle-double-right"></i></span></a></div>
-        <ul class="tabs top-bar" data-tab role="tablist">
-          <li class="tab-title active text-center" role="presentation"><a href="#tab-search" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a></li>
-          <li class="tab-title text-center" role="presentation"><a href="#tab-chat" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a></li>
-          <li class="tab-title text-center" role="presentation"><a href="#tab-notifications" role="tab" tabindex="2" aria-selected="false" aria-controls="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a></li>
+          </li>
         </ul>
-        <div class="tabs-content">
-          <section role="tabpanel" aria-hidden="false" class="content active" id="tab-search">
-              <i class="fa fa-frown-o"></i>
-              <p class="text-center">This feature has not been developed yet, <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a></br></br>Stay tuned, this is will be coded soon.</p>
-          </section>
-          <section role="tabpanel" aria-hidden="true" class="content" id="tab-chat">
-              <i class="fa fa-frown-o"></i>
-              <p class="text-center">This feature has not been developed yet, <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a></br></br>Stay tuned, this is will be coded soon.</p>
-          </section>
-          <section role="tabpanel" aria-hidden="true" class="content" id="tab-notifications">
-              <i class="fa fa-frown-o"></i>
-              <p class="text-center">This feature has not been developed yet, <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a></br></br>Stay tuned, this is will be coded soon.</p>
-          </section>
+
+      </section>
+    </nav>
+  </header>
+
+  <div id="content" class="row fluid">
+
+    <aside id="side-menu">
+      <ul class="side-nav" role="navigation" title="Navigation list">
+
+        <li role="menuitem">
+          <a href="#" class="link medium-only-text-center"><span><i class="fa fa-home"></i>Dashboard</span></a>
+        </li>
+        <li role="menuitem">
+          <a href="index.html" class="link medium-only-text-center"><span><i class="fa fa-th"></i>Foundation</span></a>
+        </li>
+        <li role="menuitem">
+          <a href="icons.html" class="link medium-only-text-center"><span><i class="fa fa-flag"></i>Icons</span></a>
+        </li>
+        <li role="menuitem">
+          <a href="panels.html" class="link medium-only-text-center"><span><i class="fa fa-th-large"></i>Panels</span></a>
+        </li>
+        <li class="active current" role="menuitem">
+          <a href="#" class="link medium-only-text-center"><span><i class="fa fa-bars"></i>Progress Bars</span></a>
+        </li>
+        <li role="menuitem">
+          <a href="ux.html" class="link medium-only-text-center"><span><i class="fa fa-clone"></i>Basic UX</span></a>
+        </li>
+        <li role="menuitem">
+          <a href="typography.html" class="link medium-only-text-center"><span><i class="fa fa-font"></i>Typography</span></a>
+        </li>
+        <li role="menuitem">
+          <a href="buttons.html" class="link medium-only-text-center"><span><i class="fa fa-caret-square-o-right"></i>Buttons</span></a>
+        </li>
+      </ul>
+    </aside>
+
+    <section id="main">
+      <nav id="breadcrumb" class="row" data-magellan-expedition="fixed">
+        <div id="mini_logo">
+          <a href="#" class="link button success">
+            <div class="image logo"></div>
+          </a>
         </div>
-      </div>
+        <div class="columns large-12">
+          <ul class="breadcrumbs" role="menubar">
+            <li role="menuitem"><a href="#"><i class="fa fa-th"></i><span class="sidebar-mini-hide">Foundation</span></a></li>
+            <li role="menuitem" class="current"><a href="#"><span class="sidebar-mini-hide">Basic</span></a></li>
+          </ul>
+        </div>
+      </nav>
 
-      <div class="row">
-        <div class="large-6 medium-6 small-12 columns small-only-text-center">
-          <div class="panel callout">
-            <div class="title"><h6>Progress Bars</h6></div>
-            Regular:
-            <div class="progress">
-              <span class="meter" style="width: 50%"></span>
-            </div>
-            <div class="progress alert">
-              <span class="meter" style="width: 70%"></span>
-            </div>
-            <div class="progress success">
-              <span class="meter" style="width: 20%"></span>
-            </div>
-            <div class="progress secondary">
-              <span class="meter" style="width: 80%"></span>
-            </div>
 
-            Striped:
-            <div class="progress striped">
-              <span class="meter" style="width: 50%"></span>
-            </div>
-            <div class="progress alert striped">
-              <span class="meter" style="width: 70%"></span>
-            </div>
-            <div class="progress success striped">
-              <span class="meter" style="width: 20%"></span>
-            </div>
-            <div class="progress secondary striped">
-              <span class="meter" style="width: 80%"></span>
-            </div>
-
-            Legend:
-            <div class="progress">
-              <span class="meter text-center" style="width: 50%">50% Completed</span>
-            </div>
-            <div class="progress alert">
-              <span class="meter text-center" style="width: 70%">70% Completed</span>
-            </div>
-            <div class="progress success">
-              <span class="meter text-center" style="width: 20%">20% Completed</span>
-            </div>
-            <div class="progress secondary">
-              <span class="meter text-center" style="width: 80%">80% Completed</span>
-            </div>
-
+      <div id="inner_content" class="row full">
+        <div class="off-canvas"></div>
+        <div id="side_content" class="row">
+          <div class="close"><a href="#" class="link"><span><i class="fa fa-angle-double-right"></i></span></a></div>
+          <ul class="tabs top-bar" data-tab role="tablist">
+            <li class="tab-title active text-center" role="presentation"><a href="#tab-search" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a></li>
+            <li class="tab-title text-center" role="presentation"><a href="#tab-chat" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a></li>
+            <li class="tab-title text-center" role="presentation"><a href="#tab-notifications" role="tab" tabindex="2" aria-selected="false" aria-controls="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a></li>
+          </ul>
+          <div class="tabs-content">
+            <section role="tabpanel" aria-hidden="false" class="content active" id="tab-search">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">
+                This feature has not been developed yet,
+                <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                <p></br></br>Stay tuned, this is will be coded soon.</p>
+              </p>
+            </section>
+            <section role="tabpanel" aria-hidden="true" class="content" id="tab-chat">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">
+                This feature has not been developed yet,
+                <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                <p></br></br>Stay tuned, this is will be coded soon.</p>
+              </p>
+            </section>
+            <section role="tabpanel" aria-hidden="true" class="content" id="tab-notifications">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">
+                This feature has not been developed yet,
+                <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                <p></br></br>Stay tuned, this is will be coded soon.</p>
+              </p>
+            </section>
           </div>
         </div>
-        <div class="large-6 medium-6 small-12 columns small-only-text-center">
-          <div class="panel callout">
-            <div class="title"><h6>Animated Progress Bars</h6></div>
-            Regular:
-            <div class="progress animated">
-              <span class="meter" data-width="50%"></span>
-            </div>
-            <div class="progress alert animated">
-              <span class="meter" data-width="70%"></span>
-            </div>
-            <div class="progress success animated">
-              <span class="meter" data-width="20%"></span>
-            </div>
-            <div class="progress secondary animated">
-              <span class="meter" data-width="80%"></span>
-            </div>
 
-            Striped:
-            <div class="progress animated striped">
-              <span class="meter" data-width="50%"></span>
-            </div>
-            <div class="progress alert animated striped">
-              <span class="meter" data-width="70%"></span>
-            </div>
-            <div class="progress success animated striped">
-              <span class="meter" data-width="20%"></span>
-            </div>
-            <div class="progress secondary animated striped">
-              <span class="meter" data-width="80%"></span>
-            </div>
+        <div class="row">
+          <div class="large-6 medium-6 small-12 columns small-only-text-center">
+            <div class="panel callout">
+              <div class="title"><h6>Progress Bars</h6></div>
+              Regular:
+              <div class="progress">
+                <span class="meter" style="width: 50%"></span>
+              </div>
+              <div class="progress alert">
+                <span class="meter" style="width: 70%"></span>
+              </div>
+              <div class="progress success">
+                <span class="meter" style="width: 20%"></span>
+              </div>
+              <div class="progress secondary">
+                <span class="meter" style="width: 80%"></span>
+              </div>
 
+              Striped:
+              <div class="progress striped">
+                <span class="meter" style="width: 50%"></span>
+              </div>
+              <div class="progress alert striped">
+                <span class="meter" style="width: 70%"></span>
+              </div>
+              <div class="progress success striped">
+                <span class="meter" style="width: 20%"></span>
+              </div>
+              <div class="progress secondary striped">
+                <span class="meter" style="width: 80%"></span>
+              </div>
 
-            Legend:
-            <div class="progress animated">
-              <span class="meter text-center" data-width="50%">50% Completed</span>
-            </div>
-            <div class="progress alert animated">
-              <span class="meter text-center" data-width="70%">70% Completed</span>
-            </div>
-            <div class="progress success animated">
-              <span class="meter text-center" data-width="20%">20% Completed</span>
-            </div>
-            <div class="progress secondary animated">
-              <span class="meter text-center" data-width="80%">80% Completed</span>
+              Legend:
+              <div class="progress">
+                <span class="meter text-center" style="width: 50%">50% Completed</span>
+              </div>
+              <div class="progress alert">
+                <span class="meter text-center" style="width: 70%">70% Completed</span>
+              </div>
+              <div class="progress success">
+                <span class="meter text-center" style="width: 20%">20% Completed</span>
+              </div>
+              <div class="progress secondary">
+                <span class="meter text-center" style="width: 80%">80% Completed</span>
+              </div>
+
             </div>
           </div>
-        </div>        
-      </div>
+          <div class="large-6 medium-6 small-12 columns small-only-text-center">
+            <div class="panel callout">
+              <div class="title"><h6>Animated Progress Bars</h6></div>
+              Regular:
+              <div class="progress animated">
+                <span class="meter" data-width="50%"></span>
+              </div>
+              <div class="progress alert animated">
+                <span class="meter" data-width="70%"></span>
+              </div>
+              <div class="progress success animated">
+                <span class="meter" data-width="20%"></span>
+              </div>
+              <div class="progress secondary animated">
+                <span class="meter" data-width="80%"></span>
+              </div>
 
-    </div>
+              Striped:
+              <div class="progress animated striped">
+                <span class="meter" data-width="50%"></span>
+              </div>
+              <div class="progress alert animated striped">
+                <span class="meter" data-width="70%"></span>
+              </div>
+              <div class="progress success animated striped">
+                <span class="meter" data-width="20%"></span>
+              </div>
+              <div class="progress secondary animated striped">
+                <span class="meter" data-width="80%"></span>
+              </div>
+
+
+              Legend:
+              <div class="progress animated">
+                <span class="meter text-center" data-width="50%">50% Completed</span>
+              </div>
+              <div class="progress alert animated">
+                <span class="meter text-center" data-width="70%">70% Completed</span>
+              </div>
+              <div class="progress success animated">
+                <span class="meter text-center" data-width="20%">20% Completed</span>
+              </div>
+              <div class="progress secondary animated">
+                <span class="meter text-center" data-width="80%">80% Completed</span>
+              </div>
+            </div>
+          </div>        
+        </div>
+
+      </div>
 
 
 
@@ -247,43 +259,44 @@
           <a target="_blank" href="http://opensloth.org">OpenSloth</a> template by <a target="_blank" href="http://chrissmejia.com">Chriss Mejía</a>.
         </div>        
       </div>
-      </section>
-    </div>
+    </section>
+  </div>
 
-<!-- At the bottom of your page but inside of the body tag -->
-<ol class="joyride-list" data-joyride>
-  <li data-id="firstStop" data-options="tip_location: top; prev_button: false; next_button: false;">
-    <p>Hello and welcome to the Joyride <br>documentation page.</p>
-    <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
-  </li>
-  <li data-id="numero1" data-class="custom so-awesome" data-options="prev_button: false; next_button: false;">
-    <h4>Stop #1</h4>
-    <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
-    <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
-    <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
-  </li>
-  <li data-id="numero2" data-options="tip_animation:fade; prev_button: false; next_button: false;">
-    <h4>Stop #2</h4>
-    <p>Get the details right by styling Joyride with a custom stylesheet!</p>
-    <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
-    <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
-  </li>
-  <li data-options="prev_button: false; next_button: false;">
-    <h4>Stop #3</h4>
-    <p>It works as a modal too!</p>
-    <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
-    <a href="#" class="small button joyride-next-tip link"><span>End</span></a>
-  </li>
-</ol>
-    
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/opensloth.js"></script>
-    <script>
-      // Progress animation trigger.
-      $('.progress.animated .meter').each(function() {
-          $(this).width($(this).data("width"));
-      });
-    </script>
-  </body>
+  <!-- At the bottom of your page but inside of the body tag -->
+  <ol class="joyride-list" data-joyride>
+    <li data-id="firstStop" data-options="tip_location: top; prev_button: false; next_button: false;">
+      <p>Hello and welcome to the Joyride <br>documentation page.</p>
+      <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
+    </li>
+    <li data-id="numero1" data-class="custom so-awesome" data-options="prev_button: false; next_button: false;">
+      <h4>Stop #1</h4>
+      <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
+      <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+      <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
+    </li>
+    <li data-id="numero2" data-options="tip_animation:fade; prev_button: false; next_button: false;">
+      <h4>Stop #2</h4>
+      <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+      <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+      <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
+    </li>
+    <li data-options="prev_button: false; next_button: false;">
+      <h4>Stop #3</h4>
+      <p>It works as a modal too!</p>
+      <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+      <a href="#" class="small button joyride-next-tip link"><span>End</span></a>
+    </li>
+  </ol>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/opensloth.js"></script>
+  <script>
+  // Progress animation trigger.
+  $('.progress.animated .meter').each(function() {
+    $(this).width($(this).data("width"));
+  });
+  </script>
+
+</body>
 </html>

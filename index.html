@@ -1,389 +1,390 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="ChrissMejía">
-    <meta name="description" content="The OpenSource Dashboard Template">
-    <title>OpenSloth | The OpenSource Dashboard Template</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/app.css"/>
-    <script src="bower_components/modernizr/modernizr.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="ChrissMejía">
+  <meta name="description" content="The OpenSource Dashboard Template">
+  <title>OpenSloth | The OpenSource Dashboard Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css"/>
+  <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body class="full">
-<div class="off-canvas"></div>
+  <div class="off-canvas"></div>
 
-<header class="row fluid">
+  <header class="row fluid">
     <aside id="profile-side-menu" class="show-for-small-only text-center">
-        <a href="#" class="settings">
-            <img class="circle avatar" src="img/pic/me.png" alt="">
-            <span class="username">Chriss</span>
-        </a>
-        <a href="#" class="signout">
-            <i class="fa fa-sign-out"></i>
-            <span>Logout</span>
-        </a>
+      <a href="#" class="settings">
+        <img class="circle avatar" src="img/pic/me.png" alt="">
+        <span class="username">Chriss</span>
+      </a>
+      <a href="#" class="signout">
+        <i class="fa fa-sign-out"></i>
+        <span>Logout</span>
+      </a>
     </aside>
 
     <nav class="top-bar small-only-text-center" data-topbar role="navigation" data-options="is_hover: false">
-        <ul class="title-area">
-            <li class="menu-icon show-for-small-only">
-                <a href="#">
-                    <span><i class="fa fa-bars"></i></span>
+      <ul class="title-area">
+        <li class="menu-icon show-for-small-only">
+          <a href="#">
+            <span><i class="fa fa-bars"></i></span>
+          </a>
+        </li>
+        <li class="name">
+          <a href="#">
+            <div class="image logo"></div>
+          </a>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="side-content-buttons dispel">
+            <a href="#" data-tab="tab-search" class="link">
+              <span><i class="fa fa-neuter icon search"></i></span>
+            </a>
+          </li>
+          <li class="side-content-buttons dispel">
+            <a href="#" data-tab="tab-chat" class="link">
+              <span>
+                <i class="fa fa-comments-o icon"><span class="text-center">3</span></i>
+              </span>
+            </a>
+          </li>
+          <li class="side-content-buttons dispel">
+            <a href="#" data-tab="tab-notifications" class="link">
+              <span><i class="fa fa-bell-o icon"></i></span>
+            </a>
+          </li>
+
+          <li class="has-dropdown profile hide-for-small-only">
+            <a href="#" class="link">
+              <img class="circle avatar" src="img/pic/me.png" alt="">
+              <span class="online"></span>
+              <span class="username">Chriss</span>
+            </a>
+            <ul class="dropdown">
+              <li>
+                <a href="#" class="link">
+                  <span><i class="fa fa-user"></i>Profile</span>
                 </a>
-            </li>
-            <li class="name">
-                <a href="#">
-                    <div class="image logo"></div>
+              </li>
+              <li>
+                <a href="#" class="link">
+                  <span><i class="fa fa-cog"></i>Settings</span>
                 </a>
-            </li>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#" class="link">
+                  <span><i class="fa fa-sign-out"></i>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
 
-        <section class="top-bar-section">
-            <!-- Right Nav Section -->
-            <ul class="right">
-                <li class="side-content-buttons dispel">
-                    <a href="#" data-tab="tab-search" class="link">
-                        <span><i class="fa fa-neuter icon search"></i></span>
-                    </a>
-                </li>
-                <li class="side-content-buttons dispel">
-                    <a href="#" data-tab="tab-chat" class="link">
-                        <span>
-                            <i class="fa fa-comments-o icon"><span class="text-center">3</span></i>
-                        </span>
-                    </a>
-                </li>
-                <li class="side-content-buttons dispel">
-                    <a href="#" data-tab="tab-notifications" class="link">
-                        <span><i class="fa fa-bell-o icon"></i></span>
-                    </a>
-                </li>
-
-                <li class="has-dropdown profile hide-for-small-only">
-                    <a href="#" class="link">
-                        <img class="circle avatar" src="img/pic/me.png" alt="">
-                        <span class="online"></span>
-                        <span class="username">Chriss</span>
-                    </a>
-                    <ul class="dropdown">
-                        <li>
-                            <a href="#" class="link">
-                                <span><i class="fa fa-user"></i>Profile</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link">
-                                <span><i class="fa fa-cog"></i>Settings</span>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#" class="link">
-                                <span><i class="fa fa-sign-out"></i>Logout</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
-        </section>
+      </section>
     </nav>
-</header>
+  </header>
 
-<div id="content" class="row fluid">
+  <div id="content" class="row fluid">
 
     <aside id="side-menu">
-        <ul class="side-nav" role="navigation" title="Navigation list">
+      <ul class="side-nav" role="navigation" title="Navigation list">
 
-            <li role="menuitem">
-                <a href="#" class="link medium-only-text-center">
-                    <span><i class="fa fa-home"></i>Dashboard</span>
-                </a>
+        <li role="menuitem">
+          <a href="#" class="link medium-only-text-center">
+            <span><i class="fa fa-home"></i>Dashboard</span>
+          </a>
+        </li>
+        <li class="active current" role="menuitem">
+          <a href="#" class="link medium-only-text-center">
+            <span><i class="fa fa-th"></i>Foundation</span>
+          </a>
+          <!-- 
+          <ul>
+            <li class="current">
+              <a href="#">+ Basic</a>
             </li>
-            <li class="active current" role="menuitem">
-                <a href="#" class="link medium-only-text-center">
-                    <span><i class="fa fa-th"></i>Foundation</span>
-                </a>
-                <!--            <ul>
-                              <li class="current">
-                                <a href="#">+ Basic</a>
-                              </li>
-                            </ul>
-                -->          </li>
-            <li role="menuitem">
-                <a href="icons.html" class="link medium-only-text-center">
-                    <span><i class="fa fa-flag"></i>Icons</span>
-                </a>
-            </li>
-            <li role="menuitem">
-                <a href="panels.html" class="link medium-only-text-center">
-                    <span><i class="fa fa-th-large"></i>Panels</span>
-                </a>
-            </li>
-            <li role="menuitem">
-                <a href="progress.html" class="link medium-only-text-center">
-                    <span><i class="fa fa-bars"></i>Progress Bars</span>
-                </a>
-            </li>
-            <li role="menuitem">
-                <a href="ux.html" class="link medium-only-text-center">
-                    <span><i class="fa fa-clone"></i>Basic UX</span>
-                </a>
-            </li>
-            <li role="menuitem">
-                <a href="typography.html" class="link medium-only-text-center">
-                    <span><i class="fa fa-font"></i>Typography</span>
-                </a>
-            </li>
-            <li role="menuitem">
-                <a href="buttons.html" class="link medium-only-text-center">
-                    <span><i class="fa fa-caret-square-o-right"></i>Buttons</span>
-                </a>
-            </li>
-        </ul>
+          </ul>-->          
+        </li>
+        <li role="menuitem">
+          <a href="icons.html" class="link medium-only-text-center">
+            <span><i class="fa fa-flag"></i>Icons</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="panels.html" class="link medium-only-text-center">
+            <span><i class="fa fa-th-large"></i>Panels</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="progress.html" class="link medium-only-text-center">
+            <span><i class="fa fa-bars"></i>Progress Bars</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="ux.html" class="link medium-only-text-center">
+            <span><i class="fa fa-clone"></i>Basic UX</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="typography.html" class="link medium-only-text-center">
+            <span><i class="fa fa-font"></i>Typography</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="buttons.html" class="link medium-only-text-center">
+            <span><i class="fa fa-caret-square-o-right"></i>Buttons</span>
+          </a>
+        </li>
+      </ul>
     </aside>
 
     <section id="main">
-        <nav id="breadcrumb" class="row" data-magellan-expedition="fixed">
-            <div id="mini_logo">
-                <a href="#" class="link button success">
-                    <div class="image logo"></div>
-                </a>
-            </div>
-            <div class="columns large-12">
-                <ul class="breadcrumbs" role="menubar">
-                    <li role="menuitem">
-                        <a href="#">
-                            <i class="fa fa-th"></i><span class="sidebar-mini-hide">Foundation</span>
-                        </a>
-                    </li>
-                    <li role="menuitem" class="current">
-                        <a href="#">
-                            <span class="sidebar-mini-hide">Basic</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav id="breadcrumb" class="row" data-magellan-expedition="fixed">
+        <div id="mini_logo">
+          <a href="#" class="link button success">
+            <div class="image logo"></div>
+          </a>
+        </div>
+        <div class="columns large-12">
+          <ul class="breadcrumbs" role="menubar">
+            <li role="menuitem">
+              <a href="#">
+                <i class="fa fa-th"></i><span class="sidebar-mini-hide">Foundation</span>
+              </a>
+            </li>
+            <li role="menuitem" class="current">
+              <a href="#">
+                <span class="sidebar-mini-hide">Basic</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
 
-        <div id="inner_content" class="row full">
-            <div class="off-canvas"></div>
-            <div id="side_content" class="row">
-                <div class="close">
-                    <a href="#" class="link">
-                        <span><i class="fa fa-angle-double-right"></i></span>
-                    </a>
-                </div>
-                <ul class="tabs top-bar" data-tab role="tablist">
-                    <li class="tab-title active text-center" role="presentation">
-                        <a href="#tab-search" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-search" class="link">
-                            <span><i class="fa fa-neuter icon search"></i></span>
-                        </a>
-                    </li>
-                    <li class="tab-title text-center" role="presentation">
-                        <a href="#tab-chat" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-chat" class="link">
-                            <span>
-                                <i class="fa fa-comments-o icon">
-                                    <span class="text-center">3</span>
-                                </i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="tab-title text-center" role="presentation">
-                        <a href="#tab-notifications" role="tab" tabindex="2" aria-selected="false" aria-controls="tab-notifications" class="link">
-                            <span><i class="fa fa-bell-o icon"></i></span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="tabs-content">
-                    <section role="tabpanel" aria-hidden="false" class="content active" id="tab-search">
-                        <i class="fa fa-frown-o"></i>
-                        <p class="text-center">
-                            This feature has not been developed yet,
-                            <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
-                            </br></br>Stay tuned, this is will be coded soon.
-                        </p>
-                    </section>
-                    <section role="tabpanel" aria-hidden="true" class="content" id="tab-chat">
-                        <i class="fa fa-frown-o"></i>
-                        <p class="text-center">
-                            This feature has not been developed yet,
-                            <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
-                            </br></br>Stay tuned, this is will be coded soon.
-                        </p>
-                    </section>
-                    <section role="tabpanel" aria-hidden="true" class="content" id="tab-notifications">
-                        <i class="fa fa-frown-o"></i>
-                        <p class="text-center">
-                            This feature has not been developed yet,
-                            <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
-                            </br></br>Stay tuned, this is will be coded soon.
-                        </p>
-                    </section>
-                </div>
-            </div>
+      <div id="inner_content" class="row full">
+        <div class="off-canvas"></div>
+        <div id="side_content" class="row">
+          <div class="close">
+            <a href="#" class="link">
+              <span><i class="fa fa-angle-double-right"></i></span>
+            </a>
+          </div>
+          <ul class="tabs top-bar" data-tab role="tablist">
+            <li class="tab-title active text-center" role="presentation">
+              <a href="#tab-search" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-search" class="link">
+                <span><i class="fa fa-neuter icon search"></i></span>
+              </a>
+            </li>
+            <li class="tab-title text-center" role="presentation">
+              <a href="#tab-chat" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-chat" class="link">
+                <span>
+                  <i class="fa fa-comments-o icon">
+                    <span class="text-center">3</span>
+                  </i>
+                </span>
+              </a>
+            </li>
+            <li class="tab-title text-center" role="presentation">
+              <a href="#tab-notifications" role="tab" tabindex="2" aria-selected="false" aria-controls="tab-notifications" class="link">
+                <span><i class="fa fa-bell-o icon"></i></span>
+              </a>
+            </li>
+          </ul>
+          <div class="tabs-content">
+            <section role="tabpanel" aria-hidden="false" class="content active" id="tab-search">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">
+                This feature has not been developed yet,
+                <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                <p></br></br>Stay tuned, this is will be coded soon.</p>
+              </p>
+            </section>
+            <section role="tabpanel" aria-hidden="true" class="content" id="tab-chat">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">
+                This feature has not been developed yet,
+                <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                <p></br></br>Stay tuned, this is will be coded soon.</p>
+              </p>
+            </section>
+            <section role="tabpanel" aria-hidden="true" class="content" id="tab-notifications">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">
+                This feature has not been developed yet,
+                <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                <p></br></br>Stay tuned, this is will be coded soon.</p>
+              </p>
+            </section>
+          </div>
+        </div>
 
-            <div class="large-8 medium-8 columns">
-                <h5>Here&rsquo;s your basic grid:</h5>
-                <!-- Grid Example -->
+        <div class="large-8 medium-8 columns">
+          <h5>Here&rsquo;s your basic grid:</h5>
+          <!-- Grid Example -->
 
-                <div class="row">
-                    <div class="large-12 columns">
-                        <div class="callout panel">
-                            <p>
-                                <strong>This is a twelve column section in a row.</strong> Each of these includes a
-                                div.panel element so you can see where the columns are - it's not required at all for
-                                the grid.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="large-6 medium-6 columns">
-                        <div class="callout panel">
-                            <p>Six columns</p>
-                        </div>
-                    </div>
-                    <div class="large-6 medium-6 columns">
-                        <div class="callout panel">
-                            <p>Six columns</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="large-4 medium-4 small-4 columns">
-                        <div class="callout panel">
-                            <p>Four columns</p>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-4 small-4 columns">
-                        <div class="callout panel">
-                            <p>Four columns</p>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-4 small-4 columns">
-                        <div class="callout panel">
-                            <p>Four columns</p>
-                        </div>
-                    </div>
-                </div>
-
-                <hr/>
-
-                <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-
-                <form>
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <label>Input Label</label>
-                            <input type="text" placeholder="large-12.columns"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-4 medium-4 columns">
-                            <label>Input Label</label>
-                            <input type="text" placeholder="large-4.columns"/>
-                        </div>
-                        <div class="large-4 medium-4 columns">
-                            <label>Input Label</label>
-                            <input type="text" placeholder="large-4.columns"/>
-                        </div>
-                        <div class="large-4 medium-4 columns">
-                            <div class="row collapse">
-                                <label>Input Label</label>
-
-                                <div class="small-9 columns">
-                                    <input type="text" placeholder="small-9.columns"/>
-                                </div>
-                                <div class="small-3 columns">
-                                    <span class="postfix">.com</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <label>Select Box</label>
-                            <select>
-                                <option value="husker">Husker</option>
-                                <option value="starbuck">Starbuck</option>
-                                <option value="hotdog">Hot Dog</option>
-                                <option value="apollo">Apollo</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-6 medium-6 columns">
-                            <label>Choose Your Favorite</label>
-
-                            <input type="radio" name="pokemon" value="Red" id="pokemonRed">
-                            <label for="pokemonRed">Radio 1</label>
-
-                            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
-                            <label for="pokemonBlue">Radio 2</label>
-                        </div>
-                        <div class="large-6 medium-6 columns">
-                            <label>Check these out</label>
-
-                            <input id="checkbox1" type="checkbox">
-                            <label for="checkbox1">Checkbox 1</label>
-
-                            <input id="checkbox2" type="checkbox">
-                            <label for="checkbox2">Checkbox 2</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <label>Textarea Label</label>
-                            <textarea placeholder="small-12.columns"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div class="large-4 medium-4 columns">
-                <h5>Try one of these buttons:</h5>
-
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="callout panel">
                 <p>
-                    <a href="#" class="small button link"><span>Simple Button</span></a><br/>
-                    <a href="#" class="small radius button link"><span>Radius Button</span></a><br/>
-                    <a href="#" class="small round button link"><span>Round Button</span></a><br/>
-                    <a href="#" class="small success button link"><span>Success Btn</span></a><br/>
-                    <a href="#" class="small alert button link"><span>Alert Btn</span></a><br/>
-                    <a href="#" class="small action button link"><span>Call to action Btn</span></a><br/>
-                    <a href="#" class="small secondary button link"><span>Secondary Btn</span></a>
+                  <strong>This is a twelve column section in a row.</strong> Each of these includes a
+                  div.panel element so you can see where the columns are - it's not required at all for
+                  the grid.
                 </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-6 medium-6 columns">
+              <div class="callout panel">
+                <p>Six columns</p>
+              </div>
+            </div>
+            <div class="large-6 medium-6 columns">
+              <div class="callout panel">
+                <p>Six columns</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 medium-4 small-4 columns">
+              <div class="callout panel">
+                <p>Four columns</p>
+              </div>
+            </div>
+            <div class="large-4 medium-4 small-4 columns">
+              <div class="callout panel">
+                <p>Four columns</p>
+              </div>
+            </div>
+            <div class="large-4 medium-4 small-4 columns">
+              <div class="callout panel">
+                <p>Four columns</p>
+              </div>
+            </div>
+          </div>
 
-                <div class="panel">
-                    <h5>So many components, girl!</h5>
+          <hr/>
 
-                    <p>
-                        A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along
-                        with details on making them your own.
-                    </p>
-                    <a href="http://foundation.zurb.com/docs/" class="small button link">
-                        <span>Go to Foundation Docs</span>
-                    </a>
+          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+
+          <form>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Input Label</label>
+                <input type="text" placeholder="large-12.columns"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 medium-4 columns">
+                <label>Input Label</label>
+                <input type="text" placeholder="large-4.columns"/>
+              </div>
+              <div class="large-4 medium-4 columns">
+                <label>Input Label</label>
+                <input type="text" placeholder="large-4.columns"/>
+              </div>
+              <div class="large-4 medium-4 columns">
+                <div class="row collapse">
+                  <label>Input Label</label>
+
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="small-9.columns"/>
+                  </div>
+                  <div class="small-3 columns">
+                    <span class="postfix">.com</span>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Select Box</label>
+                <select>
+                  <option value="husker">Husker</option>
+                  <option value="starbuck">Starbuck</option>
+                  <option value="hotdog">Hot Dog</option>
+                  <option value="apollo">Apollo</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-6 medium-6 columns">
+                <label>Choose Your Favorite</label>
+
+                <input type="radio" name="pokemon" value="Red" id="pokemonRed">
+                <label for="pokemonRed">Radio 1</label>
+
+                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
+                <label for="pokemonBlue">Radio 2</label>
+              </div>
+              <div class="large-6 medium-6 columns">
+                <label>Check these out</label>
+
+                <input id="checkbox1" type="checkbox">
+                <label for="checkbox1">Checkbox 1</label>
+
+                <input id="checkbox2" type="checkbox">
+                <label for="checkbox2">Checkbox 2</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Textarea Label</label>
+                <textarea placeholder="small-12.columns"></textarea>
+              </div>
+            </div>
+          </form>
         </div>
-        <div id="footer" class="row panel">
-            <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
-                Copyright © 2015 <b>Your Project</b>.
-            </div>
-            <div class="large-6 medium-6 small-12 columns text-right small-only-text-center">
-                <a target="_blank" href="http://opensloth.org">OpenSloth</a> template by <a target="_blank" href="http://chrissmejia.com">Chriss Mejía</a>.
-            </div>
+
+        <div class="large-4 medium-4 columns">
+          <h5>Try one of these buttons:</h5>
+
+          <p>
+            <a href="#" class="small button link"><span>Simple Button</span></a><br/>
+            <a href="#" class="small radius button link"><span>Radius Button</span></a><br/>
+            <a href="#" class="small round button link"><span>Round Button</span></a><br/>
+            <a href="#" class="small success button link"><span>Success Btn</span></a><br/>
+            <a href="#" class="small alert button link"><span>Alert Btn</span></a><br/>
+            <a href="#" class="small action button link"><span>Call to action Btn</span></a><br/>
+            <a href="#" class="small secondary button link"><span>Secondary Btn</span></a>
+          </p>
+
+          <div class="panel">
+            <h5>So many components, girl!</h5>
+
+            <p>
+              A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along
+              with details on making them your own.
+            </p>
+            <a href="http://foundation.zurb.com/docs/" class="small button link">
+              <span>Go to Foundation Docs</span>
+            </a>
+          </div>
         </div>
+      </div>
+      <div id="footer" class="row panel">
+        <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
+          Copyright © 2015 <b>Your Project</b>.
+        </div>
+        <div class="large-6 medium-6 small-12 columns text-right small-only-text-center">
+          <a target="_blank" href="http://opensloth.org">OpenSloth</a> template by <a target="_blank" href="http://chrissmejia.com">Chriss Mejía</a>.
+        </div>
+      </div>
     </section>
-</div>
+  </div>
 
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/foundation/js/foundation.min.js"></script>
-<script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
-<script src="js/opensloth.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+  <script src="js/opensloth.js"></script>
 </body>
 </html>
