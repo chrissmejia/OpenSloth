@@ -466,3 +466,22 @@ table {
 .close-reveal-modal:hover:hover, .joyride-close-tip:hover:hover {
   opacity: 0.7;
 }
+
+/* line 458, ../../scss/partials/general.scss */
+form select {
+  padding-right: 1.8rem;
+}
+/* line 462, ../../scss/partials/general.scss */
+form .prefix, form .postfix {
+  padding: 0;
+}
+/* line 467, ../../scss/partials/general.scss */
+form .error input, form .error input:focus {
+  border-color: #BE4064;
+}
+/* line 471, ../../scss/partials/general.scss */
+form .error small.error {
+  color: #BE4064 !important;
+  background: #FFFFFF !important;
+  margin-top: 0 !important;
+}

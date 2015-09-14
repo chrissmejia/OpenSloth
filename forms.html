@@ -1,0 +1,483 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="ChrissMejía">
+  <meta name="description" content="The OpenSource Dashboard Template">
+  <title>OpenSloth | The OpenSource Dashboard Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body class="full">
+  <div class="off-canvas"></div>
+
+  <header class="row fluid">
+    <aside id="profile-side-menu" class="show-for-small-only text-center">
+      <a href="#" class="settings">
+        <img class="circle avatar" src="img/pic/me.png" alt="">
+        <span class="username">Chriss</span>
+      </a>
+      <a href="#" class="signout">
+        <i class="fa fa-sign-out"></i>
+        <span>Logout</span>
+      </a>
+    </aside>
+
+    <nav class="top-bar small-only-text-center" data-topbar role="navigation" data-options="is_hover: false">
+      <ul class="title-area">
+        <li class="menu-icon show-for-small-only"><a href="#"><span><i class="fa fa-bars"></i></span></a></li>
+        <li class="name">
+          <a href="#"><div class="image logo"></div></a>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="side-content-buttons dispel">  
+            <a id="numero2" href="#" data-tab="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a>
+          </li>
+          <li class="side-content-buttons dispel">
+            <a href="#" data-tab="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a>
+          </li>
+          <li class="side-content-buttons dispel">
+            <a href="#" data-tab="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a>
+          </li>
+          
+          <li class="has-dropdown profile hide-for-small-only">
+            <a href="#" class="link">
+              <img class="circle avatar" src="img/pic/me.png" alt="">
+              <span class="online"></span>
+              <span class="username">Chriss</span>
+            </a>
+            <ul class="dropdown">
+              <li><a href="#" class="link"><span><i class="fa fa-user"></i>Profile</span></a></li>
+              <li><a href="#" class="link"><span><i class="fa fa-cog"></i>Settings</span></a></li>
+              <li class="divider"></li>
+              <li><a href="#" class="link"><span><i class="fa fa-sign-out"></i>Logout</span></a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </section>
+    </nav>
+  </header>
+
+  <div id="content" class="row fluid">
+
+    <aside id="side-menu">
+      <ul class="side-nav" role="navigation" title="Navigation list">
+
+        <li role="menuitem">
+          <a href="#" class="link medium-only-text-center">
+            <span><i class="fa fa-home"></i>Dashboard</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="index.html" class="link medium-only-text-center">
+            <span><i class="fa fa-th"></i>Foundation</span>
+          </a>
+          <!-- 
+          <ul>
+            <li class="current">
+              <a href="#">+ Basic</a>
+            </li>
+          </ul>-->          
+        </li>
+        <li role="menuitem">
+          <a href="icons.html" class="link medium-only-text-center">
+            <span><i class="fa fa-flag"></i>Icons</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="panels.html" class="link medium-only-text-center">
+            <span><i class="fa fa-th-large"></i>Panels</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="progress.html" class="link medium-only-text-center">
+            <span><i class="fa fa-tasks"></i>Progress Bars</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="ux.html" class="link medium-only-text-center">
+            <span><i class="fa fa-clone"></i>Basic UX</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="tables.html" class="link medium-only-text-center">
+            <span><i class="fa fa-table"></i>Tables</span>
+          </a>
+        </li>
+        <li class="active current" role="menuitem">
+          <a href="#" class="link medium-only-text-center">
+            <span><i class="fa fa-align-justify"></i>Forms</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="typography.html" class="link medium-only-text-center">
+            <span><i class="fa fa-font"></i>Typography</span>
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="buttons.html" class="link medium-only-text-center">
+            <span><i class="fa fa-caret-square-o-right"></i>Buttons</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <section id="main">
+      <nav id="breadcrumb" class="row" data-magellan-expedition="fixed">
+        <div id="mini_logo">
+          <a href="#" class="link button success">
+            <div class="image logo"></div>
+          </a>
+        </div>
+        <div class="columns large-12">
+          <ul class="breadcrumbs" role="menubar">
+            <li role="menuitem"><a href="#"><i class="fa fa-th"></i><span class="sidebar-mini-hide">Foundation</span></a></li>
+            <li role="menuitem" class="current"><a href="#"><span class="sidebar-mini-hide">Basic</span></a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div id="inner_content" class="row full">
+        <div class="off-canvas"></div>
+        <div id="side_content" class="row">
+          <div class="close"><a href="#" class="link"><span><i class="fa fa-angle-double-right"></i></span></a></div>
+          <ul class="tabs top-bar" data-tab role="tablist">
+            <li class="tab-title active text-center" role="presentation"><a href="#tab-search" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-search" class="link"><span><i class="fa fa-neuter icon search"></i></span></a></li>
+            <li class="tab-title text-center" role="presentation"><a href="#tab-chat" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-chat" class="link"><span><i class="fa fa-comments-o icon"><span class="text-center">3</span></i></span></a></li>
+            <li class="tab-title text-center" role="presentation"><a href="#tab-notifications" role="tab" tabindex="2" aria-selected="false" aria-controls="tab-notifications" class="link"><span><i class="fa fa-bell-o icon"></i></span></a></li>
+          </ul>
+          <div class="tabs-content">
+            <section role="tabpanel" aria-hidden="false" class="content active" id="tab-search">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">
+                This feature has not been developed yet,
+                <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                <p></br></br>Stay tuned, this is will be coded soon.</p>
+              </p>
+            </section>
+            <section role="tabpanel" aria-hidden="true" class="content" id="tab-chat">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">
+                This feature has not been developed yet,
+                <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                <p></br></br>Stay tuned, this is will be coded soon.</p>
+              </p>
+            </section>
+            <section role="tabpanel" aria-hidden="true" class="content" id="tab-notifications">
+              <i class="fa fa-frown-o"></i>
+              <p class="text-center">
+                This feature has not been developed yet,
+                <a target="_blank" href="http://chrissmejia.com/contribute/OpenSloth">help me code it or consider a donation.</a>
+                <p></br></br>Stay tuned, this is will be coded soon.</p>
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="large-6 medium-6 small-12 columns small-only-text-center">
+
+            <div class="panel callout">
+              <div class="title"><h6>Regular</h6></div>
+              <form>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>Input Label
+                      <input type="text" placeholder="large-12.columns" />
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 columns">
+                    <label>Input Label
+                      <input type="text" placeholder="large-4.columns" />
+                    </label>
+                  </div>
+                  <div class="large-4 columns">
+                    <label>Input Label
+                      <input type="text" placeholder="large-4.columns" />
+                    </label>
+                  </div>
+                  <div class="large-4 columns">
+                    <div class="row collapse">
+                      <label>Input Label</label>
+                      <div class="small-9 columns">
+                        <input type="text" placeholder="small-9.columns" />
+                      </div>
+                      <div class="small-3 columns">
+                        <span class="postfix">.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>Select Box
+                      <select>
+                        <option value="husker">Husker</option>
+                        <option value="starbuck">Starbuck</option>
+                        <option value="hotdog">Hot Dog</option>
+                        <option value="apollo">Apollo</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <label>Choose Your Favorite</label>
+                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+                  </div>
+                  <div class="large-6 columns">
+                    <label>Check these out</label>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>Textarea Label
+                      <textarea placeholder="small-12.columns"></textarea>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="panel callout">
+              <div class="title"><h6>Pre/Postfix Labels & Actions</h6></div>
+              <form>
+                <div class="row collapse">
+                  <div class="small-3 large-2 columns">
+                    <span class="prefix">http://</span>
+                  </div>
+                  <div class="small-9 large-10 columns">
+                    <input type="text" placeholder="Enter your URL...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <div class="row collapse">
+                      <div class="small-10 columns">
+                        <input type="text" placeholder="Hex Value">
+                      </div>
+                      <div class="small-2 columns">
+                        <a href="#" class="button link postfix"><span>Go</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <div class="row collapse prefix-radius">
+                      <div class="small-3 columns">
+                        <span class="prefix">Label</span>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" placeholder="Value">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="large-6 columns">
+                    <div class="row collapse postfix-radius">
+                      <div class="small-9 columns">
+                        <input type="text" placeholder="Value">
+                      </div>
+                      <div class="small-3 columns">
+                        <span class="postfix">Label</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <div class="row collapse prefix-round">
+                      <div class="small-3 columns">
+                        <a href="#" class="button link prefix"><span>Go</span></a>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" placeholder="Value">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="large-6 columns">
+                    <div class="row collapse postfix-round">
+                      <div class="small-9 columns">
+                        <input type="text" placeholder="Value">
+                      </div>
+                      <div class="small-3 columns">
+                        <a href="#" class="button link postfix"><span>Go</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>        
+
+          </div>
+          <div class="large-6 medium-6 small-12 columns small-only-text-center">
+            <div class="panel callout">
+              <div class="title"><h6>Abide Validation</h6></div>
+              <form data-abide="" id="testForm" novalidate="novalidate">
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label for="password">Password <small>required</small>
+                      <input type="password" id="password" placeholder="LittleW0men." name="password" required="">
+                    </label>
+                    <small class="error">Passwords must be at least 8 characters with 1 capital letter, 1 number, and one special character.</small>
+                  </div>
+                  <div class="large-12 columns">
+                    <label for="confirmPassword">Confirm Password <small>required</small>
+                      <input type="password" id="confirmPassword" placeholder="LittleW0men." name="confirmPassword" required="" data-equalto="password">
+                    </label>
+                    <small class="error">Passwords must match.</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="large-4 columns">
+                    <label for="email">Email
+                      <input type="email" id="email" placeholder="foundation@zurb.com">
+                    </label>
+                    <small class="error">Valid email required.</small>
+                  </div>
+                  <div class="large-4 columns">
+                    <label for="url">URL <small>required</small>
+                      <input type="url" id="url" placeholder="http://zurb.com" required="">
+                    </label>
+                    <small class="error">Valid URL required.</small>
+                  </div>
+                  <div class="large-4 columns">
+                    <div class="row collapse">
+                      <label for="customDropdown1">Hardest to find <small>required</small>
+                        <select id="customDropdown1" class="medium" required="">
+                          <option value="">Select grocery item</option>
+                          <option value="first">Green Chilies</option>
+                          <option value="second">Raisins</option>
+                          <option value="third">Panko bread crumbs</option>
+                          <option value="fourth">Assistance</option>
+                        </select>
+                      </label>
+                      <small class="error">Broke.</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="large-12 columns">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="large-6 columns">
+                    <label for="radio1"><input name="radioButtons" type="radio" id="radio1" required=""> Radio Button 1</label>
+                    <label for="radio2"><input name="radioButtons" type="radio" id="radio2" required=""> Radio Button 2</label>
+                    <label for="radio3"><input name="radioButtons" type="radio" id="radio3" required=""> Radio Button 3</label>
+                  </div>
+                  <div class="large-6 columns">
+                    <label for="checkbox1"><input type="checkbox" id="checkbox1" required=""> Label for Checkbox</label>
+                    <label for="checkbox2"><input type="checkbox" id="checkbox2" checked="" required=""> Label for Checkbox</label>
+                    <label for="checkbox3"><input type="checkbox" checked="" id="checkbox3" required=""> Label for Checkbox</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="large-12 columns">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label for="remarks">Closing Remarks</label>
+                    <textarea id="remarks" name="remarks" placeholder="Leave your remarks here."></textarea>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="large-6 columns">
+                    <button type="submit" class="medium button green">Submit</button>
+                  </div>
+                  <div class="large-6 columns">
+                    <button type="reset" class="medium button green">Reset</button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <div class="panel callout">
+              <div class="title"><h6>Inline Labels</h6></div>
+              <form>
+                <div class="row">
+                  <div class="small-8 columns">
+                    <div class="row">
+                      <div class="small-3 columns">
+                        <label for="right-label" class="right inline">Label</label>
+                      </div>
+                      <div class="small-9 columns">
+                        <input type="text" id="right-label" placeholder="Inline Text Input">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>        
+          </div>        
+  
+        </div>        
+      </div>
+
+
+
+      <div id="footer" class="row panel">
+        <div class="large-6 medium-6 small-12 columns text-left small-only-text-center">
+          Copyright © 2015 <b>Your Project</b>.
+        </div>        
+        <div class="large-6 medium-6 small-12 columns text-right small-only-text-center">
+          <a target="_blank" href="http://opensloth.org">OpenSloth</a> template by <a target="_blank" href="http://chrissmejia.com">Chriss Mejía</a>.
+        </div>        
+      </div>
+    </section>
+  </div>
+
+  <!-- At the bottom of your page but inside of the body tag -->
+  <ol class="joyride-list" data-joyride>
+    <li data-id="firstStop" data-options="tip_location: top; prev_button: false; next_button: false;">
+      <p>Hello and welcome to the Joyride <br>documentation page.</p>
+      <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
+    </li>
+    <li data-id="numero1" data-class="custom so-awesome" data-options="prev_button: false; next_button: false;">
+      <h4>Stop #1</h4>
+      <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
+      <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+      <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
+    </li>
+    <li data-id="numero2" data-options="tip_animation:fade; prev_button: false; next_button: false;">
+      <h4>Stop #2</h4>
+      <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+      <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+      <a href="#" class="small button joyride-next-tip link"><span>Next</span></a>
+    </li>
+    <li data-options="prev_button: false; next_button: false;">
+      <h4>Stop #3</h4>
+      <p>It works as a modal too!</p>
+      <a href="#" class="small button joyride-prev-tip link"><span>Prev</span></a>
+      <a href="#" class="small button joyride-next-tip link"><span>End</span></a>
+    </li>
+  </ol>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/opensloth.js"></script>
+
+</body>
+</html>

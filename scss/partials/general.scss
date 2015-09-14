@@ -452,3 +452,26 @@ table {
         opacity: 0.7;
     }
 }
+
+// Fix for forms
+form {
+    select {
+        padding-right: 1.8rem;
+    }
+
+    .prefix, .postfix {
+        padding: 0;
+    }
+    
+    .error {
+        input, input:focus {
+            border-color: $alert-color;
+        }
+
+        small.error{
+            color: $alert-color !important;
+            background: $white !important;
+            margin-top: 0 !important;
+        }
+    }
+}

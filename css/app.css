@@ -4151,7 +4151,7 @@ label small {
 /* Separate prefix and postfix styles when on span or label so buttons keep their own */
 /* line 417, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 span.prefix, label.prefix {
-  background: #85a0b7;
+  background: #346288;
   border-right: none;
   color: #FFFFFF;
   border-color: #cccccc;
@@ -4159,7 +4159,7 @@ span.prefix, label.prefix {
 
 /* line 418, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 span.postfix, label.postfix {
-  background: #85a0b7;
+  background: #346288;
   color: #FFFFFF;
   border-color: #cccccc;
 }
@@ -9939,6 +9939,25 @@ table {
 /* line 451, ../scss/partials/general.scss */
 .close-reveal-modal:hover:hover, .joyride-close-tip:hover:hover {
   opacity: 0.7;
+}
+
+/* line 458, ../scss/partials/general.scss */
+form select {
+  padding-right: 1.8rem;
+}
+/* line 462, ../scss/partials/general.scss */
+form .prefix, form .postfix {
+  padding: 0;
+}
+/* line 467, ../scss/partials/general.scss */
+form .error input, form .error input:focus {
+  border-color: #BE4064;
+}
+/* line 471, ../scss/partials/general.scss */
+form .error small.error {
+  color: #BE4064 !important;
+  background: #FFFFFF !important;
+  margin-top: 0 !important;
 }
 
 /* line 32, ../scss/partials/header.scss */
