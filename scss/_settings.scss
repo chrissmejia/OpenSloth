@@ -1300,7 +1300,7 @@ $side-nav-link-color-hover: tint($primary-color, 90%);
 
 // These control the background color for the table and even rows
 // $table-bg: $white;
-// $table-even-row-bg: $snow;
+$table-even-row-bg: tint($primary-color, 90%);
 
 // These control the table cell border style
 // $table-border-style: solid;
@@ -1308,11 +1308,11 @@ $side-nav-link-color-hover: tint($primary-color, 90%);
 // $table-border-color: $gainsboro;
 
 // These control the table head styles
-// $table-head-bg: $white-smoke;
+$table-head-bg: tint($primary-color, 70%);
 // $table-head-font-size: rem-calc(14);
-// $table-head-font-color: $jet;
+$table-head-font-color: darken($primary-color, 20%);
 // $table-head-font-weight: $font-weight-bold;
-// $table-head-padding: rem-calc(8 10 10);
+$table-head-padding: 1.2rem 0.8rem;
 
 // These control the table foot styles
 // $table-foot-bg: $table-head-bg;
@@ -1328,7 +1328,7 @@ $side-nav-link-color-hover: tint($primary-color, 90%);
 // $table-caption-font-weight: bold;
 
 // These control the row padding and font styles
-// $table-row-padding: rem-calc(9 10);
+$table-row-padding: 0.8rem 1.2rem;
 // $table-row-font-size: rem-calc(14);
 // $table-row-font-color: $jet;
 // $table-line-height: rem-calc(18);

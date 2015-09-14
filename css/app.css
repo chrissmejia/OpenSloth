@@ -6534,45 +6534,45 @@ table {
 /* line 69, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table caption {
   background: transparent;
-  color: #222222;
+  color: #182d3e;
   font-size: 1.14286rem;
   font-weight: bold;
 }
 /* line 78, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table thead {
-  background: #F5F5F5;
+  background: #c2cfdb;
 }
 /* line 82, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table thead tr th,
 table thead tr td {
-  color: #222222;
+  color: #182d3e;
   font-size: 1rem;
   font-weight: bold;
-  padding: 0.57143rem 0.71429rem 0.71429rem;
+  padding: 1.2rem 0.8rem;
 }
 /* line 92, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table tfoot {
-  background: #F5F5F5;
+  background: #c2cfdb;
 }
 /* line 96, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table tfoot tr th,
 table tfoot tr td {
-  color: #222222;
+  color: #182d3e;
   font-size: 1rem;
   font-weight: bold;
-  padding: 0.57143rem 0.71429rem 0.71429rem;
+  padding: 1.2rem 0.8rem;
 }
 /* line 107, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table tr th,
 table tr td {
   color: #222222;
   font-size: 1rem;
-  padding: 0.64286rem 0.71429rem;
+  padding: 0.8rem 1.2rem;
   text-align: left;
 }
 /* line 115, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table tr.even, table tr.alt, table tr:nth-of-type(even) {
-  background: #F9F9F9;
+  background: #eaeff3;
 }
 /* line 120, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table thead tr th,
@@ -9894,30 +9894,49 @@ a:hover {
   }
 }
 /* line 412, ../scss/partials/general.scss */
+table {
+  width: 100%;
+}
+
+/* line 415, ../scss/partials/general.scss */
+.dataTables_wrapper .row {
+  margin: 0 -0.9375rem !important;
+}
+/* line 418, ../scss/partials/general.scss */
+.dataTables_wrapper .row select {
+  width: 75px;
+  margin-top: 1.4rem;
+}
+/* line 423, ../scss/partials/general.scss */
+.dataTables_wrapper .row .pagination {
+  float: right;
+}
+
+/* line 429, ../scss/partials/general.scss */
 .split.link {
   padding: 0;
 }
-/* line 415, ../scss/partials/general.scss */
+/* line 432, ../scss/partials/general.scss */
 .split.link div {
   padding: 1rem;
   margin-right: 3.53571rem;
 }
-/* line 419, ../scss/partials/general.scss */
+/* line 436, ../scss/partials/general.scss */
 .split.link div span {
   right: -3.53571rem;
 }
 
-/* line 425, ../scss/partials/general.scss */
+/* line 442, ../scss/partials/general.scss */
 .split.button.no-pip span > i {
   margin-left: -0.48889em;
 }
 
-/* line 430, ../scss/partials/general.scss */
+/* line 447, ../scss/partials/general.scss */
 .close-reveal-modal:hover, .joyride-close-tip:hover {
   text-decoration: none;
   opacity: 0.3;
 }
-/* line 434, ../scss/partials/general.scss */
+/* line 451, ../scss/partials/general.scss */
 .close-reveal-modal:hover:hover, .joyride-close-tip:hover:hover {
   opacity: 0.7;
 }

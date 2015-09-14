@@ -420,30 +420,49 @@ a:hover {
   }
 }
 /* line 412, ../../scss/partials/general.scss */
+table {
+  width: 100%;
+}
+
+/* line 415, ../../scss/partials/general.scss */
+.dataTables_wrapper .row {
+  margin: 0 -0.9375rem !important;
+}
+/* line 418, ../../scss/partials/general.scss */
+.dataTables_wrapper .row select {
+  width: 75px;
+  margin-top: 1.4rem;
+}
+/* line 423, ../../scss/partials/general.scss */
+.dataTables_wrapper .row .pagination {
+  float: right;
+}
+
+/* line 429, ../../scss/partials/general.scss */
 .split.link {
   padding: 0;
 }
-/* line 415, ../../scss/partials/general.scss */
+/* line 432, ../../scss/partials/general.scss */
 .split.link div {
   padding: 1rem;
   margin-right: 3.53571rem;
 }
-/* line 419, ../../scss/partials/general.scss */
+/* line 436, ../../scss/partials/general.scss */
 .split.link div span {
   right: -3.53571rem;
 }
 
-/* line 425, ../../scss/partials/general.scss */
+/* line 442, ../../scss/partials/general.scss */
 .split.button.no-pip span > i {
   margin-left: -0.48889em;
 }
 
-/* line 430, ../../scss/partials/general.scss */
+/* line 447, ../../scss/partials/general.scss */
 .close-reveal-modal:hover, .joyride-close-tip:hover {
   text-decoration: none;
   opacity: 0.3;
 }
-/* line 434, ../../scss/partials/general.scss */
+/* line 451, ../../scss/partials/general.scss */
 .close-reveal-modal:hover:hover, .joyride-close-tip:hover:hover {
   opacity: 0.7;
 }

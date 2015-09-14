@@ -408,6 +408,23 @@ a:hover {
     }    
 }
 
+// Fix Tables
+table {
+    width: 100%;
+}
+.dataTables_wrapper .row {
+    margin: 0 -0.9375rem !important;
+
+    select {
+        width: 75px;
+        margin-top: 1.4rem;
+    }
+
+    .pagination {
+        float: right;
+    }
+}
+
 // Fix for split buttons
 .split.link {
     padding: 0;
