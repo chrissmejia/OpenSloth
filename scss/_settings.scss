@@ -4,7 +4,6 @@
 //   Based on Foundation by ZURB   //
 /////////////////////////////////////
 
-@import url(https://fonts.googleapis.com/css?family=Nunito:300);
 @import "palette_color";
 
 // Table of Contents
@@ -90,13 +89,14 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Nunito", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+// $font-family-sans-serif: "Nunito", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
 // $font-weight-normal: normal;
-// $font-weight-bold: bold;
+$font-weight-normal: 200;
+$font-weight-bold: 500;
 
 $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
@@ -132,7 +132,7 @@ $warning-color: $complement-color;
 
 // We use these to control various global styles
 // $body-bg: $white;
-$body-font-color: darken($primary-color, 6%);
+$body-font-color: darken($primary-color, 30%);
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;

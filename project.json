@@ -1,7 +1,7 @@
 {
     "project": {
         "name": "OpenSloth",
-        "description": "OpenSource dashboard",
-        "version": "0.6",
+        "description": "OpenSource HTML dashboard",
+        "version": "0.7",
     }
 }

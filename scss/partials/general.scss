@@ -29,6 +29,10 @@
 @import "compass/css3/transition";
 @import "compass/css3/background-size";
 
+html {
+    letter-spacing: 0.04rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     small {
         color: darken($primary-color, 4%);
@@ -47,8 +51,10 @@ blockquote {
     max-width: none;	
 }
 
-a:hover {
-    text-decoration: underline;	
+a {    
+    &:hover {
+        text-decoration: underline; 
+    }
 }
 
 .link {
@@ -279,6 +285,7 @@ a:hover {
             margin: 0;
             display: inline-block;
             padding: 1.2rem;
+            font-size: 0.8rem;
         }
 
         .link {
@@ -299,7 +306,7 @@ a:hover {
                 margin: 0;
                 padding: 0.9rem 1.2rem;
  
-                font-size: 1rem;
+                font-size: 0.8rem;
             }
 
             &>.content {
@@ -333,8 +340,8 @@ a:hover {
 
                 margin: 0;
                 padding: 0.9rem 1.2rem;
- 
-                font-size: 1rem;
+
+                font-size: 0.8rem;
 
             }
 

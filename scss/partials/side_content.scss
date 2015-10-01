@@ -33,7 +33,6 @@
     right: 0;
     position: absolute;
     height: 100%;
-    color: $primary-color;
     z-index: 1000;
     background: $white;
     border-left: tint($primary-color, 70%) 0.1rem solid;
@@ -72,7 +71,16 @@
         font-size: 0.9rem;
     }
 
+    .tab-title {
+        i {
+            color: $primary-color;
+        }
+    }
+
     .tabs-content {
+        padding: 1rem;
+        text-align: center;
+
         i {
             display: block;
             font-size: 4rem;

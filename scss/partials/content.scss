@@ -56,9 +56,14 @@ body.non-scroll {
     .breadcrumbs {
         margin-bottom: 0;
         background: inherit;
+        padding: 0.4rem 0;
 
         i {
             margin-right: 0.6rem;
+        }
+
+        * {
+            font-size: 0.8rem;
         }
     }
 
