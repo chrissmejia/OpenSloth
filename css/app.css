@@ -118,7 +118,7 @@ body {
   cursor: auto;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -1758,7 +1758,7 @@ select {
   border-width: 1px;
   display: block;
   font-size: 0.92857rem;
-  font-weight: 200;
+  font-weight: 100;
   margin-bottom: 1.42857rem;
   padding: 1rem 1.71429rem 1rem 1rem;
   position: relative;
@@ -2445,7 +2445,7 @@ button, .button {
   border-width: 0;
   cursor: pointer;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   line-height: normal;
   margin: 0 0 1.42857rem;
   position: relative;
@@ -4046,7 +4046,7 @@ label {
   cursor: pointer;
   display: block;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.5;
   margin-bottom: 0;
   /* Styles for required inputs */
@@ -4413,7 +4413,7 @@ fieldset legend {
   display: block;
   font-size: 0.85714rem;
   font-style: italic;
-  font-weight: 200;
+  font-weight: 100;
   margin-bottom: 1.14286rem;
   margin-top: -1px;
   padding: 0.42857rem 0.64286rem 0.64286rem;
@@ -4430,7 +4430,7 @@ span.error, small.error {
   display: block;
   font-size: 0.85714rem;
   font-style: italic;
-  font-weight: 200;
+  font-weight: 100;
   margin-bottom: 1.14286rem;
   margin-top: -1px;
   padding: 0.42857rem 0.64286rem 0.64286rem;
@@ -4459,7 +4459,7 @@ span.error, small.error {
   display: block;
   font-size: 0.85714rem;
   font-style: italic;
-  font-weight: 200;
+  font-weight: 100;
   margin-bottom: 1.14286rem;
   margin-top: -1px;
   padding: 0.42857rem 0.64286rem 0.64286rem;
@@ -4962,7 +4962,7 @@ label.error {
   color: #FFFFFF;
   display: none;
   font-family: inherit;
-  font-weight: 200;
+  font-weight: 100;
   position: absolute;
   top: 0;
   width: 95%;
@@ -5071,7 +5071,7 @@ label.error {
 .joyride-close-tip {
   color: #777777 !important;
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 100;
   line-height: .5 !important;
   position: absolute;
   text-decoration: none;
@@ -5170,7 +5170,7 @@ kbd {
 .label {
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1;
   margin-bottom: auto;
   position: relative;
@@ -5734,7 +5734,7 @@ ul.pagination li {
   color: #EEEEEE;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.14286rem;
-  font-weight: 200;
+  font-weight: 100;
   padding: 1.07143rem 1.42857rem;
   text-align: center;
 }
@@ -5744,7 +5744,7 @@ ul.pagination li {
   color: #333333;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 2.28571rem;
-  font-weight: 200;
+  font-weight: 100;
   padding: 1.07143rem 1.42857rem;
   text-align: center;
 }
@@ -5754,7 +5754,7 @@ ul.pagination li {
   border-bottom: dotted 1px #DDDDDD;
   color: #777777;
   font-size: 0.85714rem;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.4;
   padding: 1.07143rem;
   text-align: center;
@@ -5765,7 +5765,7 @@ ul.pagination li {
   border-bottom: dotted 1px #DDDDDD;
   color: #333333;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 100;
   padding: 1.07143rem;
   text-align: center;
 }
@@ -6112,7 +6112,7 @@ ul.pagination li {
 /* line 71, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 100;
   margin: 0;
 }
 /* line 76, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
@@ -6135,7 +6135,7 @@ ul.pagination li {
 .side-nav li.active > a:first-child:not(.button) {
   color: #eaeff3;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 100;
 }
 /* line 97, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.divider {
@@ -6322,7 +6322,7 @@ ul.pagination li {
   float: left;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 100;
   margin-left: 1.14286rem;
   margin-bottom: 0;
 }
@@ -6348,7 +6348,7 @@ ul.pagination li {
   background: #346288;
   color: #FFFFFF;
   cursor: default;
-  font-weight: 200;
+  font-weight: 100;
   padding: 0.21429rem 1.14286rem;
 }
 /* line 100, ../bower_components/foundation/scss/foundation/components/_sub-nav.scss */
@@ -6750,7 +6750,7 @@ table tr td {
   color: #FFFFFF;
   display: none;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.3;
   max-width: 300px;
   padding: 0.85714rem;
@@ -6799,7 +6799,7 @@ table tr td {
   color: #777777;
   display: block;
   font-size: 0.71429rem;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 @media only screen and (min-width: 45.78571em) {
@@ -6946,7 +6946,7 @@ meta.foundation-mq-topbar {
 .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
   color: #346288;
   display: block;
-  font-weight: 200;
+  font-weight: 100;
   padding: 0 1.07143rem;
   width: 75%;
 }
@@ -7060,7 +7060,7 @@ meta.foundation-mq-topbar {
   display: block;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.92857rem;
-  font-weight: 200;
+  font-weight: 100;
   padding-left: 1.07143rem;
   padding: 12px 0 12px 1.07143rem;
   text-transform: none;
@@ -7319,12 +7319,12 @@ meta.foundation-mq-topbar {
 }
 /* line 444, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a {
-  font-weight: 200;
+  font-weight: 100;
   padding: 8px 1.07143rem;
 }
 /* line 447, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a.parent-link {
-  font-weight: 200;
+  font-weight: 100;
 }
 /* line 452, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.parent-link {
@@ -7902,7 +7902,7 @@ a img {
 p {
   font-family: inherit;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.6;
   margin-bottom: 1.42857rem;
   text-rendering: optimizeLegibility;
@@ -7925,7 +7925,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #203d54;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
@@ -7972,7 +7972,7 @@ h6 {
 .subheader {
   line-height: 1.4;
   color: #4685b8;
-  font-weight: 200;
+  font-weight: 100;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
 }
@@ -8015,7 +8015,7 @@ code {
   border-width: 1px;
   color: #333333;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: 200;
+  font-weight: 100;
   padding: 0.14286rem 0.35714rem 0.07143rem;
 }
 
