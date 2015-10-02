@@ -1,0 +1,46 @@
+{# layout.html #}
+{# Import the theme's layout. #}
+{% extends "!layout.html" %}
+
+{% set css_files = css_files + ['https://chrissmejia.com/static/css/app.css'] %}
+{% set css_files = css_files + ['https://chrissmejia.com/static/css/cmcore.css'] %}
+{% set css_files = css_files + ['https://chrissmejia.com/static/css/partials/docs.css'] %}
+
+{% block footer %} 
+<header>
+  <nav id="cm-top-bar" class="top-bar" data-topbar role="navigation" data-options="is_hover: false">
+    <ul class="title-area">
+      <li class="name">
+        <a href="https://chrissmejia.com"><div class="image logo"></div></a>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+    <!-- Right Nav Section -->
+      <ul class="right">
+        <li>  
+          <a href="https://chrissmejia.com/opensloth/" class="link"><span><i class="fa fa-globe"></i>Web</span></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://chrissmejia.com/static/templates/OpenSloth/index.html" class="link"><span><i class="fa fa-laptop"></i>Live Demo</span></a>
+        </li>        
+        <li>  
+          <a href="https://chrissmejia.com/contribute/OpenSloth" class="contribute link"><span><i class="fa fa-heart"></i>Contribute</span></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/chrissmejia/OpenSloth" class="link"><span><i class="fa fa-github"></i>Code</span></a>
+        </li>
+      </ul>
+      <ul class="left">
+        <li><a href="https://chrissmejia.com/about" class="link"><span>Available for hire</span></a></li>
+      </ul>
+    </section>
+  </nav>
+</header>
+
+  <script src="https://chrissmejia.com/static/templates/OpenSloth/bower_components/foundation/js/foundation.min.js"></script>
+  <script src="https://chrissmejia.com/static/templates/OpenSloth/bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+  <script src="https://chrissmejia.com/static/templates/OpenSloth/js/opensloth.js"></script>
+{% endblock %}
