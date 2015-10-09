@@ -2,9 +2,10 @@
 {# Import the theme's layout. #}
 {% extends "!layout.html" %}
 
-{% set css_files = css_files + ['https://chrissmejia.com/static/css/app.css'] %}
+{% set css_files = css_files + ['https://chrissmejia.com/static/templates/OpenSloth/css/app.css'] %}
 {% set css_files = css_files + ['https://chrissmejia.com/static/css/cmcore.css'] %}
 {% set css_files = css_files + ['https://chrissmejia.com/static/css/partials/docs.css'] %}
+
 
 {% block footer %} 
 <header>
@@ -14,14 +15,14 @@
         <a href="https://chrissmejia.com"><div class="image logo"></div></a>
       </li>
       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      <li class="toggle-topbar icon"><a href="#"><i class="fa fa-bars"></i></a></li>
     </ul>
 
     <section class="top-bar-section">
     <!-- Right Nav Section -->
       <ul class="right">
         <li>  
-          <a href="https://chrissmejia.com/opensloth/" class="link"><span><i class="fa fa-globe"></i>Web</span></a>
+          <a href="https://chrissmejia.com/opensloth/" class="link"><span class="OSlogo"></span></a>
         </li>
         <li>
           <a target="_blank" href="https://chrissmejia.com/static/templates/OpenSloth/index.html" class="link"><span><i class="fa fa-laptop"></i>Live Demo</span></a>
@@ -34,7 +35,7 @@
         </li>
       </ul>
       <ul class="left">
-        <li><a href="https://chrissmejia.com/about" class="link"><span>Available for hire</span></a></li>
+        <li><a href="https://chrissmejia.com/about" class="link"><span>About</span></a></li>
       </ul>
     </section>
   </nav>
@@ -43,4 +44,14 @@
   <script src="https://chrissmejia.com/static/templates/OpenSloth/bower_components/foundation/js/foundation.min.js"></script>
   <script src="https://chrissmejia.com/static/templates/OpenSloth/bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
   <script src="https://chrissmejia.com/static/templates/OpenSloth/js/opensloth.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60873942-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
 {% endblock %}
