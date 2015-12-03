@@ -1,0 +1,159 @@
+/* line 30, ../../../sources/scss/partials/side_content.scss */
+#side_content {
+  width: 18rem;
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  z-index: 1000;
+  background: #FFFFFF;
+  border-left: #c2cfdb 0.1rem solid;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 41, ../../../sources/scss/partials/side_content.scss */
+#side_content .close {
+  opacity: 1;
+  visibility: initial;
+  position: absolute;
+  z-index: 1000;
+  top: 0.8rem;
+  left: -0.4rem;
+  width: 1.1rem;
+}
+/* line 50, ../../../sources/scss/partials/side_content.scss */
+#side_content .close a {
+  -moz-border-radius-topright: 0.6rem;
+  -webkit-border-top-right-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  -moz-border-radius-bottomleft: 0.6rem;
+  -webkit-border-bottom-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  padding: 0.3rem 0.2rem 0.5rem 0.2rem;
+  background-color: #eaeff3;
+  border: #c2cfdb 0.1rem solid;
+  overflow: hidden;
+}
+/* line 58, ../../../sources/scss/partials/side_content.scss */
+#side_content .close a:before {
+  -moz-border-radius-topright: 0.6rem;
+  -webkit-border-top-right-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  -moz-border-radius-bottomleft: 0.6rem;
+  -webkit-border-bottom-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  background: #c2cfdb;
+}
+/* line 65, ../../../sources/scss/partials/side_content.scss */
+#side_content .close i {
+  font-size: 0.8rem;
+}
+/* line 70, ../../../sources/scss/partials/side_content.scss */
+#side_content p {
+  font-size: 0.9rem;
+}
+/* line 75, ../../../sources/scss/partials/side_content.scss */
+#side_content .tab-title i {
+  color: #346288;
+}
+/* line 80, ../../../sources/scss/partials/side_content.scss */
+#side_content .tabs-content {
+  padding: 1rem;
+  text-align: center;
+}
+/* line 84, ../../../sources/scss/partials/side_content.scss */
+#side_content .tabs-content i {
+  display: block;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* line 93, ../../../sources/scss/partials/side_content.scss */
+#inner_content.row {
+  margin-right: 0;
+  position: relative;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 98, ../../../sources/scss/partials/side_content.scss */
+#inner_content.row .off-canvas {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  background: rgba(52, 98, 136, 0.4);
+  z-index: 100;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 112, ../../../sources/scss/partials/side_content.scss */
+#inner_content.row.full #side_content {
+  right: -18rem;
+}
+/* line 115, ../../../sources/scss/partials/side_content.scss */
+#inner_content.row.full #side_content .close {
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 122, ../../../sources/scss/partials/side_content.scss */
+#inner_content.row.full .off-canvas {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 73.21429em) {
+  /* line 131, ../../../sources/scss/partials/side_content.scss */
+  #side_content {
+    right: -18rem;
+  }
+
+  /* line 135, ../../../sources/scss/partials/side_content.scss */
+  #inner_content.row {
+    margin-right: 18rem;
+  }
+  /* line 138, ../../../sources/scss/partials/side_content.scss */
+  #inner_content.row.full {
+    margin-right: 0;
+  }
+  /* line 142, ../../../sources/scss/partials/side_content.scss */
+  #inner_content.row .off-canvas {
+    display: none;
+  }
+}
+@media only screen and (max-width: 45.71429em) {
+  /* line 150, ../../../sources/scss/partials/side_content.scss */
+  #inner_content.row.full {
+    right: 45.71429em;
+  }
+  /* line 154, ../../../sources/scss/partials/side_content.scss */
+  #inner_content.row .close {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* line 161, ../../../sources/scss/partials/side_content.scss */
+  #main {
+    position: relative;
+  }
+  /* line 164, ../../../sources/scss/partials/side_content.scss */
+  #main #inner_content {
+    position: initial;
+  }
+  /* line 167, ../../../sources/scss/partials/side_content.scss */
+  #main #inner_content .tabs {
+    display: none;
+  }
+}

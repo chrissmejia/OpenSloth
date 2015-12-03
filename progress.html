@@ -7,8 +7,8 @@
   <meta name="description" content="The OpenSource Dashboard Template">
   <title>OpenSloth | The OpenSource Dashboard Template</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/app.css" />
-  <script src="bower_components/modernizr/modernizr.js"></script>
+  <link rel="stylesheet" href="static/css/app.css"/>
+  <script src="static/bower_components/modernizr/modernizr.js"></script>
 </head>
 <body class="full">
   <div class="off-canvas"></div>
@@ -16,7 +16,7 @@
   <header class="row fluid">
     <aside id="profile-side-menu" class="show-for-small-only text-center">
       <a href="#" class="settings">
-        <img class="circle avatar" src="img/pic/me.png" alt="">
+        <img class="circle avatar" src="static/img/pic/me.png" alt="">
         <span class="username">Chriss</span>
       </a>
       <a href="#" class="signout">
@@ -48,7 +48,7 @@
           
           <li class="has-dropdown profile hide-for-small-only">
             <a href="#" class="link">
-              <img class="circle avatar" src="img/pic/me.png" alt="">
+              <img class="circle avatar" src="static/img/pic/me.png" alt="">
               <span class="online"></span>
               <span class="username">Chriss</span>
             </a>
@@ -320,9 +320,10 @@
     </li>
   </ol>
 
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/foundation/js/foundation.min.js"></script>
-  <script src="js/opensloth.js"></script>
+  <script src="static/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="static/bower_components/foundation/js/foundation.min.js"></script>
+  <script src="static/bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+  <script src="static/js/opensloth.js"></script>
   <script>
   // Progress animation trigger.
   $('.progress.animated .meter').each(function() {
