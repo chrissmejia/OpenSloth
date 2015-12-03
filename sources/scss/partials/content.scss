@@ -95,7 +95,6 @@ body.non-scroll {
     }
 
     .logo{
-        @include import-image('logo_white.svg', 14rem, 3.18rem, 90%);
-        margin-top: 0.4rem;
+        @include import-image('logo_white.svg', 14rem, 3.48rem, 94%);
     }
 }

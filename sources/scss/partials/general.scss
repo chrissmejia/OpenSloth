@@ -51,7 +51,9 @@ blockquote {
     max-width: none;	
 }
 
-a {    
+a {
+    color: $primary-color;
+
     &:hover {
         text-decoration: underline; 
     }
@@ -184,7 +186,8 @@ a {
             @include circular-notification(1rem, -0.5rem, -0.2rem);
             background-color: $secondary-color-2;
             color: tint($secondary-color-2, 90%);
-            line-height: 0.6rem;     
+            line-height: 0.6rem;
+            padding: 0.2rem 0.34rem;
         }
 
         &.fa-neuter.search {
@@ -193,9 +196,19 @@ a {
 
     }
 
-    .has-dropdown a::after {
-        margin-top: 0;
-        top: 2.3rem;
+    .has-dropdown a {
+
+        color: $primary-color;
+
+        * {
+            color: $primary-color;        
+        }
+
+        &::after {
+            margin-top: 0;
+            top: 2.3rem;
+        }
+
     }
 
     &.tabs {
@@ -271,6 +284,11 @@ a {
 	@include circular;
 }
 
+.f-dropdown {
+    top: initial !important;
+    left: initial !important;
+}
+
 .panel {
     margin-top: 1.42857rem;
     overflow: auto;
@@ -290,7 +308,7 @@ a {
 
         .link {
             float: right;
-            padding: 0.9rem;
+            padding: 0.8rem;
         }
     }
 
