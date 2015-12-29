@@ -12,7 +12,7 @@ body.non-scroll {
 /* line 40, ../../../sources/scss/partials/content.scss */
 #main .row {
   margin: 0;
-  padding: 0.9375rem;
+  padding: 1.42857rem;
 }
 /* line 44, ../../../sources/scss/partials/content.scss */
 #main .row .row {
@@ -29,8 +29,8 @@ body.non-scroll {
 /* line 56, ../../../sources/scss/partials/content.scss */
 #breadcrumb .breadcrumbs {
   margin-bottom: 0;
+  padding: 0;
   background: inherit;
-  padding: 0.4rem 0;
 }
 /* line 61, ../../../sources/scss/partials/content.scss */
 #breadcrumb .breadcrumbs i {

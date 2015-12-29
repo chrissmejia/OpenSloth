@@ -22,79 +22,20 @@
 // SOFTWARE.                                                                              //
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "settings";
-@import "variables";
-@import "mixins";
-@import "compass/css3/transition";
+(function(){
+	"use strict";
+	var cache_storage = {};
 
-body.non-scroll {
-    overflow: hidden;
-}
+    var JSloth = {
+        name : 'JSloth',
+        version : '0.1',
 
-#content {
-    background-color: $primary-color;
-    overflow: hidden;
-}
-
-#main {
-    .row{
-        margin: 0;
-        padding: 1.42857rem;
-
-        .row {
-            padding: 0;
+        cache : function(name, get_fn, force) {
+            if (cache_storage[name] && !force) {
+            	return cache_storage[name];
+            }
+            return cache_storage[name] = get_fn;
         }
     }
-}
-
-#breadcrumb {
-    overflow: hidden;
-    background: tint($primary-color, 85%);
-    color: $primary-color;
-    border: 0.1rem tint($primary-color, 70%) solid !important;
-
-    .breadcrumbs {
-        margin-bottom: 0;
-        padding : 0;
-        background: inherit;
-
-        i {
-            margin-right: 0.6rem;
-        }
-
-        * {
-            font-size: 0.8rem;
-        }
-    }
-
-    &.fixed {
-        z-index: 10000;
-        background: $white;
-        padding-left: 14rem;
-
-        #mini_logo {
-            left: 0;
-            opacity: 1;
-            position: fixed;
-            top: 0;
-        }
-    }
-}
-
-#mini_logo {
-	background-color: $success-color;
-    left: -$menu-full-width;
-    opacity: 0;
-    position: absolute;
-    @include single-transition(all, 0.5s);
-
-    .button {
-        margin: 0;
-        padding: 0;
-        position: absolute;
-    }
-
-    .logo{
-        @include import-image('logo_white.svg', 14rem, 3.48rem, 94%);
-    }
-}
+    window.$js = JSloth;    
+})();

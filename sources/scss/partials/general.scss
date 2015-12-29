@@ -403,6 +403,30 @@ a {
     .button {
         margin-bottom: 0;
     }
+
+    &.transparent {
+        margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
+        background: $white;
+        border-top: 0;
+
+        .link {
+            float: right;
+            height: 0;
+            opacity: 0.4;
+            position: relative;
+            right: -0.8rem;
+            top: -0.8rem;
+            @include single-transition(all, 0.5s);
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .mainchart {
+            height: 15rem;
+        }
+    }
 }
 
 .progress {

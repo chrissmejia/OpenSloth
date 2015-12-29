@@ -22,79 +22,72 @@
 // SOFTWARE.                                                                              //
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "settings";
-@import "variables";
-@import "mixins";
-@import "compass/css3/transition";
+(function(){
+    "use strict";
 
-body.non-scroll {
-    overflow: hidden;
-}
+    function data() {
+        var dataset = [];
+        var startDate = 1450137815;
 
-#content {
-    background-color: $primary-color;
-    overflow: hidden;
-}
+        dataset[1] = [];
+        dataset[2] = [];
+        dataset[3] = [];
+        dataset[4] = [];
 
-#main {
-    .row{
-        margin: 0;
-        padding: 1.42857rem;
-
-        .row {
-            padding: 0;
-        }
-    }
-}
-
-#breadcrumb {
-    overflow: hidden;
-    background: tint($primary-color, 85%);
-    color: $primary-color;
-    border: 0.1rem tint($primary-color, 70%) solid !important;
-
-    .breadcrumbs {
-        margin-bottom: 0;
-        padding : 0;
-        background: inherit;
-
-        i {
-            margin-right: 0.6rem;
+        for (var i = 0; i < 14; i++) {
+            var baseY = 1000 * Math.random();
+            var baseX = startDate + (i * 100000);
+            dataset[1].push({x: baseX, y: baseY + (Math.random() * 100)});
+            dataset[2].push({x: baseX, y: baseY + (Math.random() * 300)});
+            dataset[3].push({x: baseX, y: baseY + (Math.random() * 600)});
+            dataset[4].push({x: baseX, y: baseY + (Math.random() * 900)});
         }
 
-        * {
-            font-size: 0.8rem;
+        return [
+        {
+          values: dataset[1],
+          key: '2013',
+          color: '#346288'
+        },
+        {
+          values: dataset[2],
+          key: '2014',
+          color: '#BE4064'
+        },
+        {
+          values: dataset[3],
+          key: '2015',
+          color: '#75BB3F'
+        },
+        {
+          values: dataset[4],
+          key: '2016',
+          color: '#D39847'
         }
-    }
+    ];
+    }    
 
-    &.fixed {
-        z-index: 10000;
-        background: $white;
-        padding-left: 14rem;
+    nv.addGraph(function() {
+        var chart = nv.models.lineChart();
 
-        #mini_logo {
-            left: 0;
-            opacity: 1;
-            position: fixed;
-            top: 0;
-        }
-    }
-}
+        chart.xAxis
+//        .axisLabel('Time')
+        .tickFormat(function(d) { return d3.time.format('%d %b %y')(new Date(d * 1000))});
 
-#mini_logo {
-	background-color: $success-color;
-    left: -$menu-full-width;
-    opacity: 0;
-    position: absolute;
-    @include single-transition(all, 0.5s);
+        chart.yAxis
+//        .axisLabel('Interactions')
+        .tickFormat(d3.format('d'));
 
-    .button {
-        margin: 0;
-        padding: 0;
-        position: absolute;
-    }
+        chart.margin({top: 0, right: 30, bottom: 20, left: 30})
 
-    .logo{
-        @include import-image('logo_white.svg', 14rem, 3.48rem, 94%);
-    }
-}
+        d3.select('#chart svg')
+        .datum(data())
+        .transition().duration(500)
+        .call(chart);
+
+        nv.utils.windowResize(chart.update);
+
+        return chart;
+    });
+
+})();

@@ -61,7 +61,7 @@ a:hover {
 }
 /* line 77, ../../../sources/scss/partials/general.scss */
 .link:hover:before {
-  background-color: #eaeff3;
+  background-color: #ebeff3;
   right: 0;
   left: 0;
 }
@@ -97,19 +97,19 @@ a:hover {
 }
 /* line 118, ../../../sources/scss/partials/general.scss */
 .button.secondary:before {
-  background-color: #85a0b7;
+  background-color: #85a1b8;
 }
 /* line 122, ../../../sources/scss/partials/general.scss */
 .button.secondary:hover {
-  background-color: #85a0b7;
+  background-color: #85a1b8;
 }
 /* line 125, ../../../sources/scss/partials/general.scss */
 .button.secondary:hover:before {
-  background-color: #6587a4;
+  background-color: #6588a5;
 }
 /* line 130, ../../../sources/scss/partials/general.scss */
 .button.secondary:active {
-  background-color: #6587a4;
+  background-color: #6588a5;
 }
 /* line 136, ../../../sources/scss/partials/general.scss */
 .button.action {
@@ -161,7 +161,7 @@ a:hover {
 }
 /* line 185, ../../../sources/scss/partials/general.scss */
 .top-bar i span {
-  color: #f8ebef;
+  color: #f9ecf0;
   width: 1rem;
   height: 1rem;
   display: block;
@@ -172,7 +172,7 @@ a:hover {
   padding: 0.2rem 0;
   border-radius: 50%;
   background-color: #BE4064;
-  color: #f8ebef;
+  color: #f9ecf0;
   line-height: 0.6rem;
   padding: 0.2rem 0.34rem;
 }
@@ -218,7 +218,7 @@ a:hover {
 }
 /* line 234, ../../../sources/scss/partials/general.scss */
 .top-bar.tabs .link:before {
-  background-color: #eaeff3;
+  background-color: #ebeff3;
 }
 /* line 238, ../../../sources/scss/partials/general.scss */
 .top-bar.tabs .link:hover:before {
@@ -285,7 +285,7 @@ a:hover {
 /* line 296, ../../../sources/scss/partials/general.scss */
 .panel .title {
   margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
-  background: #c2cfdb;
+  background: #c2d0db;
   color: #346288;
   text-transform: uppercase;
 }
@@ -308,7 +308,7 @@ a:hover {
 /* line 319, ../../../sources/scss/partials/general.scss */
 .panel .accordion .accordion-navigation > a {
   color: #182d3e !important;
-  background: #c2cfdb;
+  background: #c2d0db;
   text-transform: uppercase;
   margin: 0;
   padding: 0.9rem 1.2rem;
@@ -336,13 +336,13 @@ a:hover {
 /* line 348, ../../../sources/scss/partials/general.scss */
 .panel .tabs {
   margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
-  background: #c2cfdb;
+  background: #c2d0db;
 }
 /* line 354, ../../../sources/scss/partials/general.scss */
 .panel .tabs .tab-title a {
   color: #182d3e !important;
   text-transform: uppercase;
-  background: #c2cfdb;
+  background: #c2d0db;
   margin: 0;
   padding: 0.9rem 1.2rem;
   font-size: 0.8rem;
@@ -384,15 +384,42 @@ a:hover {
 .panel .button {
   margin-bottom: 0;
 }
+/* line 407, ../../../sources/scss/partials/general.scss */
+.panel.transparent {
+  margin: -1.42857rem -1.42857rem 1.42857rem -1.42857rem !important;
+  background: #FFFFFF;
+  border-top: 0;
+}
+/* line 412, ../../../sources/scss/partials/general.scss */
+.panel.transparent .link {
+  float: right;
+  height: 0;
+  opacity: 0.4;
+  position: relative;
+  right: -0.8rem;
+  top: -0.8rem;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 421, ../../../sources/scss/partials/general.scss */
+.panel.transparent .link:hover {
+  opacity: 1;
+}
+/* line 426, ../../../sources/scss/partials/general.scss */
+.panel.transparent .mainchart {
+  height: 15rem;
+}
 
-/* line 409, ../../../sources/scss/partials/general.scss */
+/* line 433, ../../../sources/scss/partials/general.scss */
 .progress .meter {
   font-size: 0.8rem;
   line-height: 1.5rem;
   color: #FFFFFF;
   overflow: hidden;
 }
-/* line 416, ../../../sources/scss/partials/general.scss */
+/* line 440, ../../../sources/scss/partials/general.scss */
 .progress.striped .meter {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPjxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -404,7 +431,7 @@ a:hover {
   -webkit-background-size: 40px 40px;
   background-size: 40px 40px;
 }
-/* line 421, ../../../sources/scss/partials/general.scss */
+/* line 445, ../../../sources/scss/partials/general.scss */
 .progress.animated .meter {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -412,7 +439,7 @@ a:hover {
   transition: all 0.5s;
   width: 0;
 }
-/* line 426, ../../../sources/scss/partials/general.scss */
+/* line 450, ../../../sources/scss/partials/general.scss */
 .progress.animated.striped .meter {
   -moz-animation: animated-striped 3s linear infinite;
   -webkit-animation: animated-striped 3s linear infinite;
@@ -442,67 +469,67 @@ a:hover {
     background-position: 0 0;
   }
 }
-/* line 437, ../../../sources/scss/partials/general.scss */
+/* line 461, ../../../sources/scss/partials/general.scss */
 table {
   width: 100%;
 }
 
-/* line 440, ../../../sources/scss/partials/general.scss */
+/* line 464, ../../../sources/scss/partials/general.scss */
 .dataTables_wrapper .row {
   margin: 0 -0.9375rem !important;
 }
-/* line 443, ../../../sources/scss/partials/general.scss */
+/* line 467, ../../../sources/scss/partials/general.scss */
 .dataTables_wrapper .row select {
   width: 75px;
   margin-top: 1.4rem;
 }
-/* line 448, ../../../sources/scss/partials/general.scss */
+/* line 472, ../../../sources/scss/partials/general.scss */
 .dataTables_wrapper .row .pagination {
   float: right;
 }
 
-/* line 454, ../../../sources/scss/partials/general.scss */
+/* line 478, ../../../sources/scss/partials/general.scss */
 .split.link {
   padding: 0;
 }
-/* line 457, ../../../sources/scss/partials/general.scss */
+/* line 481, ../../../sources/scss/partials/general.scss */
 .split.link div {
   padding: 1rem;
   margin-right: 3.53571rem;
 }
-/* line 461, ../../../sources/scss/partials/general.scss */
+/* line 485, ../../../sources/scss/partials/general.scss */
 .split.link div span {
   right: -3.53571rem;
 }
 
-/* line 467, ../../../sources/scss/partials/general.scss */
+/* line 491, ../../../sources/scss/partials/general.scss */
 .split.button.no-pip span > i {
   margin-left: -0.48889em;
 }
 
-/* line 472, ../../../sources/scss/partials/general.scss */
+/* line 496, ../../../sources/scss/partials/general.scss */
 .close-reveal-modal:hover, .joyride-close-tip:hover {
   text-decoration: none;
   opacity: 0.3;
 }
-/* line 476, ../../../sources/scss/partials/general.scss */
+/* line 500, ../../../sources/scss/partials/general.scss */
 .close-reveal-modal:hover:hover, .joyride-close-tip:hover:hover {
   opacity: 0.7;
 }
 
-/* line 483, ../../../sources/scss/partials/general.scss */
+/* line 507, ../../../sources/scss/partials/general.scss */
 form select {
   padding-right: 1.8rem;
 }
-/* line 487, ../../../sources/scss/partials/general.scss */
+/* line 511, ../../../sources/scss/partials/general.scss */
 form .prefix, form .postfix {
   padding: 0;
 }
-/* line 492, ../../../sources/scss/partials/general.scss */
+/* line 516, ../../../sources/scss/partials/general.scss */
 form .error input, form .error input:focus {
   border-color: #BE4064;
 }
-/* line 496, ../../../sources/scss/partials/general.scss */
+/* line 520, ../../../sources/scss/partials/general.scss */
 form .error small.error {
   color: #BE4064 !important;
   background: #FFFFFF !important;
